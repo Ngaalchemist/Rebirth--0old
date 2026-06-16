@@ -11,7 +11,7 @@ export function HeaderSection() {
           </p>
 
           <button
-            onClick={scrollToPricing}
+            onClick={() => window.open('https://thanhtoan.ngaalchemist.com', '_blank')}
             data-testid="button-header-register"
             className="rounded-none px-10 md:px-16 py-2.5 text-sm font-bold bg-[#C9A84C] text-[#140728] hover:bg-[#E8C96A] transition-all shadow-md hover:shadow-lg whitespace-nowrap tracking-wide"
           >
