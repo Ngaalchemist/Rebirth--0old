@@ -33,7 +33,7 @@ export function FinalCtaSection() {
           {/* CTA */}
           <div className="space-y-5 pt-4">
             <CtaButton
-              onClick={() => window.open('https://thanhtoan.ngaalchemist.com', '_blank')}
+              onClick={scrollToReg}
               className="text-lg md:text-xl px-12 py-6 shadow-[0_0_60px_rgba(201,168,76,0.5)] bg-[#C9A84C] text-[#140728] hover:bg-[#E8C96A]"
               data-testid="button-cta-final"
             >

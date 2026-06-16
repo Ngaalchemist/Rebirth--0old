@@ -70,7 +70,7 @@ export function CurriculumSection() {
           className="text-center"
         >
           <button
-            onClick={() => window.open('https://thanhtoan.ngaalchemist.com', '_blank')}
+            onClick={scrollToPricing}
             data-testid="button-cta-curriculum"
             className="group inline-flex items-center justify-between gap-4 px-8 py-4 md:py-5 rounded-none font-bold text-base md:text-lg text-[#140728] bg-[#C9A84C] hover:bg-[#E8C96A] transition-all shadow-[0_8px_30px_rgba(201,168,76,0.4)] hover:shadow-[0_14px_44px_rgba(201,168,76,0.65)] max-w-xl w-full sm:w-auto mx-auto"
           >

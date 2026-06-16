@@ -126,7 +126,7 @@ export function HeroSection() {
 
             <button
               type="button"
-              onClick={() => window.open('https://thanhtoan.ngaalchemist.com', '_blank')}
+              onClick={scrollToPricing}
               data-testid="button-cta-hero"
               className="group inline-flex items-center justify-center gap-3 px-7 md:px-9 py-4 md:py-5 rounded-none font-bold text-base md:text-lg text-[#140728] transition-all duration-200 shadow-[0_8px_30px_rgba(201,168,76,0.45)] hover:shadow-[0_16px_50px_rgba(255,224,102,0.75)] hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.99] border border-[#FFE066]/50"
               style={{
