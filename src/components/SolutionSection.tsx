@@ -108,7 +108,7 @@ export function SolutionSection() {
           className="text-center mt-12"
         >
           <button
-            onClick={scrollToPricing}
+            onClick={() => window.open('https://thanhtoan.ngaalchemist.com', '_blank')}
             data-testid="button-cta-solution"
             className="group inline-flex items-center justify-center gap-3 px-8 py-4 md:py-5 rounded-none font-bold text-base md:text-lg text-[#140728] bg-[#C9A84C] hover:bg-[#E8C96A] transition-all shadow-[0_8px_30px_rgba(201,168,76,0.35)] hover:shadow-[0_14px_44px_rgba(201,168,76,0.6)] mx-auto"
           >
