@@ -123,7 +123,7 @@ export function CycleContinuesSection() {
           className="text-center space-y-3"
         >
           <CtaButton
-            onClick={scrollToPricing}
+            onClick={() => window.open('https://thanhtoan.ngaalchemist.com', '_blank')}
             className="text-base md:text-lg px-10 py-5 bg-[#C9A84C] text-[#140728] hover:bg-[#E8C96A] rounded-none shadow-[0_0_30px_rgba(201,168,76,0.3)]"
             data-testid="button-cta-cycle"
           >
