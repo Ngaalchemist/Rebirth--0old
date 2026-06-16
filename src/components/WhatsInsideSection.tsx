@@ -91,7 +91,7 @@ export function WhatsInsideSection() {
           className="text-center"
         >
           <button
-            onClick={scrollToPricing}
+            onClick={() => window.open('https://thanhtoan.ngaalchemist.com', '_blank')}
             data-testid="button-cta-whatsinside"
             className="group inline-flex items-center justify-center gap-2 sm:gap-4 px-5 sm:px-8 py-4 md:py-5 rounded-none font-bold text-[13px] sm:text-base md:text-lg text-[#140728] bg-[#C9A84C] hover:bg-[#E8C96A] transition-all shadow-[0_8px_30px_rgba(201,168,76,0.4)] hover:shadow-[0_14px_44px_rgba(201,168,76,0.65)] w-full sm:w-auto mx-auto"
           >
