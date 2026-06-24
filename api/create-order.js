@@ -68,6 +68,16 @@ export default async function handler(req, res) {
 
     await redis.set(`order:${code}`, JSON.stringify(order), { ex: ORDER_TTL_SECONDS });
 
+    // Ghi dữ liệu khách hàng vào Google Sheet ngay khi điền form xong (chưa cần đợi thanh toán)
+    // Không chặn response nếu việc ghi sheet bị lỗi/chậm — tránh ảnh hưởng tới UX của khách
+    logToGoogleSheet({
+      name,
+      phone,
+      email: email || "",
+      orderCode: code,
+      paid: false,
+    });
+
     const qrUrl = `https://qr.sepay.vn/img?acc=${ACCOUNT_NO}&bank=MSB&amount=${AMOUNT}&des=${encodeURIComponent(code)}`;
 
     return res.status(200).json({
@@ -82,4 +92,19 @@ export default async function handler(req, res) {
     console.error("create-order error:", err);
     return res.status(500).json({ error: "Có lỗi xảy ra, vui lòng thử lại" });
   }
+}
+
+// Gửi dữ liệu sang Google Sheet (Apps Script Web App) — không chờ kết quả,
+// chỉ log lỗi ra console nếu có, không làm gián đoạn luồng tạo đơn hàng của khách.
+function logToGoogleSheet(data) {
+  const url = process.env.GOOGLE_SHEET_WEBHOOK_URL;
+  if (!url) return;
+
+  fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  }).catch((err) => {
+    console.error("logToGoogleSheet error:", err);
+  });
 }
