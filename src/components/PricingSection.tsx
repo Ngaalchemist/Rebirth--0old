@@ -59,7 +59,7 @@ export function PricingSection() {
 
           {/* Price */}
           <div className="text-center mb-8 mt-3">
-            <p className="text-gray-400 text-base md:text-lg mb-2">Giá gốc khi mở chính thức</p>
+            <p className="text-gray-400 text-base md:text-lg mb-2">Giá trị thực của khóa học</p>
             <div className="text-gray-500/60 line-through text-3xl md:text-4xl mb-1">2.000.000đ</div>
             <div className="text-7xl md:text-8xl font-bold text-[#C9A84C] font-serif leading-none">444.000đ</div>
             <p className="text-gray-300 text-sm md:text-base mt-3">Một lần duy nhất · Truy cập trọn đời</p>
