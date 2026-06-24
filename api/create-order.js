@@ -9,8 +9,11 @@ const redis = new Redis({
 });
 
 // Thông tin nhận tiền — Maritime Bank (MSB)
+// QUAN TRỌNG: MSB yêu cầu nhận tiền qua Tài khoản ảo (VA) để SePay theo dõi được giao dịch,
+// không nhận trực tiếp vào số tài khoản gốc. Tiền vẫn về thẳng tài khoản chính như thường,
+// VA chỉ là "đường" để SePay nhìn thấy giao dịch.
 const BANK_BIN = "970426"; // Mã BIN VietQR của MSB
-const ACCOUNT_NO = "03101010918637";
+const ACCOUNT_NO = "96886693015092"; // Số VA cố định do MSB cấp qua SePay
 const ACCOUNT_NAME = "NGUYEN THANH NGA";
 const AMOUNT = 444000;
 const ORDER_TTL_SECONDS = 60 * 60 * 24; // giữ đơn hàng 24h rồi tự xoá
@@ -65,7 +68,7 @@ export default async function handler(req, res) {
 
     await redis.set(`order:${code}`, JSON.stringify(order), { ex: ORDER_TTL_SECONDS });
 
-    const qrUrl = `https://img.vietqr.io/image/${BANK_BIN}-${ACCOUNT_NO}-compact2.png?amount=${AMOUNT}&addInfo=${encodeURIComponent(code)}&accountName=${encodeURIComponent(ACCOUNT_NAME)}`;
+    const qrUrl = `https://qr.sepay.vn/img?acc=${ACCOUNT_NO}&bank=MSB&amount=${AMOUNT}&des=${encodeURIComponent(code)}`;
 
     return res.status(200).json({
       code,
