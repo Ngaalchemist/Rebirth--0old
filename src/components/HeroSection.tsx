@@ -63,14 +63,15 @@ export function HeroSection() {
               style={{
                 fontFamily: "'Playfair Display SC', serif",
                 fontWeight: 700,
-                fontSize: "clamp(1.4rem, 5vw, 3.4rem)",
+                fontSize: "clamp(1.3rem, 3.6vw, 2.6rem)",
                 letterSpacing: "-0.015em",
-                lineHeight: 1.12,
+                lineHeight: 1.15,
                 WebkitTextStroke: "1px #1a0a3a",
                 textShadow: "3px 3px 0 #1a0a3a, 6px 6px 16px rgba(0,0,0,0.6)",
               }}
             >
-              7 NGÀY THOÁT KHỎI<br />NỖI SỢ BỊ BỎ RƠI
+              <span style={{ display: "block", whiteSpace: "nowrap" }}>7 NGÀY THOÁT KHỎI</span>
+              <span style={{ display: "block", whiteSpace: "nowrap" }}>NỖI SỢ BỊ BỎ RƠI</span>
             </motion.h1>
 
             {/* Sub-headline — smaller than the main headline now */}
