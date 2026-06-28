@@ -64,15 +64,19 @@ export function HeroSection() {
             </motion.p>
 
             {/* Headline — left aligned, extends across toward the portrait */}
-            <h1 className="leading-[1.07] mb-8 lg:mb-12">
+            <h1 className="leading-[1.1] mb-8 lg:mb-12">
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
-                className="block font-serif font-bold text-[#F6ECCF] whitespace-nowrap"
+                className="block text-[#E8C96A] whitespace-nowrap"
                 style={{
+                  fontFamily: "'Playfair Display SC', serif",
+                  fontWeight: 700,
                   fontSize: "clamp(1.3rem, 4.7vw, 3.9rem)",
-                  textShadow: "2px 2px 0 #1a0a3a, 4px 4px 12px rgba(0,0,0,0.55)",
+                  letterSpacing: "-0.01em",
+                  WebkitTextStroke: "1px #1a0a3a",
+                  textShadow: "3px 3px 0 #1a0a3a, 6px 6px 16px rgba(0,0,0,0.6)",
                 }}
               >
                 7 NGÀY THOÁT KHỎI
@@ -81,10 +85,14 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="block font-serif font-bold text-[#F6ECCF] mt-1 whitespace-nowrap"
+                className="block text-[#E8C96A] mt-1 whitespace-nowrap"
                 style={{
+                  fontFamily: "'Playfair Display SC', serif",
+                  fontWeight: 700,
                   fontSize: "clamp(1.15rem, 4.4vw, 3.6rem)",
-                  textShadow: "2px 2px 0 #1a0a3a, 4px 4px 12px rgba(0,0,0,0.55)",
+                  letterSpacing: "-0.01em",
+                  WebkitTextStroke: "1px #1a0a3a",
+                  textShadow: "3px 3px 0 #1a0a3a, 6px 6px 16px rgba(0,0,0,0.6)",
                 }}
               >
                 NỖI SỢ BỊ BỎ RƠI
