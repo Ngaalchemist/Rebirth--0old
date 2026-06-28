@@ -5,7 +5,7 @@ import heroBg from "@/assets/images/hero-final.png";
 const checkmarks = [
   { gold: "Ngừng kiệt sức", rest: " vì phải nỗ lực để được ở lại." },
   { gold: "Chấm dứt sự nhục nhã", rest: " khi phải cầu xin sự chú ý từ người khác." },
-  { gold: "Xây dựng cảm giác đủ đầy", rest: "và vững vàng từ bên trong." },
+  { gold: "Xây dựng cảm giác đủ đầy ", rest: "và vững vàng từ bên trong." },
 ];
 
 const trust = [
