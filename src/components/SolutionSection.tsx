@@ -62,9 +62,9 @@ function StationIcon({ src }: { src: string }) {
   );
 }
 
-const TOP_ZONE = 420; // space reserved above the line for "above" cards
-const BOTTOM_ZONE = 420; // space reserved below the line for "below" cards
-const ICON_GAP = 40; // breathing room between card edge and icon
+const TOP_ZONE = 320; // space reserved above the line for "above" cards
+const BOTTOM_ZONE = 330; // space reserved below the line for "below" cards
+const ICON_GAP = 30; // breathing room between card edge and icon
 const BAR_HEIGHT = 14; // thickness of the metallic gold timeline bar
 
 export function SolutionSection() {
@@ -85,7 +85,7 @@ export function SolutionSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20 md:mb-28"
+          className="text-center mb-10 md:mb-12"
         >
           <h2 className="font-serif font-extrabold text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-[#F5D78E] leading-tight tracking-wide whitespace-nowrap">
             LỘ TRÌNH 4 GIAI ĐOẠN CHUYỂN HÓA
@@ -152,7 +152,7 @@ export function SolutionSection() {
         </div>
 
         {/* ── MOBILE vertical stack ── */}
-        <div className="md:hidden space-y-5 mb-12 relative pl-7">
+        <div className="md:hidden space-y-5 mb-6 relative pl-7">
           <div
             className="absolute left-[12px] top-2 bottom-2 w-[8px] rounded-full"
             style={{
@@ -186,7 +186,7 @@ export function SolutionSection() {
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-20 md:mt-24"
+          className="text-center mt-8 md:mt-10"
         >
           <button
             onClick={scrollToPricing}
