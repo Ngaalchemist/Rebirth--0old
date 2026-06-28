@@ -8,7 +8,7 @@ const items = [
   },
   {
     icon: Brain,
-    text: "Chủ đề: attachment wound, self-worth, nervous system",
+    text: "Chủ đề: Quantum Identity Shift • Neuro-Somatic Rewiring • Abandonment Loop Dissolution",
   },
   {
     icon: Monitor,
