@@ -4,8 +4,8 @@ import heroBg from "@/assets/images/hero-final.png";
 
 const checkmarks = [
   { gold: "Ngừng kiệt sức", rest: " vì phải nỗ lực để được ở lại." },
-  { gold: "Chấm dứt sự nhục nhã", rest: " khi phải cầu xin sự chú ý." },
-  { gold: "Kiến tạo Danh tính mới", rest: " từ bến đỗ vững chãi nhất của chính mình." },
+  { gold: "Chấm dứt sự nhục nhã", rest: " khi phải cầu xin sự chú ý từ người khác." },
+  { gold: "Xây dựng cảm giác đủ đầy", rest: "và vững vàng từ bên trong." },
 ];
 
 const trust = [
@@ -104,8 +104,8 @@ export function HeroSection() {
               className="text-xs md:text-sm text-gray-100 leading-relaxed mb-5 max-w-xl"
               style={{ textShadow: "0 1px 8px rgba(20,7,40,0.95), 0 0 20px rgba(20,7,40,0.85)" }}
             >
-              Ngừng đóng vai{" "}
-              <span className="text-[#FFE066] font-semibold">"người hiểu chuyện"</span> để thu hồi lại giá trị mà bạn đã vô thức đặt vào tay người khác. Bẻ gãy kịch bản bị bỏ rơi bằng hệ thống chuyển hóa Tiềm thức tầng sâu.
+              Nếu bạn luôn cố gắng trở thành người{" "}
+              <span className="text-[#FFE066] font-semibold">"hiểu chuyện, nhẫn nhịn và hy sinh"</span> để được yêu thương, đây là hành trình 7 ngày giúp bạn nhận diễn gốc rễ của nỗi sợ bị bỏ rơi và xây dựng lại cảm giác an toàn từ bên trong.
             </motion.p>
 
             <ul className="space-y-2 mb-6 max-w-xl">
