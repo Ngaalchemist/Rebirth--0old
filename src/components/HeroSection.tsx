@@ -55,15 +55,15 @@ export function HeroSection() {
             </motion.p>
 
             {/* Headline — left aligned, extends across toward the portrait */}
-            <h1 className="leading-[1.1] mb-8 lg:mb-12">
+            <h1 className="leading-[1.08] mb-10 lg:mb-14">
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
                 className="block font-serif font-bold text-[#F6ECCF]"
                 style={{
-                  fontSize: "clamp(1.4rem, 3.4vw, 2.5rem)",
-                  textShadow: "2px 2px 0 #1a0a3a, 4px 4px 12px rgba(0,0,0,0.55)",
+                  fontSize: "clamp(2.4rem, 6.5vw, 4.6rem)",
+                  textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)",
                 }}
               >
                 Đừng nỗ lực để được yêu.
@@ -72,12 +72,12 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="block mt-1"
-                style={{ fontSize: "clamp(1.35rem, 3.2vw, 2.4rem)" }}
+                className="block mt-2"
+                style={{ fontSize: "clamp(2.3rem, 6.2vw, 4.4rem)" }}
               >
                 <span
                   className="font-serif font-bold text-[#F6ECCF]"
-                  style={{ textShadow: "2px 2px 0 #1a0a3a, 4px 4px 12px rgba(0,0,0,0.55)" }}
+                  style={{ textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)" }}
                 >
                   Hãy trở thành người{" "}
                 </span>
@@ -86,8 +86,8 @@ export function HeroSection() {
                   style={{
                     fontFamily: "'Playfair Display SC', serif",
                     fontWeight: 700,
-                    WebkitTextStroke: "0.6px #1a0a3a",
-                    textShadow: "3px 3px 0 #1a0a3a, 6px 6px 16px rgba(0,0,0,0.6)",
+                    WebkitTextStroke: "0.8px #1a0a3a",
+                    textShadow: "4px 4px 0 #1a0a3a, 8px 8px 20px rgba(0,0,0,0.65)",
                   }}
                 >
                   KHÔNG THỂ BỊ BỎ RƠI.
@@ -125,20 +125,20 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="text-xs md:text-sm font-bold uppercase tracking-wide text-[#C9A84C] mb-3"
+              className="text-[11px] md:text-xs font-bold uppercase tracking-wide text-[#C9A84C] mb-2"
               style={{ textShadow: "0 1px 6px rgba(20,7,40,0.95)" }}
             >
               Sau 7 ngày, bạn sẽ:
             </motion.p>
 
-            <ul className="space-y-2 mb-6 max-w-xl">
+            <ul className="space-y-1.5 mb-5 max-w-xl">
               {checkmarks.map((c, i) => (
                 <motion.li
                   key={i}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.75 + i * 0.1 }}
-                  className="flex items-start gap-3 text-sm md:text-base text-gray-50"
+                  className="flex items-start gap-2.5 text-xs md:text-sm text-gray-50"
                   style={{ textShadow: "0 1px 6px rgba(20,7,40,0.95)" }}
                 >
                   <span className="text-[#C9A84C] mt-0.5 flex-shrink-0 font-bold">✓</span>
