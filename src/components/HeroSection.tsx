@@ -55,14 +55,14 @@ export function HeroSection() {
             </motion.p>
 
             {/* Headline — left aligned, extends across toward the portrait */}
-            <h1 className="leading-[1.08] mb-10 lg:mb-14">
+            <h1 className="leading-[1.08] mb-6 lg:mb-8">
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
                 className="block font-serif font-bold text-[#F6ECCF]"
                 style={{
-                  fontSize: "clamp(2.4rem, 6.5vw, 4.6rem)",
+                  fontSize: "clamp(1.92rem, 5.2vw, 3.68rem)",
                   textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)",
                 }}
               >
@@ -72,26 +72,28 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="block mt-2"
-                style={{ fontSize: "clamp(2.3rem, 6.2vw, 4.4rem)" }}
+                className="block font-serif font-bold text-[#F6ECCF] mt-2"
+                style={{
+                  fontSize: "clamp(1.84rem, 4.96vw, 3.52rem)",
+                  textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)",
+                }}
               >
-                <span
-                  className="font-serif font-bold text-[#F6ECCF]"
-                  style={{ textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)" }}
-                >
-                  Hãy trở thành người{" "}
-                </span>
-                <span
-                  className="uppercase text-[#E8C96A]"
-                  style={{
-                    fontFamily: "'Playfair Display SC', serif",
-                    fontWeight: 700,
-                    WebkitTextStroke: "0.8px #1a0a3a",
-                    textShadow: "4px 4px 0 #1a0a3a, 8px 8px 20px rgba(0,0,0,0.65)",
-                  }}
-                >
-                  KHÔNG THỂ BỊ BỎ RƠI.
-                </span>
+                Hãy trở thành người
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="block uppercase text-[#E8C96A] mt-2"
+                style={{
+                  fontFamily: "'Playfair Display SC', serif",
+                  fontWeight: 700,
+                  fontSize: "clamp(2.3rem, 6.2vw, 4.4rem)",
+                  WebkitTextStroke: "0.8px #1a0a3a",
+                  textShadow: "4px 4px 0 #1a0a3a, 8px 8px 20px rgba(0,0,0,0.65)",
+                }}
+              >
+                KHÔNG THỂ BỊ BỎ RƠI.
               </motion.span>
             </h1>
 
@@ -99,11 +101,11 @@ export function HeroSection() {
             <motion.p
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.45 }}
-              className="font-serif text-[#F6ECCF] leading-[1.3] mb-6 max-w-xl"
+              transition={{ duration: 0.8, delay: 0.55 }}
+              className="font-serif font-bold text-[#F6ECCF] leading-[1.15] mb-6 max-w-2xl"
               style={{
-                fontSize: "clamp(1rem, 2.3vw, 1.25rem)",
-                textShadow: "2px 2px 0 #1a0a3a, 4px 4px 12px rgba(0,0,0,0.55)",
+                fontSize: "clamp(3rem, 6.9vw, 3.75rem)",
+                textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)",
               }}
             >
               Hành trình 7 ngày nhận diện gốc rễ nỗi sợ bị bỏ rơi, xây lại giá trị thật của chính mình.
