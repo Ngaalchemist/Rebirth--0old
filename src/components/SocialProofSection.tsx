@@ -4,11 +4,11 @@ import { Users, Brain, Monitor } from "lucide-react";
 const items = [
   {
     icon: Users,
-    text: "Hơn 500+ ca đồng hành cùng phụ nữ trong session / healing",
+    text: "Hơn 500+ ca đồng hành cùng phụ nữ trong session healing",
   },
   {
     icon: Brain,
-    text: "Chủ đề: Quantum Identity Shift • Neuro-Somatic Rewiring • Abandonment Loop Dissolution",
+    text: "Quantum Identity Shift • Neuro-Somatic Rewiring • Abandonment Loop Dissolution",
   },
   {
     icon: Monitor,
