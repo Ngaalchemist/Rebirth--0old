@@ -275,13 +275,13 @@ export function HeroSection() {
               style={{ color: GOLD, fontWeight: 400 }}
             >
               ”
+            </span>{" "}
+            <span
+              className="text-[10px] tracking-wide whitespace-nowrap"
+              style={{ color: GOLD }}
+            >
+              - Nga Alchemist
             </span>
-          </p>
-          <p
-            className="text-[10px] tracking-wide mt-2.5"
-            style={{ color: GOLD }}
-          >
-            - Nga Alchemist
           </p>
         </motion.div>
       </div>
