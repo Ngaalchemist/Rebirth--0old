@@ -12,9 +12,7 @@ const items = [
   },
   {
     icon: Monitor,
-    text: "Học online • 
-      Thực hành ngắn • 
-      Không lý thuyết sáo rỗng",
+    text: "Học online • Thực hành ngắn • Không lý thuyết sáo rỗng",
   },
 ];
 
