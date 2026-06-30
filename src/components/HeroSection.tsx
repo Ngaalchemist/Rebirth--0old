@@ -269,7 +269,7 @@ export function HeroSection() {
               fontSize: "0.8rem",
             }}
           >
-            Thế giới không đối xử với bạn theo cách bạn muốn. Nó đối xử với bạn theo đúng cách bạn đang đối xử với chính mình.
+            Tình yêu không làm bạn đau. Những vết thương chưa lành mới làm điều đó.
             <span
               className="ml-1 align-baseline"
               style={{ color: GOLD, fontWeight: 400 }}
