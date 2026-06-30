@@ -222,31 +222,46 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* ── QUOTE (bottom right, floating beside the portrait, no box) ── */}
+        {/* ── QUOTE BOX (near shoulder, clear of the hands) ── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute bottom-14 right-8 xl:right-16 z-10 w-60 text-right"
+          className="hidden lg:block absolute top-[30%] right-8 xl:right-14 z-10 w-56 p-5 rounded-md border backdrop-blur-md"
+          style={{
+            borderColor: "rgba(232,201,106,0.3)",
+            background:
+              "linear-gradient(160deg, rgba(20,7,40,0.8) 0%, rgba(20,7,40,0.58) 100%)",
+            boxShadow:
+              "0 12px 36px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)",
+          }}
         >
-          <p
-            className="text-base text-gray-50 leading-relaxed italic"
+          <span
+            className="block text-3xl leading-none select-none mb-1"
             style={{
+              color: GOLD,
               fontFamily: "'Playfair Display', serif",
-              textShadow: "0 2px 10px rgba(0,0,0,0.65)",
+              textShadow: "0 2px 10px rgba(0,0,0,0.5)",
             }}
           >
-            <span style={{ color: GOLD }}>“</span>
-            Khi bạn chữa lành mối quan hệ với chính mình, thế giới bên ngoài
-            cũng sẽ khác đi
-            <span style={{ color: GOLD }}>”</span>
-          </p>
+            “
+          </span>
           <p
-            className="mt-2 text-xs tracking-wide"
-            style={{ color: GOLD, textShadow: "0 1px 6px rgba(0,0,0,0.6)" }}
+            className="text-sm text-gray-100 leading-relaxed italic"
+            style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            - Nga Alchemist
+            Khi bạn chữa lành mối quan hệ với chính mình, thế giới bên ngoài
+            cũng sẽ khác đi.
           </p>
+          <div className="flex items-center justify-between mt-3">
+            <span
+              className="text-[11px] tracking-wide"
+              style={{ color: GOLD }}
+            >
+              - Nga Alchemist
+            </span>
+            <span style={{ color: GOLD }}>✺</span>
+          </div>
         </motion.div>
       </div>
     </section>
