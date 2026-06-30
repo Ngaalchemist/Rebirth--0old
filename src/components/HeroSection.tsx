@@ -227,12 +227,12 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute bottom-6 right-8 xl:right-14 z-10 w-48 p-4 rounded-md border backdrop-blur-md"
+          className="hidden lg:block absolute top-[48%] -translate-y-1/2 right-3 xl:right-6 z-10 w-48 p-4 rounded-md border backdrop-blur-sm"
           style={{
             borderColor: "rgba(232,201,106,0.3)",
-            backgroundColor: "rgba(15,8,28,0.9)",
+            backgroundColor: "rgba(15,8,28,0.05)",
             boxShadow:
-              "0 12px 36px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)",
+              "0 12px 36px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.04)",
           }}
         >
           <span
