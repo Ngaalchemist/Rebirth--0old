@@ -8,7 +8,7 @@ const items = [
   },
   {
     icon: Brain,
-    text: "Nhận diện gốc rễ tổn thương • Điều hòa cảm xúc qua cơ thể • Thoát khỏi vòng lặp sợ bị bỏ rơi",
+    text: "Giải phóng nỗi đau gốc • Làm chủ sự bình an • Tái lập trình giá trị bản thân",
   },
   {
     icon: Monitor,
