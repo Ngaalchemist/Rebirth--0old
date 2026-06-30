@@ -230,7 +230,7 @@ export function HeroSection() {
           className="hidden lg:block absolute top-[27%] right-0 z-10 w-48 p-4 rounded-md border"
           style={{
             borderColor: "rgba(232,201,106,0.25)",
-            backgroundColor: "rgba(10,5,20,0.2)",
+            backgroundColor: "rgba(10,5,20,0.4)",
             boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
           }}
         >
@@ -238,7 +238,6 @@ export function HeroSection() {
             className="block text-2xl leading-none select-none mb-1"
             style={{
               color: GOLD,
-              fontFamily: "'Times New Roman', serif",
               fontWeight: 400,
               textShadow: "0 2px 10px rgba(0,0,0,0.5)",
             }}
@@ -249,10 +248,9 @@ export function HeroSection() {
             className="leading-relaxed"
             style={{
               color: GOLD,
-              fontFamily: "'Times New Roman', serif",
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "0.9rem",
+              fontSize: "1.05rem",
             }}
           >
             Khi bạn chữa lành mối quan hệ với chính mình, thế giới bên ngoài
@@ -261,7 +259,7 @@ export function HeroSection() {
           <div className="flex items-center justify-between mt-2.5">
             <span
               className="text-[10px] tracking-wide"
-              style={{ color: GOLD, fontFamily: "'Times New Roman', serif" }}
+              style={{ color: GOLD }}
             >
               - Nga Alchemist
             </span>
@@ -269,7 +267,6 @@ export function HeroSection() {
               className="text-2xl leading-none select-none"
               style={{
                 color: GOLD,
-                fontFamily: "'Times New Roman', serif",
                 fontWeight: 400,
                 textShadow: "0 2px 10px rgba(0,0,0,0.5)",
               }}
