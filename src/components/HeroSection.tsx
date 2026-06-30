@@ -71,7 +71,7 @@ export function HeroSection() {
           <img
             src={heroBg}
             alt="Nga Alchemist"
-            className="w-full h-full object-cover object-[80%_center] lg:object-center"
+            className="w-full h-full object-cover object-[68%_center] lg:object-[60%_center]"
           />
           {/* Left fade so the headline column reads clearly */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0c0420] from-5% via-[#0c0420]/85 via-44% to-transparent to-72%" />
@@ -222,16 +222,15 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* ── QUOTE BOX (near shoulder, clear of the hands) ── */}
+        {/* ── QUOTE BOX (back near the hands, purple translucent, gold serif) ── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute top-[30%] right-8 xl:right-14 z-10 w-56 p-5 rounded-md border backdrop-blur-md"
+          className="hidden lg:block absolute bottom-12 right-8 xl:right-14 z-10 w-60 p-5 rounded-md border backdrop-blur-md"
           style={{
             borderColor: "rgba(232,201,106,0.3)",
-            background:
-              "linear-gradient(160deg, rgba(20,7,40,0.8) 0%, rgba(20,7,40,0.58) 100%)",
+            backgroundColor: "rgba(45,15,75,0.7)",
             boxShadow:
               "0 12px 36px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)",
           }}
@@ -240,15 +239,22 @@ export function HeroSection() {
             className="block text-3xl leading-none select-none mb-1"
             style={{
               color: GOLD,
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Times New Roman', serif",
+              fontWeight: 400,
               textShadow: "0 2px 10px rgba(0,0,0,0.5)",
             }}
           >
             “
           </span>
           <p
-            className="text-sm text-gray-100 leading-relaxed italic"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            className="leading-relaxed"
+            style={{
+              color: GOLD,
+              fontFamily: "'Times New Roman', serif",
+              fontWeight: 400,
+              fontStyle: "normal",
+              fontSize: "1.05rem",
+            }}
           >
             Khi bạn chữa lành mối quan hệ với chính mình, thế giới bên ngoài
             cũng sẽ khác đi.
@@ -256,11 +262,21 @@ export function HeroSection() {
           <div className="flex items-center justify-between mt-3">
             <span
               className="text-[11px] tracking-wide"
-              style={{ color: GOLD }}
+              style={{ color: GOLD, fontFamily: "'Times New Roman', serif" }}
             >
               - Nga Alchemist
             </span>
-            <span style={{ color: GOLD }}>✺</span>
+            <span
+              className="text-3xl leading-none select-none"
+              style={{
+                color: GOLD,
+                fontFamily: "'Times New Roman', serif",
+                fontWeight: 400,
+                textShadow: "0 2px 10px rgba(0,0,0,0.5)",
+              }}
+            >
+              ”
+            </span>
           </div>
         </motion.div>
       </div>
