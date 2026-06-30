@@ -250,16 +250,6 @@ export function HeroSection() {
             boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
           }}
         >
-          <span
-            className="block text-xl leading-none select-none mb-1"
-            style={{
-              color: GOLD,
-              fontWeight: 400,
-              textShadow: "0 2px 10px rgba(0,0,0,0.5)",
-            }}
-          >
-            “
-          </span>
           <p
             className="leading-relaxed"
             style={{
@@ -269,19 +259,13 @@ export function HeroSection() {
               fontSize: "0.74rem",
             }}
           >
-            Bạn không đau vì họ rời đi. Bạn đau vì họ chạm vào nơi chưa từng được chữa lành..
-            <span
-              className="ml-1 align-baseline"
-              style={{ color: GOLD, fontWeight: 400 }}
-            >
-              ”
-            </span>{" "}
-            <span
-              className="text-[10px] tracking-wide whitespace-nowrap"
-              style={{ color: GOLD }}
-            >
-              - Nga Alchemist
-            </span>
+            “Bạn không đau vì họ rời đi. Bạn đau vì họ chạm vào nơi chưa từng được chữa lành..”
+          </p>
+          <p
+            className="text-[10px] tracking-wide whitespace-nowrap mt-1.5"
+            style={{ color: GOLD }}
+          >
+            - Nga Alchemist
           </p>
         </motion.div>
       </div>
