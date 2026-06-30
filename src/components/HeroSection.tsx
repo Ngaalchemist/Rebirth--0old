@@ -243,30 +243,48 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute top-[36%] right-2 xl:right-4 z-10 w-[180px] p-3 rounded-md border"
+          className="hidden lg:block absolute top-[36%] right-2 xl:right-4 z-10 w-[200px] p-4 rounded-md border backdrop-blur-sm"
           style={{
-            borderColor: "rgba(232,201,106,0.25)",
-            backgroundColor: "rgba(10,5,20,0.4)",
-            boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
+            borderColor: "rgba(232,201,106,0.35)",
+            backgroundColor: "rgba(8,4,18,0.55)",
+            boxShadow:
+              "0 8px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(232,201,106,0.12)",
           }}
         >
+          <span
+            className="block text-2xl leading-none select-none mb-1.5"
+            style={{
+              color: GOLD,
+              fontFamily: "'Playfair Display', serif",
+              textShadow: "0 2px 10px rgba(0,0,0,0.5)",
+            }}
+          >
+            “
+          </span>
           <p
             className="leading-relaxed"
             style={{
               color: GOLD,
-              fontWeight: 400,
-              fontStyle: "normal",
-              fontSize: "0.74rem",
+              fontWeight: 700,
+              fontStyle: "italic",
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "0.86rem",
+              textShadow: "0 2px 10px rgba(0,0,0,0.45)",
             }}
           >
-            “Bạn không đau vì họ rời đi. Bạn đau vì họ chạm vào nơi chưa từng được chữa lành..”
+            Bạn không đau vì họ rời đi. Bạn đau vì họ chạm vào nơi chưa từng được chữa lành..
           </p>
-          <p
-            className="text-[10px] tracking-wide whitespace-nowrap mt-1.5"
-            style={{ color: GOLD }}
+          <div
+            className="mt-3 pt-2 border-t"
+            style={{ borderColor: "rgba(232,201,106,0.25)" }}
           >
-            - Nga Alchemist
-          </p>
+            <p
+              className="text-[10px] tracking-[0.12em] uppercase whitespace-nowrap"
+              style={{ color: "rgba(232,201,106,0.85)", fontWeight: 600 }}
+            >
+              — Nga Alchemist
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>
