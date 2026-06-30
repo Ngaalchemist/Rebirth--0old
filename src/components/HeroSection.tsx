@@ -227,7 +227,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute top-[27%] right-10 xl:right-16 z-10 w-[136px] p-2.5 rounded-md border"
+          className="hidden lg:block absolute top-[27%] right-10 xl:right-16 z-10 w-[200px] p-3.5 rounded-md border"
           style={{
             borderColor: "rgba(232,201,106,0.25)",
             backgroundColor: "rgba(10,5,20,0.4)",
@@ -250,30 +250,24 @@ export function HeroSection() {
               color: GOLD,
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "0.78rem",
+              fontSize: "0.8rem",
             }}
           >
             Khi bạn chữa lành mối quan hệ với chính mình, thế giới bên ngoài
             cũng sẽ khác đi.
-          </p>
-          <div className="flex items-center justify-between mt-2.5">
             <span
-              className="text-[10px] tracking-wide"
-              style={{ color: GOLD }}
-            >
-              - Nga Alchemist
-            </span>
-            <span
-              className="text-xl leading-none select-none"
-              style={{
-                color: GOLD,
-                fontWeight: 400,
-                textShadow: "0 2px 10px rgba(0,0,0,0.5)",
-              }}
+              className="ml-1 align-baseline"
+              style={{ color: GOLD, fontWeight: 400 }}
             >
               ”
             </span>
-          </div>
+          </p>
+          <p
+            className="text-[10px] tracking-wide mt-2.5"
+            style={{ color: GOLD }}
+          >
+            - Nga Alchemist
+          </p>
         </motion.div>
       </div>
     </section>
