@@ -72,7 +72,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
-                className="block font-bold text-[#B8902E] whitespace-nowrap"
+                className="block font-bold text-[#E8C96A] whitespace-nowrap"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   fontSize: "clamp(1.4rem, 3.6vw, 2.9rem)",
@@ -85,7 +85,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="block font-bold text-[#B8902E] mt-2 whitespace-nowrap"
+                className="block font-bold text-[#E8C96A] mt-2 whitespace-nowrap"
                 style={{
                   fontFamily: "'Playfair Display', serif",
                   fontSize: "clamp(1.4rem, 3.6vw, 2.9rem)",
@@ -101,17 +101,16 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.42 }}
-              className="font-bold text-[#F2DFA0] mb-5 lg:mb-6 max-w-xl"
+              className="font-bold text-[#E8C96A] mb-5 lg:mb-6 w-full md:w-[130%] lg:w-[155%]"
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(1.1rem, 2.4vw, 1.45rem)",
+                fontSize: "clamp(0.95rem, 2vw, 1.25rem)",
                 textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)",
                 lineHeight: 1.35,
               }}
             >
-              Khóa học online 7 ngày giúp phá vỡ những mô thức cảm xúc
-              <br />
-              khiến bạn liên tục trải qua cùng một kết cục trong tình yêu.
+              <span className="block whitespace-nowrap">Khóa học online 7 ngày giúp phá vỡ những mô thức cảm xúc</span>
+              <span className="block whitespace-nowrap">khiến bạn liên tục trải qua cùng một kết cục trong tình yêu.</span>
             </motion.p>
 
             {/* Reveal — part 1 */}
