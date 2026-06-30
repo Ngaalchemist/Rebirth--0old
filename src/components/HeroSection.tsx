@@ -104,12 +104,12 @@ export function HeroSection() {
               className="block font-bold text-[#F2DFA0] mb-5 lg:mb-6 max-w-xl"
               style={{
                 fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(1.3rem, 2.8vw, 1.7rem)",
+                fontSize: "clamp(1.1rem, 2.4vw, 1.45rem)",
                 textShadow: "3px 3px 0 #1a0a3a, 6px 6px 18px rgba(0,0,0,0.6)",
                 lineHeight: 1.35,
               }}
             >
-              Hành trình 7 ngày giúp bạn phá vỡ những mô thức cảm xúc khiến mình liên tục trải qua cùng một kết cục trong tình yêu.
+              Hành trình 7 ngày giúp phá vỡ những mô thức cảm xúc khiến bạn liên tục trải qua cùng một kết cục trong tình yêu.
             </motion.p>
 
             {/* Reveal — part 1 */}
@@ -164,9 +164,11 @@ export function HeroSection() {
               type="button"
               onClick={scrollToPricing}
               data-testid="button-cta-hero"
-              className="group inline-flex items-center justify-center gap-3 px-7 md:px-9 py-4 md:py-5 rounded-none font-bold text-base md:text-lg text-[#140728] transition-all duration-200 shadow-[0_8px_30px_rgba(232,201,106,0.4)] hover:shadow-[0_16px_50px_rgba(232,201,106,0.6)] hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.99] border border-[#E8C96A]/50"
+              className="group flex items-center justify-center gap-3 px-7 md:px-9 py-4 md:py-5 rounded-none font-bold text-base md:text-lg text-[#140728] transition-all duration-200 shadow-[0_8px_30px_rgba(232,201,106,0.4)] hover:shadow-[0_16px_50px_rgba(232,201,106,0.6)] hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.99] border border-[#E8C96A]/50"
               style={{
                 background: "#E8C96A",
+                width: "50vw",
+                maxWidth: "100%",
               }}
             >
               <span className="tracking-wide text-center sm:whitespace-nowrap">BẮT ĐẦU HÀNH TRÌNH 7 NGÀY</span>
