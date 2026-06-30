@@ -22,11 +22,11 @@ const GOLD = "#E8C96A";
 const features = [
   {
     icon: Compass,
-    title: "Nhận diện chính xác mô thức khiến bạn liên tục lặp lại cùng một nỗi đau trong tình yêu",
+    title: "Hiểu rõ vì sao mình luôn kết thúc ở cùng một nỗi đau",
   },
   {
     icon: BellOff,
-    title: "Không còn hoảng loạn khi ai đó trở nên lạnh nhạt",
+    title: "Không còn hoang mang khi ai đó trở nên lạnh nhạt",
   },
   {
     icon: ShieldCheck,
@@ -34,7 +34,7 @@ const features = [
   },
   {
     icon: Users2,
-    title: "Ngừng tìm kiếm giá trị bản thân từ sự chú ý của người khác",
+    title: "Cộng đồng riêng đồng hành và hỗ trợ 24/7",
   },
 ];
 
@@ -150,7 +150,24 @@ export function HeroSection() {
               </motion.span>
             </h1>
 
-            {/* Subheadline — "Khóa học online 7 ngày" highlighted gold */}
+            {/* Sub headline 1 — emotional hook */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.45 }}
+              className="text-gray-200 mb-4 max-w-xl"
+              style={{
+                fontSize: "clamp(0.95rem, 1.7vw, 1.1rem)",
+                textShadow: "0 1px 8px rgba(20,7,40,0.85)",
+                lineHeight: 1.6,
+                fontStyle: "italic",
+              }}
+            >
+              Nếu kết cục này cứ lặp lại, có thể vấn đề không nằm ở họ. Mà
+              nằm ở nỗi sợ bị bỏ rơi chưa được chữa lành trong bạn.
+            </motion.p>
+
+            {/* Sub headline 2 — "Khóa học online 7 ngày" highlighted gold */}
             <motion.p
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
@@ -165,7 +182,9 @@ export function HeroSection() {
               <span className="font-semibold" style={{ color: GOLD }}>
                 Khóa học online 7 ngày
               </span>{" "}
-              giúp bạn chấm dứt vòng lặp bị bỏ rơi, thất vọng và tự nghi ngờ bản thân trong tình yêu.
+              giúp bạn chữa lành nỗi sợ bị bỏ rơi từ gốc rễ, phá vỡ những mô
+              thức tình yêu lặp đi lặp lại và lấy lại giá trị bản thân từ bên
+              trong.
             </motion.p>
 
             {/* Feature row — no boxes, icon centered above text, no dividers */}
