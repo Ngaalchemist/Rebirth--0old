@@ -227,16 +227,16 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute bottom-12 right-8 xl:right-14 z-10 w-60 p-5 rounded-md border backdrop-blur-md"
+          className="hidden lg:block absolute bottom-6 right-8 xl:right-14 z-10 w-48 p-4 rounded-md border backdrop-blur-md"
           style={{
             borderColor: "rgba(232,201,106,0.3)",
-            backgroundColor: "rgba(45,15,75,0.7)",
+            backgroundColor: "rgba(15,8,28,0.9)",
             boxShadow:
               "0 12px 36px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.06)",
           }}
         >
           <span
-            className="block text-3xl leading-none select-none mb-1"
+            className="block text-2xl leading-none select-none mb-1"
             style={{
               color: GOLD,
               fontFamily: "'Times New Roman', serif",
@@ -253,21 +253,21 @@ export function HeroSection() {
               fontFamily: "'Times New Roman', serif",
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "1.05rem",
+              fontSize: "0.9rem",
             }}
           >
             Khi bạn chữa lành mối quan hệ với chính mình, thế giới bên ngoài
             cũng sẽ khác đi.
           </p>
-          <div className="flex items-center justify-between mt-3">
+          <div className="flex items-center justify-between mt-2.5">
             <span
-              className="text-[11px] tracking-wide"
+              className="text-[10px] tracking-wide"
               style={{ color: GOLD, fontFamily: "'Times New Roman', serif" }}
             >
               - Nga Alchemist
             </span>
             <span
-              className="text-3xl leading-none select-none"
+              className="text-2xl leading-none select-none"
               style={{
                 color: GOLD,
                 fontFamily: "'Times New Roman', serif",
