@@ -185,20 +185,20 @@ export function HeroSection() {
               giúp bạn nhận diện gốc rễ nỗi sợ bị bỏ rơi, phá vỡ những mô thức cũ và xây dựng cảm giác đủ đầy từ bên trong.
             </motion.p>
 
-            {/* Feature row — no boxes, icon centered above text, no dividers */}
+            {/* Feature row — icon inline with text, compact height */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-6 mb-7 max-w-2xl"
+              className="grid grid-cols-2 gap-x-6 gap-y-3 mb-7 max-w-xl"
             >
               {features.map((f, i) => (
-                <div key={i} className="flex flex-col items-center text-center gap-2.5">
+                <div key={i} className="flex items-start gap-2.5">
                   <div
-                    className="w-11 h-11 rounded-full flex items-center justify-center border"
+                    className="w-7 h-7 rounded-full flex items-center justify-center border shrink-0 mt-0.5"
                     style={{ borderColor: "rgba(232,201,106,0.45)" }}
                   >
-                    <f.icon className="w-5 h-5" style={{ color: GOLD }} />
+                    <f.icon className="w-3.5 h-3.5" style={{ color: GOLD }} />
                   </div>
                   <p className="text-[12.5px] leading-snug text-gray-100">
                     {f.title}
@@ -238,53 +238,45 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* ── QUOTE BOX (back near the hands, purple translucent, gold serif) ── */}
+        {/* ── QUOTE — editorial pull-quote style, no box, no border ── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute top-[36%] right-2 xl:right-4 z-10 w-[200px] p-4 rounded-md border backdrop-blur-sm"
-          style={{
-            borderColor: "rgba(232,201,106,0.35)",
-            backgroundColor: "rgba(8,4,18,0.55)",
-            boxShadow:
-              "0 8px 28px rgba(0,0,0,0.35), inset 0 1px 0 rgba(232,201,106,0.12)",
-          }}
+          className="hidden lg:block absolute top-[38%] right-6 xl:right-12 z-10 w-[230px] text-right"
         >
-          <span
-            className="block text-2xl leading-none select-none mb-1.5"
-            style={{
-              color: GOLD,
-              fontFamily: "'Playfair Display', serif",
-              textShadow: "0 2px 10px rgba(0,0,0,0.5)",
-            }}
-          >
-            “
-          </span>
           <p
-            className="leading-relaxed"
             style={{
-              color: GOLD,
-              fontWeight: 700,
+              color: "#F2E6C4",
               fontStyle: "italic",
+              fontWeight: 500,
               fontFamily: "'Playfair Display', serif",
-              fontSize: "0.86rem",
-              textShadow: "0 2px 10px rgba(0,0,0,0.45)",
+              fontSize: "1.05rem",
+              lineHeight: 1.6,
+              letterSpacing: "0.01em",
+              textShadow: "0 2px 16px rgba(0,0,0,0.65), 0 6px 30px rgba(0,0,0,0.4)",
             }}
           >
-            Bạn không đau vì họ rời đi. Bạn đau vì họ chạm vào nơi chưa từng được chữa lành..
+            Bạn không đau vì họ rời đi.
+            <br />
+            Bạn đau vì họ chạm vào nơi
+            <br />
+            chưa từng được chữa lành.
           </p>
           <div
-            className="mt-3 pt-2 border-t"
-            style={{ borderColor: "rgba(232,201,106,0.25)" }}
+            className="mt-3 ml-auto w-9 h-px"
+            style={{ backgroundColor: "rgba(232,201,106,0.7)" }}
+          />
+          <p
+            className="mt-2.5 text-[10px] tracking-[0.22em] uppercase"
+            style={{
+              color: "rgba(232,201,106,0.85)",
+              fontWeight: 600,
+              textShadow: "0 1px 6px rgba(0,0,0,0.6)",
+            }}
           >
-            <p
-              className="text-[10px] tracking-[0.12em] uppercase whitespace-nowrap"
-              style={{ color: "rgba(232,201,106,0.85)", fontWeight: 600 }}
-            >
-              — Nga Alchemist
-            </p>
-          </div>
+            Nga Alchemist
+          </p>
         </motion.div>
       </div>
     </section>
