@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Zap, HeartHandshake, RefreshCw, Loader2, CheckCircle2, Copy, Check } from "lucide-react";
 
-type Step = "form" | "loading" | "qr" | "paid" | "error";
+type Step = "form" | "loading" | "qr" | "processing" | "paid" | "error";
 
 interface OrderInfo {
   code: string;
@@ -56,6 +56,8 @@ export function RegistrationSection() {
           if (checkData.status === "paid") {
             if (pollRef.current) clearInterval(pollRef.current);
             setStep("paid");
+          } else if (checkData.status === "processing") {
+            setStep("processing");
           }
         } catch {
           // bỏ qua lỗi tạm thời của 1 lần poll, sẽ thử lại ở lần kế tiếp
@@ -114,7 +116,22 @@ export function RegistrationSection() {
                   <p className="text-sm text-muted-foreground">Mã đơn hàng: <span className="font-mono text-foreground">{order?.code}</span></p>
                 </motion.div>
               )}
-
+              {step === "processing" && order && (
+                <motion.div
+                  key="processing"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-center py-10 space-y-4"
+                  data-testid="status-processing"
+                >
+                  <Loader2 className="w-16 h-16 text-primary mx-auto animate-spin" />
+                  <h3 className="text-2xl font-bold font-serif text-foreground">Đã nhận được chuyển khoản!</h3>
+                  <p className="text-muted-foreground">
+                    Hệ thống đang đối chiếu giao dịch, vui lòng chờ trong giây lát — <strong>đừng chuyển khoản thêm lần nữa</strong>.
+                  </p>
+                  <p className="text-sm text-muted-foreground">Mã đơn hàng: <span className="font-mono text-foreground">{order.code}</span></p>
+                </motion.div>
+              )}
               {step === "qr" && order && (
                 <motion.div
                   key="qr"
