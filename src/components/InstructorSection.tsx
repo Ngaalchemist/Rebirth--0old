@@ -12,13 +12,14 @@ const methods = [
 ];
 
 const storyBefore = [
-  "Mình đứng đây hôm nay không phải như một bậc thầy lý thuyết, mà như một người phụ nữ đã từng bước qua đổ vỡ, tự tay đi qua ngọn lửa tăm tối nhất để nhặt lại từng mảnh vỡ giá trị của chính mình.",
-  'Mình hiểu hơn ai hết cảm giác nhục nhã âm thầm khi phải quỵ lụy xin xỏ sự trân trọng. Mình từng gượng ép bản thân trở nên "hiểu chuyện", cố cho đi nhiều hơn... chỉ để đổi lấy một tấm vé ở lại trong cuộc đời của một người vốn đã coi thường mình.',
+  "Mình đứng đây hôm nay không phải như một bậc thầy lý thuyết, mà là một người phụ nữ đã từng bước qua đổ vỡ, tự tay đi qua ngọn lửa tăm tối nhất để nhặt lại từng mảnh vỡ giá trị của chính mình.",
+  'Mình hiểu hơn ai hết cái vòng lặp cay đắng mà có thể bạn đang mắc kẹt: Những ngày đầu luôn đẹp như một giấc mơ, bạn được chiều chuộng, nâng niu như một công chúa. Nhưng sự gắn kết bắt đầu sâu hơn, kịch bản cũ lại âm thầm trỗi dậy. Sự quan tâm thưa dần, thay vào đó là sự lạnh nhạt và cảm giác không còn được trân trọng đến mức bạn tự hỏi liệu mình có từng xứng đáng được yêu.',
 ];
 
 const storyAfter = [
-  "Đêm tháng 8 năm 2022.\nNằm bất động trên sàn nhà sau một trận cãi vã nảy lửa với chồng, mình chạm đáy.",
-  "Giây phút tim thắt lại vì kiệt sức và tủi nhục, mình biết một điều duy nhất: Không thể để lòng tự trọng bị chà đạp thêm một giây nào nữa. Mình gom chút dũng khí tàn tạ cuối cùng để ly hôn, bước ra khỏi mối quan hệ độc hại.",
+  "Đêm tháng 8 năm 2022.\Nằm bất động trên sàn nhà sau một trận cãi vã nảy lửa với chồng, mình chạm đáy.",
+  "Mình thức trắng đến tận 5h sáng hôm đó, đầu óc quay cuồn giữa nỗi đau và thất vọng về bản thân. Rồi giữa cơn kiệt quệ ấy, một nhận thức đau đớn ập đến: Đây không phải lần đầu. Mình đã lặp lại đúng một kịch bản thất bại này trong tình yêu, hết lần này đến lần khác, và luôn kết thúc bằng việc bị coi thường, hoặc bị bỏ rơi.", 
+  "Lần đầu tiên mình đã nhìn thấy vòng lặp đó rõ như ban ngày. Và lúc đó, mình chỉ biết một điều duy nhất: Không thể để lòng tự trọng bị chà đạp thêm một giây nào nữa. Mình gom chút dũng khí tàn tạ cuối cùng để ly hôn, bước ra khỏi mối quan hệ độc hại.",
   "Nhưng bước ra khỏi một người không có nghĩa là thoát khỏi vòng lặp. Ly hôn xong, mình vẫn phải đối diện với sự trống rỗng, nỗi sợ cô đơn và những đêm dài overthinking.",
   "Sự giải thoát thực sự chỉ bắt đầu khi mình ngừng hướng ra ngoài, dấn thân vào hành trình tự chữa lành nghiêm túc và chọn con đường trở thành một Người thực hành Thôi miên & chữa lành Tiềm thức tầng sâu.",
 ];
