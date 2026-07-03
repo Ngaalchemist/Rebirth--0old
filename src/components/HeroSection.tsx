@@ -163,8 +163,9 @@ export function HeroSection() {
                 fontStyle: "italic",
               }}
             >
-              Nếu kết cục này cứ lặp lại, có thể vấn đề không nằm ở họ. Mà
-              nằm ở nỗi sợ bị bỏ rơi chưa được chữa lành trong bạn.
+              Nếu kết cục này cứ lặp lại, có thể vấn đề không nằm ở họ. Mà nằm ở
+              <br />
+              nỗi sợ bị bỏ rơi chưa được chữa lành trong bạn.
             </motion.p>
 
             {/* Sub headline 2 — "Khóa học online 7 ngày" highlighted gold */}
@@ -172,7 +173,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-gray-100 mb-7 max-w-xl"
+              className="text-gray-100 mb-7"
               style={{
                 fontSize: "clamp(0.95rem, 1.7vw, 1.1rem)",
                 textShadow: "0 1px 8px rgba(20,7,40,0.85)",
@@ -182,7 +183,9 @@ export function HeroSection() {
               <span className="font-semibold" style={{ color: GOLD }}>
                 Khóa học online 7 ngày
               </span>{" "}
-              giúp bạn nhận diện gốc rễ nỗi sợ bị bỏ rơi, phá vỡ những mô thức cũ và xây dựng cảm giác đủ đầy từ bên trong.
+              giúp bạn nhận diện gốc rễ nỗi sợ bị bỏ rơi, phá vỡ
+              <br />
+              những mô thức cũ và xây dựng cảm giác đủ đầy từ bên trong.
             </motion.p>
 
             {/* Feature row — icon inline with text, compact height */}
