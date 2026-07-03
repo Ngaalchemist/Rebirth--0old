@@ -100,9 +100,9 @@ export function MechanismSection() {
           className="bg-white/5 border border-[#C9A84C]/25 rounded-2xl p-8 max-w-3xl mx-auto"
         >
           <p className="text-gray-100 text-lg md:text-xl leading-[1.8] text-center">
-            Hãy nhớ rằng, mọi thứ bên ngoài chỉ là "tấm gương phản chiếu" thế giới nội tâm của bạn. Nếu muốn người trong gương mỉm cười, bạn không thể thò tay vào và cố gắng thay đổi họ. Bạn phải mỉm cười trước.",
+            Hãy nhớ rằng, mọi thứ bên ngoài chỉ là "tấm gương phản chiếu" thế giới nội tâm của bạn. Nếu muốn người trong gương mỉm cười, bạn không thể thò tay vào và cố gắng thay đổi họ. Bạn phải mỉm cười trước.
              <br />
-            "Tương tự, muốn thay đổi kết quả trong cuộc sống, trước tiên hãy thay đổi chính mình từ bên trong. Nói cách khác, hãy thay đổi{" "}
+            Tương tự, muốn thay đổi kết quả trong cuộc sống, trước tiên hãy thay đổi chính mình từ bên trong. Nói cách khác, hãy thay đổi{" "}
             <span className="text-[#F5D78E] font-bold">"Danh tính nội tâm"</span> của bạn, bởi thế giới bên ngoài chỉ đang phản chiếu lại con người mà bạn đang là.
           </p>
         </motion.div>
