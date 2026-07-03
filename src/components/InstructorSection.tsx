@@ -12,27 +12,37 @@ const methods = [
 ];
 
 const mirrorIntro = [
-  "Có thể bạn cũng đang ở trong một vòng lặp quen thuộc.",
-  "Bạn yêu rất nhiều, cố gắng rất nhiều, luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình. Bạn lo lắng khi người kia im lặng, tự hỏi liệu mình có làm gì sai, cố trở nên ngoan hơn, hiểu chuyện hơn để được yêu nhiều hơn.",
-  "Và đến một ngày, bạn nhìn chính mình rồi tự hỏi. Đó cũng từng là câu hỏi của mình.",
+  "Có thể bạn cũng đã từng trải qua cảm giác này:",
+  "Bạn yêu rất nhiều, cố gắng rất nhiều, luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình. Bạn lo lắng khi người kia im lặng, liên tục tự hỏi liệu mình có làm gì sai, cố trở nên ngoan hơn, hiểu chuyện hơn để chứng minh giá trị của mình.",
+  "Và đến một ngày, bạn nhìn chính mình rồi tự hỏi: ",
 ];
 
 const storyIntro =
-  "Mình không đến đây với vai trò một người hoàn hảo hay có tất cả câu trả lời. Mình đến đây với trải nghiệm của một người đã từng đánh mất chính mình, và với kinh nghiệm đồng hành cùng hàng trăm phụ nữ trên hành trình tìm lại giá trị bản thân từ gốc rễ.";
+  "Đó cũng từng là câu hỏi của mình.",
+  "Đã có một giai đoạn mình tin rằng vấn đề nằm ở bản thân. Rằng mình chưa đủ tốt. Chưa đủ giá trị. Nên mới liên tục gặp những tổn thương trong tình yêu và các mối quan hệ.", 
+  
+  
 
 const quoteBoxText = "Mình có thật sự xứng đáng được yêu không?";
 
 const storyAfter = [
-  "Sau nhiều lần thất bại trong tình yêu, sau những lần bị xem nhẹ, bị hạ thấp, bị tổn thương bởi những lời nói tưởng chừng vô tình, mình đã từng tin rằng vấn đề nằm ở mình. Rằng mình không đủ tốt. Rằng mình không đủ giá trị để được yêu thương và trân trọng.",
-  "Tháng 8 năm 2022, mình chạm đến điểm thấp nhất. Sau một trận cãi vã dữ dội với chồng, mình nằm bất động trên sàn nhà. Đêm đó, mình thức trắng đến gần sáng, đầu óc quay cuồng giữa kiệt quệ, đau đớn và tuyệt vọng.",
-  "Giữa cơn kiệt quệ ấy, một sự thật hiện ra rõ ràng đến mức mình không thể tiếp tục né tránh. Đây không phải lần đầu tiên. Mình đã sống trong cùng một kịch bản suốt nhiều năm, chỉ là những gương mặt khác nhau, những hoàn cảnh khác nhau, nhưng kết cục thì luôn giống nhau. Mình luôn đánh mất chính mình để giữ lấy một mối quan hệ. Và cuối cùng, mình luôn là người bị tổn thương.",
-  "Lần đầu tiên mình đã nhìn thấy vòng lặp đó rõ như ban ngày. Và lúc đó mình chỉ biết một điều duy nhất. Không thể tiếp tục sống như vậy thêm một ngày nào nữa.",
+  "Cho đến một ngày mà mình sẽ không bao giờ quên.",
+  "Tháng 8 năm 2022, Sau một trận cãi vã dữ dội với chồng, mình chạm đáy.  Mình nằm bất động trên sàn nhà, kiệt quệ, thất vọng và hoàn toàn mất phương hướng.",
+  "Đó cũng là thời điểm mình vừa trải qua phá sản, thất nghiệp, con trai mới ba tuổi, còn cuộc hôn nhân thì đứng trên bờ vực đổ vỡ.",
+  " Đêm hôm đó, lần đầu tiên mình nhìn thấy một sự thật mà trước đây luôn né tránh:",
+  "Đây không phải là một biến cố đơn lẻ.",
+  "Đây là một vòng lặp.",
+  "Dù là những con người khác nhau, những hoàn cảnh khác nhau, kết cục vẫn luôn giống nhau. Mình liên tục đánh mất chính mình để giữ lấy một mối quan hệ. Liên tục đặt giá trị bản thân vào tay người khác. Và cuối cùng, luôn là người bị tổn thương và bị coi thường.",  
+  "Lần đầu tiên, mình nhìn thấy vòng lặp ấy rõ như ban ngày.",
+  "Và lúc đó mình chỉ biết một điều duy nhất:",
+  "Không thể tiếp tục sống như vậy thêm một ngày nào nữa.",
 ];
 
 const divorcePunchLine = "Mình quyết định ly hôn.\nKhông phải vì hết yêu.\nMà vì lần đầu tiên, mình chọn cứu lấy chính mình.";
-
+ <br />
+"Nhưng rời khỏi một mối quan hệ không đồng nghĩa với việc chữa lành những gì đang diễn ra bên trong.", 
 const storyAfter2 = [
-  "Sự chuyển hóa thực sự bắt đầu khi mình ngừng tìm câu trả lời ở bên ngoài và quay vào bên trong, dấn thân vào hành trình Tái lập trình Tiềm thức, học cách lắng nghe và đối diện với những vết thương mà trước đó mình luôn né tránh. Đó cũng là lúc mình chọn con đường trở thành một Người thực hành Thôi miên trị liệu và chữa lành Tiềm thức tầng sâu. Vì mình đã hiểu ra rằng thế giới không đối xử với bạn theo cách bạn muốn, mà đối xử với bạn đúng cách bạn đang đối xử với chính mình.",
+  "Sự chuyển hóa thực sự bắt đầu khi mình ngừng tìm kiếm câu trả lời ở bên ngoài và quay vào bên trong, dấn thân vào hành trình Tự chữa lành và Tái lập trình Tiềm thức, học cách lắng nghecơ thể, đối diện với những vết thương cũ và hiểu cách chúng âm thầm chi phối mọi lựa chọn trong cuộc sống.",
 ];
 
 const insight = {
@@ -80,12 +90,13 @@ export function InstructorSection() {
             Chào bạn, mình là Nga Alchemist
           </h2>
           <p className="mt-3 text-violet-700 text-sm md:text-base">
-            Người bẻ gãy mô thức &amp; chữa lành cảm xúc từ gốc
+            Giúp phụ nữ thoát khỏi nỗi sợ bị bỏ rơi và tìm lại giá trị bản thân.
           </p>
           <p className="mt-5 text-gray-600 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
             Trong những năm qua, mình đã đồng hành cùng{" "}
-            <span className="font-semibold text-gray-900">hàng trăm phụ nữ</span> trên hành trình chữa lành những vết thương về giá trị bản thân, sự phụ thuộc cảm xúc và nỗi sợ bị bỏ rơi, giúp họ xây dựng lại lòng tự trọng từ gốc rễ.
+            <span className="font-semibold text-gray-900">hàng trăm phụ nữ</span> trên hành trình chữa lành nỗi sợ bị bỏ rơi, sự phụ thuộc cảm xúc, cảm giác không đủ giá trị để được yêu thương và giúp họ xây dựng lại lòng tự trọng từ gốc rễ.",
           </p>
+          "Nhưng trước khi trở thành người đồng hành, mình cũng từng là người mắc kẹt rất lâu trong chính những vòng lặp đó.",
         </motion.div>
 
         {/* Photo */}
