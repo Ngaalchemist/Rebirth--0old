@@ -12,12 +12,12 @@ const methods = [
 ];
 
 const mirrorIntro = [
-  "Có thể bạn đã từng trải qua cảm giác này:",
+  "Có thể bạn cũng đang ở trong một vòng lặp quen thuộc:",
   "Bạn yêu rất nhiều, cố gắng rất nhiều, luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình — lo lắng khi người kia im lặng, tự hỏi liệu mình có làm gì sai, cố trở nên ngoan hơn, hiểu chuyện hơn để được yêu nhiều hơn.",
 ];
 
 const storyBefore = [
-  "Mình đứng đây hôm nay không phải như một người có tất cả câu trả lời. Mình đứng đây như một người phụ nữ đã từng lạc mất giá trị bản thân, từng bước qua những ngày tháng tối tăm nhất để nhặt lại từng mảnh của lòng tự trọng và học cách yêu thương chính mình từ đầu.",
+  "Mình không đến đây với vai trò một người hoàn hảo hay có tất cả câu trả lời. Mình đến đây với trải nghiệm của một người đã từng đánh mất chính mình, và với kinh nghiệm đồng hành cùng hàng trăm phụ nữ trên hành trình tìm lại giá trị bản thân từ gốc rễ.",
   "Và đến một ngày, bạn nhìn chính mình rồi tự hỏi — đó cũng từng là câu hỏi của mình:",
 ];
 
@@ -36,16 +36,12 @@ const storyAfter2 = [
   "Sự chuyển hóa thực sự bắt đầu khi mình ngừng tìm câu trả lời ở bên ngoài và quay vào bên trong — dấn thân vào hành trình Tái lập trình Tiềm thức, học cách lắng nghe và đối diện với những vết thương mà trước đó mình luôn né tránh. Đó cũng là lúc mình chọn con đường trở thành một Người thực hành Thôi miên trị liệu và chữa lành Tiềm thức tầng sâu — vì mình đã hiểu ra: Thế giới không đối xử với bạn theo cách bạn muốn, nó đối xử với bạn đúng cách bạn đang đối xử với chính mình.",
 ];
 
-const proof = [
-  {
-    lead: "Mình đã tự mình đi qua và chuyển hóa thật.",
-    body: 'Mình đã dùng chính Thôi miên và Thiền định để bẻ gãy kịch bản "bị bỏ rơi" đã âm thầm vận hành trong tiềm thức suốt nhiều năm. Từng bước một, mình xây dựng lại lòng tự trọng từ gốc rễ, tìm lại sự bình an không phụ thuộc vào bất kỳ ai, và kiến tạo một thực tại hoàn toàn khác — nơi mình không còn sống trong sợ hãi, không còn đánh đổi giá trị bản thân để được yêu.',
-  },
-  {
-    lead: "Mình thấu hiểu từ việc đồng hành thực tế.",
-    body: "Sự thấu hiểu của mình không chỉ đến từ hành trình của riêng mình, mà còn được mài giũa qua những năm tháng đồng hành cùng những người phụ nữ mang vết thương tương tự. Mình đã chứng kiến cách nỗi đau vận hành, nhìn thấy những niềm tin vô thức khiến một người liên tục lặp lại cùng một kịch bản tổn thương — và cũng được chứng kiến khoảnh khắc họ thức tỉnh. Khoảnh khắc họ thu hồi lại giá trị bản thân. Khoảnh khắc họ không còn sống để được chọn, mà bắt đầu lựa chọn chính mình.",
-  },
-];
+const insight = {
+  headline:
+    "Vết thương không được chữa lành sẽ luôn tìm cách lặp lại chính nó — dưới một gương mặt khác, một hoàn cảnh khác — cho đến khi bạn thật sự nhìn thẳng vào nó.",
+  support:
+    "Đó là điều mình đã tự mình đi qua. Và cũng là điều mình đã chứng kiến ở hàng trăm phụ nữ mình từng đồng hành — người này qua người khác, cùng một kịch bản, cho đến ngày họ chọn dừng lại và quay vào bên trong.",
+};
 
 const helps = [
   {
@@ -86,6 +82,10 @@ export function InstructorSection() {
           </h2>
           <p className="mt-3 text-violet-700 text-base md:text-lg">
             Người bẻ gãy mô thức &amp; chữa lành cảm xúc từ gốc
+          </p>
+          <p className="mt-5 text-gray-600 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
+            Trong những năm qua, mình đã đồng hành cùng{" "}
+            <span className="font-semibold text-gray-900">hàng trăm phụ nữ</span> trên hành trình chữa lành những vết thương về giá trị bản thân, sự phụ thuộc cảm xúc và nỗi sợ bị bỏ rơi — giúp họ xây dựng lại lòng tự trọng từ gốc rễ.
           </p>
         </motion.div>
 
@@ -129,9 +129,11 @@ export function InstructorSection() {
           viewport={{ once: true }}
           className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl"
         >
-          {storyBefore.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+          <p>
+            Mình không đến đây với vai trò một người hoàn hảo hay có tất cả câu trả lời. Mình đến đây với trải nghiệm của một người đã từng đánh mất chính mình, và với{" "}
+            <span className="font-semibold text-gray-900">kinh nghiệm đồng hành cùng hàng trăm phụ nữ</span> trên hành trình tìm lại giá trị bản thân từ gốc rễ.
+          </p>
+          <p>{storyBefore[1]}</p>
 
           <div className="bg-gray-900 rounded-2xl px-7 py-6 my-7">
             <p className="text-white font-semibold text-xl md:text-2xl leading-relaxed text-center">
@@ -152,43 +154,40 @@ export function InstructorSection() {
           ))}
         </motion.div>
 
-        {/* VÌ MÌNH ĐÃ ĐI QUA box (contrasting dark bg) */}
+        {/* Insight box (contrasting dark bg) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mt-10 rounded-2xl p-7 md:p-9 bg-gradient-to-br from-[#1a0a2e] to-[#140728] border border-[#C9A84C]/30 shadow-xl"
         >
-          <h3 className="font-serif font-bold text-[#F5D78E] text-xl md:text-2xl mb-3 tracking-wide">
-            VÌ MÌNH ĐÃ ĐI QUA, NÊN MÌNH HIỂU...
+          <h3 className="font-serif font-bold text-[#F5D78E] text-xl md:text-2xl mb-4 tracking-wide">
+            ĐIỀU MÌNH TIN, SAU TẤT CẢ NHỮNG GÌ ĐÃ ĐI QUA
           </h3>
-          <p className="text-gray-200 leading-[1.9] text-base md:text-lg mb-6 font-medium">
-            Mình không hiểu bằng kiến thức.
-            <br />
-            Mình hiểu bằng trải nghiệm.
+          <p className="text-white font-semibold text-xl md:text-2xl leading-relaxed mb-5">
+            {insight.headline}
           </p>
-          <ul className="space-y-6">
-            {proof.map((p, i) => (
-              <li key={i} className="flex items-start gap-4">
-                <span className="mt-2 w-2.5 h-2.5 rounded-full bg-[#C9A84C] flex-shrink-0" />
-                <div>
-                  <p className="text-[#F5D78E] font-semibold text-lg md:text-xl mb-1.5">{p.lead}</p>
-                  <p className="text-gray-100 leading-[1.9] text-lg md:text-xl">{p.body}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <p className="text-gray-300 leading-[1.9] text-base md:text-lg">
+            {insight.support}
+          </p>
         </motion.div>
 
         {/* Transition + 3 helps */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-10 text-gray-700 leading-[1.9] text-lg md:text-xl whitespace-pre-line"
+          className="mt-10 text-gray-700 leading-[1.9] text-lg md:text-xl"
         >
-          {"Hành trình 7 ngày này không có những triết lý cao siêu đao to búa lớn. Nó là tất cả những đúc kết tinh gọn, an toàn và sâu sắc nhất từ chính hành trình chuyển hóa xương máu của mình, cùng những trải nghiệm đồng hành thực tế cùng hàng trăm khách hàng.\nMình ở đây để giúp bạn rút ngắn con đường, không còn phải mò mẫm trong bóng tối:"}
-        </motion.p>
+          <p>
+            Hành trình 7 ngày này không được xây dựng từ những lý thuyết xa vời. Nó được{" "}
+            <span className="font-semibold text-gray-900">chắt lọc từ những gì mình đã trải nghiệm, thực hành và kiểm chứng</span>{" "}
+            trong quá trình đồng hành cùng khách hàng thực tế.
+          </p>
+          <p className="mt-3">
+            Mình ở đây để giúp bạn rút ngắn con đường, không còn phải mò mẫm trong bóng tối:
+          </p>
+        </motion.div>
 
         <div className="grid md:grid-cols-3 gap-5 mt-8">
           {helps.map((h, i) => (
