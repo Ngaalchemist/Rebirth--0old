@@ -99,7 +99,7 @@ export function MechanismSection() {
           viewport={{ once: true }}
           className="bg-white/5 border border-[#C9A84C]/25 rounded-2xl p-8 max-w-3xl mx-auto"
         >
-          <p className="text-gray-100 text-lg md:text-2xl leading-[1.8] text-center">
+          <p className="text-gray-100 text-base md:text-1g leading-[1.8] text-center">
             Hãy nhớ rằng, mọi thứ bên ngoài chỉ là "tấm gương phản chiếu" thế giới nội tâm của bạn. Nếu muốn người trong gương mỉm cười, bạn không thể thò tay vào và cố gắng thay đổi họ. Bạn phải mỉm cười trước.
              <br />
             Tương tự, muốn thay đổi kết quả trong cuộc sống, trước tiên hãy thay đổi chính mình từ bên trong. Nói cách khác, hãy thay đổi{" "}
