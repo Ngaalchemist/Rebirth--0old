@@ -12,29 +12,35 @@ const methods = [
 ];
 
 const storyBefore = [
-  "Mình đứng đây hôm nay không phải như một bậc thầy lý thuyết, mà là một người phụ nữ đã từng bước qua đổ vỡ, tự tay đi qua ngọn lửa tăm tối nhất để nhặt lại từng mảnh vỡ giá trị của chính mình.",
-  'Mình hiểu hơn ai hết cái vòng lặp cay đắng mà có thể bạn đang mắc kẹt: Những ngày đầu luôn đẹp như một giấc mơ, bạn được chiều chuộng, nâng niu như một công chúa. Nhưng sự gắn kết bắt đầu sâu hơn, kịch bản cũ lại âm thầm trỗi dậy. Sự quan tâm thưa dần, thay vào đó là sự lạnh nhạt và cảm giác không còn được trân trọng đến mức bạn tự hỏi liệu mình có từng xứng đáng được yêu.',
+  "Mình đứng đây hôm nay không phải như một người có tất cả câu trả lời, cũng không phải như một bậc thầy lý thuyết. Mình đứng đây như một người phụ nữ đã từng đi qua những đổ vỡ sâu nhất của chính mình — từng lạc mất giá trị bản thân, từng bước qua những ngày tháng tối tăm nhất để nhặt lại từng mảnh của lòng tự trọng và học cách yêu thương chính mình từ đầu.",
+  "Vì thế, mình hiểu rất rõ vòng lặp mà có thể bạn đang mắc kẹt: Những ngày đầu luôn đẹp như một giấc mơ. Bạn được yêu thương, được quan tâm, được trân trọng, cảm thấy mình đặc biệt. Nhưng khi sự gắn kết trở nên sâu sắc hơn, mọi thứ bắt đầu thay đổi — sự quan tâm thưa dần, sự lạnh nhạt xuất hiện, và những tổn thương âm thầm tích tụ.",
+  "Và đến một ngày, bạn nhìn chính mình rồi tự hỏi — đó cũng từng là câu hỏi của mình:",
 ];
 
+const quoteBoxText = "Mình có thật sự xứng đáng được yêu không?";
+
 const storyAfter = [
-  "Đêm tháng 8 năm 2022.\ Nằm bất động trên sàn nhà sau một trận cãi vã nảy lửa với chồng, mình chạm đáy.",
-  "Mình thức trắng đến tận 5h sáng hôm đó, đầu óc quay cuồn giữa nỗi đau và thất vọng về bản thân. Rồi giữa cơn kiệt quệ ấy, một nhận thức đau đớn ập đến: ",
-  "Đây không phải lần đầu.",
-  "Mình đã lặp lại đúng một kịch bản thất bại này trong tình yêu, hết lần này đến lần khác, và luôn kết thúc bằng việc bị coi thường, hoặc bị bỏ rơi.", 
-  "Lần đầu tiên mình nhìn thấy vòng lặp đó rõ như ban ngày.",
-  "Và lúc đó, mình chỉ biết một điều duy nhất: Không thể để lòng tự trọng bị chà đạp thêm một giây nào nữa. Mình gom chút dũng khí tàn tạ cuối cùng để ly hôn, bước ra khỏi mối quan hệ độc hại.",
-  "Nhưng bước ra khỏi một người không có nghĩa là thoát khỏi vòng lặp. Ly hôn xong, mình vẫn phải đối diện với sự trống rỗng, nỗi sợ cô đơn và những đêm dài overthinking.",
-  "Sự giải thoát thực sự chỉ bắt đầu khi mình ngừng hướng ra ngoài, dấn thân vào hành trình tự chữa lành nghiêm túc và chọn con đường trở thành một Người thực hành Thôi miên & chữa lành Tiềm thức tầng sâu.",
+  "Sau nhiều lần thất bại trong tình yêu, sau những lần bị xem nhẹ, bị hạ thấp, bị tổn thương bởi những lời nói tưởng chừng vô tình, mình đã từng tin rằng vấn đề nằm ở mình. Rằng mình không đủ tốt. Rằng mình không đủ giá trị để được yêu thương và trân trọng.",
+  "Tháng 8 năm 2022, mình chạm đến điểm thấp nhất. Sau một trận cãi vã dữ dội với chồng, mình nằm bất động trên sàn nhà. Đêm đó, mình thức trắng đến gần sáng, đầu óc quay cuồng giữa kiệt quệ, đau đớn và tuyệt vọng.",
+  "Giữa cơn kiệt quệ ấy, một sự thật hiện ra rõ ràng đến mức mình không thể tiếp tục né tránh: Đây không phải lần đầu tiên. Mình đã sống trong cùng một kịch bản suốt nhiều năm — chỉ là những gương mặt khác nhau, những hoàn cảnh khác nhau, nhưng kết cục thì luôn giống nhau. Mình luôn đánh mất chính mình để giữ lấy một mối quan hệ. Và cuối cùng, mình luôn là người bị tổn thương.",
+  "Lần đầu tiên mình đã nhìn thấy vòng lặp đó rõ như ban ngày. Và lúc đó mình chỉ biết một điều duy nhất: Không thể tiếp tục sống như vậy thêm một ngày nào nữa.",
+];
+
+const divorcePunchLine = "Mình quyết định ly hôn.\nKhông phải vì hết yêu.\nMà vì lần đầu tiên, mình chọn cứu lấy chính mình.";
+
+const storyAfter2 = [
+  "Nhưng rời đi không có nghĩa là thoát khỏi vòng lặp. Sau ly hôn vẫn là những khoảng trống, vẫn là nỗi sợ cô đơn, vẫn là những đêm dài trằn trọc, overthinking và tự nghi ngờ chính mình.",
+  "Sự chuyển hóa thực sự chỉ bắt đầu khi mình ngừng tìm câu trả lời ở bên ngoài và quay vào bên trong — dấn thân nghiêm túc vào hành trình Tái lập trình Tiềm thức, học cách lắng nghe và đối diện với những vết thương mà trước đó mình luôn né tránh. Đó cũng là lúc mình chọn con đường trở thành một Người thực hành Thôi miên trị liệu và chữa lành Tiềm thức tầng sâu — vì mình đã hiểu ra: Thế giới không đối xử với bạn theo cách bạn muốn, nó đối xử với bạn đúng cách bạn đang đối xử với chính mình.",
 ];
 
 const proof = [
   {
     lead: "Mình đã tự mình đi qua và chuyển hóa thật.",
-    body: 'Mình đã dùng chính Thôi miên và Thiền định để bẻ gãy kịch bản "bị bỏ rơi" trong tiềm thức, tái lập lại sự tự tôn từ gốc để kiến tạo một thực tại hoàn toàn mới: Bình an tự thân, làm chủ cảm xúc và tự do tự tại.',
+    body: 'Mình đã dùng chính Thôi miên và Thiền định để bẻ gãy kịch bản "bị bỏ rơi" đã âm thầm vận hành trong tiềm thức suốt nhiều năm. Từng bước một, mình xây dựng lại lòng tự trọng từ gốc rễ, tìm lại sự bình an không phụ thuộc vào bất kỳ ai, và kiến tạo một thực tại hoàn toàn khác — nơi mình không còn sống trong sợ hãi, không còn đánh đổi giá trị bản thân để được yêu.',
   },
   {
     lead: "Mình thấu hiểu từ việc đồng hành thực tế.",
-    body: "Mình không chia sẻ bằng những lý thuyết suông trong sách vở. Sự thấu suốt của mình ngày hôm nay được mài dũa từ việc trực tiếp đồng hành, lắng nghe và dẫn dắt những tâm hồn từng vụn vỡ. Mình đã nhìn thấy cấu trúc của nỗi đau, thấy cách tiềm thức vận hành cái bẫy tự hủy hoại, và cũng thấy khoảnh khắc một người phụ nữ bừng tỉnh, thu hồi lại quyền lực nội tâm để làm chủ cuộc đời mình.",
+    body: "Sự thấu hiểu của mình không chỉ đến từ hành trình của riêng mình, mà còn được mài giũa qua những năm tháng đồng hành cùng những người phụ nữ mang vết thương tương tự. Mình đã chứng kiến cách nỗi đau vận hành, nhìn thấy những niềm tin vô thức khiến một người liên tục lặp lại cùng một kịch bản tổn thương — và cũng được chứng kiến khoảnh khắc họ thức tỉnh. Khoảnh khắc họ thu hồi lại giá trị bản thân. Khoảnh khắc họ không còn sống để được chọn, mà bắt đầu lựa chọn chính mình.",
   },
 ];
 
@@ -112,11 +118,19 @@ export function InstructorSection() {
 
           <div className="bg-gray-900 rounded-2xl px-7 py-6 my-7">
             <p className="text-white font-semibold text-xl md:text-2xl leading-relaxed text-center">
-              Sau nhiều thất bại và những lời thóa mạ hạ bệ lòng tự trọng, mình đã thực sự tin: Bản thân mình là kẻ không có giá trị.
+              {quoteBoxText}
             </p>
           </div>
 
           {storyAfter.map((p, i) => (
+            <p key={i} className="whitespace-pre-line">{p}</p>
+          ))}
+
+          <p className="whitespace-pre-line font-serif font-semibold text-violet-900 text-xl md:text-2xl text-center py-2">
+            {divorcePunchLine}
+          </p>
+
+          {storyAfter2.map((p, i) => (
             <p key={i} className="whitespace-pre-line">{p}</p>
           ))}
         </motion.div>
@@ -128,9 +142,14 @@ export function InstructorSection() {
           viewport={{ once: true }}
           className="mt-10 rounded-2xl p-7 md:p-9 bg-gradient-to-br from-[#1a0a2e] to-[#140728] border border-[#C9A84C]/30 shadow-xl"
         >
-          <h3 className="font-serif font-bold text-[#F5D78E] text-xl md:text-2xl mb-5 tracking-wide">
+          <h3 className="font-serif font-bold text-[#F5D78E] text-xl md:text-2xl mb-3 tracking-wide">
             VÌ MÌNH ĐÃ ĐI QUA, NÊN MÌNH HIỂU...
           </h3>
+          <p className="text-gray-200 leading-[1.9] text-base md:text-lg mb-6 font-medium">
+            Mình không hiểu bằng kiến thức.
+            <br />
+            Mình hiểu bằng trải nghiệm.
+          </p>
           <ul className="space-y-6">
             {proof.map((p, i) => (
               <li key={i} className="flex items-start gap-4">
@@ -178,6 +197,11 @@ export function InstructorSection() {
           viewport={{ once: true }}
           className="mt-10 text-center"
         >
+          <p className="text-violet-900 font-serif font-bold text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-6">
+            Bạn chưa từng thiếu giá trị.
+            <br />
+            Bạn chỉ đang mang những vết thương khiến mình quên mất giá trị thật sự của bản thân mà thôi.
+          </p>
           <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
             Hành trình này đang ở đây đợi bạn — nếu bạn đã sẵn sàng ngừng nỗ lực để được yêu, và bắt đầu trở thành{" "}
             <span className="text-violet-800 font-semibold whitespace-nowrap">người không thể bị bỏ rơi.</span>
