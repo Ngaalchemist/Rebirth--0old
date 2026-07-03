@@ -155,7 +155,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.45 }}
-              className="text-gray-200 mb-4 max-w-xl"
+              className="text-gray-200 mb-4 max-w-2xl"
               style={{
                 fontSize: "clamp(0.95rem, 1.7vw, 1.1rem)",
                 textShadow: "0 1px 8px rgba(20,7,40,0.85)",
