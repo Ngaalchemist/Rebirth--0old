@@ -11,9 +11,13 @@ const methods = [
   "Coaching chữa lành",
 ];
 
+const mirrorIntro = [
+  "Có thể bạn đã từng trải qua cảm giác này:",
+  "Bạn yêu rất nhiều, cố gắng rất nhiều, luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình — lo lắng khi người kia im lặng, tự hỏi liệu mình có làm gì sai, cố trở nên ngoan hơn, hiểu chuyện hơn để được yêu nhiều hơn.",
+];
+
 const storyBefore = [
-  "Mình đứng đây hôm nay không phải như một người có tất cả câu trả lời, cũng không phải như một bậc thầy lý thuyết. Mình đứng đây như một người phụ nữ đã từng đi qua những đổ vỡ sâu nhất của chính mình — từng lạc mất giá trị bản thân, từng bước qua những ngày tháng tối tăm nhất để nhặt lại từng mảnh của lòng tự trọng và học cách yêu thương chính mình từ đầu.",
-  "Vì thế, mình hiểu rất rõ vòng lặp mà có thể bạn đang mắc kẹt: Những ngày đầu luôn đẹp như một giấc mơ. Bạn được yêu thương, được quan tâm, được trân trọng, cảm thấy mình đặc biệt. Nhưng khi sự gắn kết trở nên sâu sắc hơn, mọi thứ bắt đầu thay đổi — sự quan tâm thưa dần, sự lạnh nhạt xuất hiện, và những tổn thương âm thầm tích tụ.",
+  "Mình đứng đây hôm nay không phải như một người có tất cả câu trả lời. Mình đứng đây như một người phụ nữ đã từng lạc mất giá trị bản thân, từng bước qua những ngày tháng tối tăm nhất để nhặt lại từng mảnh của lòng tự trọng và học cách yêu thương chính mình từ đầu.",
   "Và đến một ngày, bạn nhìn chính mình rồi tự hỏi — đó cũng từng là câu hỏi của mình:",
 ];
 
@@ -29,8 +33,7 @@ const storyAfter = [
 const divorcePunchLine = "Mình quyết định ly hôn.\nKhông phải vì hết yêu.\nMà vì lần đầu tiên, mình chọn cứu lấy chính mình.";
 
 const storyAfter2 = [
-  "Nhưng rời đi không có nghĩa là thoát khỏi vòng lặp. Sau ly hôn vẫn là những khoảng trống, vẫn là nỗi sợ cô đơn, vẫn là những đêm dài trằn trọc, overthinking và tự nghi ngờ chính mình.",
-  "Sự chuyển hóa thực sự chỉ bắt đầu khi mình ngừng tìm câu trả lời ở bên ngoài và quay vào bên trong — dấn thân nghiêm túc vào hành trình Tái lập trình Tiềm thức, học cách lắng nghe và đối diện với những vết thương mà trước đó mình luôn né tránh. Đó cũng là lúc mình chọn con đường trở thành một Người thực hành Thôi miên trị liệu và chữa lành Tiềm thức tầng sâu — vì mình đã hiểu ra: Thế giới không đối xử với bạn theo cách bạn muốn, nó đối xử với bạn đúng cách bạn đang đối xử với chính mình.",
+  "Sự chuyển hóa thực sự bắt đầu khi mình ngừng tìm câu trả lời ở bên ngoài và quay vào bên trong — dấn thân vào hành trình Tái lập trình Tiềm thức, học cách lắng nghe và đối diện với những vết thương mà trước đó mình luôn né tránh. Đó cũng là lúc mình chọn con đường trở thành một Người thực hành Thôi miên trị liệu và chữa lành Tiềm thức tầng sâu — vì mình đã hiểu ra: Thế giới không đối xử với bạn theo cách bạn muốn, nó đối xử với bạn đúng cách bạn đang đối xử với chính mình.",
 ];
 
 const proof = [
@@ -104,6 +107,20 @@ export function InstructorSection() {
             </span>
           ))}
         </div>
+
+        {/* Mirroring intro */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="space-y-4 text-gray-700 leading-[1.9] text-lg md:text-xl mb-5"
+        >
+          {mirrorIntro.map((p, i) => (
+            <p key={i} className={i === 0 ? "font-semibold text-gray-900" : ""}>
+              {p}
+            </p>
+          ))}
+        </motion.div>
 
         {/* Story */}
         <motion.div
