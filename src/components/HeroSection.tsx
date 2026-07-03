@@ -10,7 +10,7 @@ import {
   Play,
   Users,
   Infinity as InfinityIcon,
-  Clock,
+  BadgeCheck,
 } from "lucide-react";
 import heroBg from "@/assets/images/hero-final.png";
 
@@ -22,19 +22,19 @@ const GOLD = "#E8C96A";
 const features = [
   {
     icon: Compass,
-    title: "Nhận diện chính xác mô thức khiến bạn liên tục lặp lại cùng một nỗi đau trong tình yêu",
+    title: "Gọi đúng tên mô thức khiến bạn cứ yêu là lặp lại một kiểu tổn thương",
   },
   {
     icon: BellOff,
-    title: "Không còn hoảng loạn khi ai đó trở nên lạnh nhạt",
+    title: "Không còn tim đập loạn, check điện thoại liên tục khi họ chỉ chậm nhắn tin",
   },
   {
     icon: ShieldCheck,
-    title: "Lấy lại sự bình an, tự tin và quyền lựa chọn trong tình yêu",
+    title: "Bước vào mối quan hệ tiếp theo mà không mang theo nỗi sợ cũ",
   },
   {
     icon: Users2,
-    title: "Ngừng tìm kiếm giá trị bản thân từ sự chú ý của người khác",
+    title: "Ngừng cố gắng đến kiệt sức chỉ để đổi lấy một chỗ ở lại",
   },
 ];
 
@@ -43,7 +43,6 @@ const trust = [
   { icon: Play, label: "Bắt đầu ngay" },
   { icon: Users, label: "Cộng đồng riêng" },
   { icon: InfinityIcon, label: "Truy cập trọn đời" },
-  { icon: Clock, label: "Hoàn tiền 7 ngày" },
 ];
 
 export function HeroSection() {
@@ -226,6 +225,37 @@ export function HeroSection() {
               <span className="tracking-wide">BẮT ĐẦU HÀNH TRÌNH 7 NGÀY</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </motion.button>
+
+            {/* Effort detail — reduces perceived Effort & Sacrifice right under the ask */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.75 }}
+              className="mt-3 text-[11px] md:text-xs text-gray-300"
+              style={{ textShadow: "0 1px 4px rgba(20,7,40,0.95)" }}
+            >
+              Chỉ 20–30 phút mỗi ngày, học theo tiến độ riêng của bạn — không cần gián đoạn công việc hay cuộc sống hiện tại.
+            </motion.p>
+
+            {/* Guarantee badge — made prominent instead of buried in the trust row */}
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-4 inline-flex items-center gap-2.5 px-4 py-2.5 rounded-md border max-w-2xl"
+              style={{
+                borderColor: "rgba(232,201,106,0.35)",
+                backgroundColor: "rgba(8,3,22,0.45)",
+              }}
+            >
+              <BadgeCheck className="w-5 h-5 flex-shrink-0" style={{ color: GOLD }} />
+              <span className="text-xs md:text-sm text-gray-100">
+                <span className="font-semibold" style={{ color: GOLD }}>
+                  Cam kết hoàn tiền 100%
+                </span>{" "}
+                nếu sau 7 ngày bạn không thấy sự thay đổi rõ rệt — không cần lý do.
+              </span>
+            </motion.div>
 
             {/* Trust row */}
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-5 text-xs md:text-sm text-gray-200">
