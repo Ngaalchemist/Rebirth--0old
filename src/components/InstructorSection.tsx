@@ -17,9 +17,12 @@ const storyBefore = [
 ];
 
 const storyAfter = [
-  "Đêm tháng 8 năm 2022.\Nằm bất động trên sàn nhà sau một trận cãi vã nảy lửa với chồng, mình chạm đáy.",
-  "Mình thức trắng đến tận 5h sáng hôm đó, đầu óc quay cuồn giữa nỗi đau và thất vọng về bản thân. Rồi giữa cơn kiệt quệ ấy, một nhận thức đau đớn ập đến: Đây không phải lần đầu. Mình đã lặp lại đúng một kịch bản thất bại này trong tình yêu, hết lần này đến lần khác, và luôn kết thúc bằng việc bị coi thường, hoặc bị bỏ rơi.", 
-  "Lần đầu tiên mình đã nhìn thấy vòng lặp đó rõ như ban ngày. Và lúc đó, mình chỉ biết một điều duy nhất: Không thể để lòng tự trọng bị chà đạp thêm một giây nào nữa. Mình gom chút dũng khí tàn tạ cuối cùng để ly hôn, bước ra khỏi mối quan hệ độc hại.",
+  "Đêm tháng 8 năm 2022.\ Nằm bất động trên sàn nhà sau một trận cãi vã nảy lửa với chồng, mình chạm đáy.",
+  "Mình thức trắng đến tận 5h sáng hôm đó, đầu óc quay cuồn giữa nỗi đau và thất vọng về bản thân. Rồi giữa cơn kiệt quệ ấy, một nhận thức đau đớn ập đến: ",
+  "Đây không phải lần đầu.",
+  "Mình đã lặp lại đúng một kịch bản thất bại này trong tình yêu, hết lần này đến lần khác, và luôn kết thúc bằng việc bị coi thường, hoặc bị bỏ rơi.", 
+  "Lần đầu tiên mình nhìn thấy vòng lặp đó rõ như ban ngày.",
+  "Và lúc đó, mình chỉ biết một điều duy nhất: Không thể để lòng tự trọng bị chà đạp thêm một giây nào nữa. Mình gom chút dũng khí tàn tạ cuối cùng để ly hôn, bước ra khỏi mối quan hệ độc hại.",
   "Nhưng bước ra khỏi một người không có nghĩa là thoát khỏi vòng lặp. Ly hôn xong, mình vẫn phải đối diện với sự trống rỗng, nỗi sợ cô đơn và những đêm dài overthinking.",
   "Sự giải thoát thực sự chỉ bắt đầu khi mình ngừng hướng ra ngoài, dấn thân vào hành trình tự chữa lành nghiêm túc và chọn con đường trở thành một Người thực hành Thôi miên & chữa lành Tiềm thức tầng sâu.",
 ];
