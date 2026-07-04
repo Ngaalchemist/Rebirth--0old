@@ -53,27 +53,31 @@ export function PricingSection() {
         >
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
             <span className="bg-[#C9A84C] text-[#140728] text-xs font-bold px-5 py-1.5 rounded-lg tracking-widest uppercase">
-              GIÁ CỐ ĐỊNH
+              MỨC ĐẦU TƯ
             </span>
           </div>
 
           {/* Price */}
-          <div className="text-center mb-8 mt-3">
+          <div className="text-center mb-6 mt-3">
             <p className="text-gray-400 text-base md:text-lg mb-2">Giá trị thực của khóa học</p>
             <div className="text-gray-500/60 line-through text-3xl md:text-4xl mb-1">2.000.000đ</div>
             <div className="text-7xl md:text-8xl font-bold text-[#C9A84C] font-serif leading-none">444.000đ</div>
             <p className="text-gray-300 text-sm md:text-base mt-3">Một lần duy nhất · Truy cập trọn đời</p>
           </div>
 
-          <div className="mb-7 text-center max-w-md mx-auto space-y-2">
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-              Mình từng trả hàng chục triệu để tìm con đường này.
+          {/* KHỐI TÂM SỰ & ĐỊNH GIÁ GÂY ĐỘNG LỰC MUA NGAY */}
+          <div className="border-t border-b border-white/10 py-6 my-8 text-left space-y-3.5">
+            <p className="text-gray-200 text-base leading-relaxed italic font-light">
+              "Mình từng trả hàng chục triệu để tìm con đường này."
             </p>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-              Và mình biết — người thật sự cần chữa lành thường không phải người có nhiều tiền nhất.
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+              Nhưng mình định giá <span className="text-[#C9A84C] font-semibold">444K</span> vì mình muốn đây là <span className="text-[#F5D78E] font-medium">quyết định dễ dàng nhất</span> bạn từng làm cho bản thân. Không phải vì lộ trình này rẻ, mà vì bạn xứng đáng được bắt đầu.
             </p>
-            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-              444K vì mình muốn cộng đồng này lớn, và mình không muốn tiền là lý do bạn tiếp tục mắc kẹt thêm một ngày nào nữa.
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+              Mình biết — người thực sự cần chữa lành thường không phải là người có nhiều tiền nhất. Mình muốn cộng đồng này đủ lớn để làm điểm tựa cho nhau...
+            </p>
+            <p className="text-base md:text-lg text-[#F5D78E] font-medium leading-relaxed bg-[#C9A84C]/10 border-l-2 border-[#C9A84C] pl-4 py-2">
+              Và mình không muốn TIỀN là lý do bạn tiếp tục mắc kẹt thêm một ngày nào nữa.
             </p>
           </div>
 
@@ -132,7 +136,7 @@ export function PricingSection() {
             data-testid="button-cta-pricing"
             className="group w-full flex items-center justify-center gap-3 py-6 rounded-none font-bold text-lg md:text-2xl text-[#140728] bg-[#C9A84C] hover:bg-[#E8C96A] transition-all shadow-[0_8px_30px_rgba(201,168,76,0.4)]"
           >
-            <span className="tracking-wide">ĐĂNG KÝ NGAY — CHỈ 444.000Đ</span>
+            <span className="tracking-wide">BẮT ĐẦU NGAY — CHỈ 444.000Đ</span>
             <ChevronRight className="w-7 h-7 group-hover:translate-x-1 transition-transform flex-shrink-0" />
           </button>
           <p className="text-center text-sm md:text-base text-gray-400 mt-4">
