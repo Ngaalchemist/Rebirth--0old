@@ -21,11 +21,11 @@ const intro = [
 
 const relate = {
   lead: "Có thể bạn cũng đã từng trải qua cảm giác này.",
-  body: "Bạn yêu rất nhiều, cố gắng rất nhiều, và luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình. Bạn lo lắng khi người kia im lặng, bạn liên tục tự hỏi liệu mình có làm gì sai, bạn cố gắng trở nên tốt hơn, ngoan hơn, hiểu chuyện hơn để chứng minh giá trị của mình.",
-  cue: "Và đến một ngày, bạn nhìn chính mình rồi tự hỏi:",
+  body: "Bạn yêu rất nhiều, cố gắng rất nhiều, và luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình. Bạn lo lắng khi người kia im lặng, bạn liên tục tự hỏi liệu mình có làm gì sai, bạn cố gắng trở nên tốt hơn, ngoan hơn, hiểu chuyện hơn để giữ lấy điều mình trân trọng.",
+  cue: "Và đến một ngày, bạn bắt đầu nhận ra:",
 };
 
-const quoteWorth = "Tại sao kết cục luôn giống nhau?";
+const quoteWorth = "Dù đã cố gắng rất nhiều... Dường như mọi chuyện vẫn luôn kết thúc theo cùng một cách.";
 const echo = "Đó cũng từng là câu hỏi của mình.";
 
 const herStruggle =
