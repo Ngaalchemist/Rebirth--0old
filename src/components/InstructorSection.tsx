@@ -43,7 +43,7 @@ const ahaMoment = [
   "Và trong khoảnh khắc đó, lần đầu tiên mình ngừng nghĩ về cuộc cãi vã.",
   "Ngừng nghĩ về chồng.",
   "Ngừng nghĩ về việc ai đúng ai sai.",
-  "Mình bắt đầu nhìn vào một điều đáng sợ hơn:",
+  "Mình bắt đầu nhìn vào một điều đáng sợ hơn.",
   "Toàn bộ cuộc đời mình.",
 ];
 
@@ -357,7 +357,7 @@ export function InstructorSection() {
                   isLast
                     ? "font-serif italic font-bold text-violet-900 text-xl md:text-2xl leading-snug"
                     : isSecondLast
-                    ? "font-serif italic text-gray-600 text-base md:text-lg leading-relaxed"
+                    ? "text-gray-500 text-base md:text-lg leading-relaxed"
                     : "text-gray-700 text-base md:text-lg leading-relaxed"
                 }
               >
