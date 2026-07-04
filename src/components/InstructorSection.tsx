@@ -324,7 +324,7 @@ export function InstructorSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-serif font-semibold text-violet-900 text-xl md:text-2xl leading-snug"
+            className="font-serif italic font-semibold text-violet-900 text-lg md:text-xl leading-snug"
           >
             {turningPointLead}
           </motion.p>
@@ -340,23 +340,31 @@ export function InstructorSection() {
           ))}
         </div>
 
-        {/* Aha moment — kéo dài nhịp, mỗi dòng một nhát cắt, cùng 1 tông nhấn */}
+        {/* Aha moment — nhịp chậm, dồn về 2 câu cuối. Xám bình thường, chỉ nhấn italic ở đỉnh */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="my-8 space-y-1.5"
+          className="my-8 space-y-2"
         >
-          {ahaMoment.map((line, i) => (
-            <p
-              key={i}
-              className={`font-serif text-violet-900 text-xl md:text-2xl leading-snug ${
-                i === ahaMoment.length - 1 ? "font-bold" : "font-semibold"
-              }`}
-            >
-              {line}
-            </p>
-          ))}
+          {ahaMoment.map((line, i) => {
+            const isSecondLast = i === ahaMoment.length - 2;
+            const isLast = i === ahaMoment.length - 1;
+            return (
+              <p
+                key={i}
+                className={
+                  isLast
+                    ? "font-serif italic font-bold text-violet-900 text-xl md:text-2xl leading-snug"
+                    : isSecondLast
+                    ? "font-serif italic text-gray-600 text-base md:text-lg leading-relaxed"
+                    : "text-gray-700 text-base md:text-lg leading-relaxed"
+                }
+              >
+                {line}
+              </p>
+            );
+          })}
         </motion.div>
 
         <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
