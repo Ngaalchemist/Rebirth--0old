@@ -43,7 +43,6 @@ const ahaMoment = [
   "Và trong khoảnh khắc đó, lần đầu tiên mình ngừng nghĩ về cuộc cãi vã.",
   "Ngừng nghĩ về chồng.",
   "Ngừng nghĩ về việc ai đúng ai sai.",
-  "Mình bắt đầu nhìn vào một điều đáng sợ hơn: Toàn bộ cuộc đời mình",
   "Mình bắt đầu nhìn vào một điều đáng sợ hơn:",
   "Toàn bộ cuộc đời mình.",
 ];
