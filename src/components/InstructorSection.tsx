@@ -186,7 +186,7 @@ function BrokenCircleQuote({ text }: { text: string }) {
 }
 
 // Triết lý "đóng đinh" world view của Cycle Breaker — trình bày liền mạch,
-// canh trái, CÙNG MỘT CỠ CHỮ với phần còn lại của câu chuyện (text-lg md:text-xl,
+// canh trái, CÙNG MỘT CỠ CHỮ với phần còn lại của câu chuyện (text-base md:text-lg,
 // leading-[1.9]) để không bị "nhảy size" giữa các dòng. Chỉ dùng đậm/nghiêng/màu
 // để nhấn ý, không đổi kích thước.
 function CycleBreakerStatement({ data }: { data: typeof cycleBreakerPhilosophy }) {
@@ -195,7 +195,7 @@ function CycleBreakerStatement({ data }: { data: typeof cycleBreakerPhilosophy }
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl"
+      className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg"
     >
       <p>{data.lead}</p>
 
@@ -262,7 +262,7 @@ export function InstructorSection() {
         </motion.div>
 
         {/* ————— TRƯỚC ĐIỂM CHẠM ĐÁY ————— */}
-        <div className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl">
+        <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -295,7 +295,7 @@ export function InstructorSection() {
 
         <BrokenCircleQuote text={quoteWorth} />
 
-        <div className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl">
+        <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -308,7 +308,7 @@ export function InstructorSection() {
         {/* ————— ĐIỂM CHẠM ĐÁY ————— */}
         <PhaseMarker>Tháng 8, 2022 — Điểm chạm đáy</PhaseMarker>
 
-        <div className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl">
+        <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -341,8 +341,8 @@ export function InstructorSection() {
               key={i}
               className={`font-serif ${
                 i === ahaMoment.length - 1
-                  ? "font-bold text-violet-900 text-2xl md:text-3xl"
-                  : "font-medium text-gray-800 text-lg md:text-xl"
+                  ? "font-bold text-violet-900 text-xl md:text-2xl"
+                  : "font-medium text-gray-800 text-base md:text-lg"
               } leading-snug mb-1.5`}
             >
               {line}
@@ -350,7 +350,7 @@ export function InstructorSection() {
           ))}
         </motion.div>
 
-        <div className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl">
+        <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -362,7 +362,7 @@ export function InstructorSection() {
 
         <BrokenCircleQuote text={quoteWhy} />
 
-        <div className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl">
+        <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
           {realization.map((p, i) => (
             <motion.p
               key={i}
@@ -395,8 +395,8 @@ export function InstructorSection() {
               key={i}
               className={`font-serif ${
                 i === 3
-                  ? "font-bold text-violet-900 text-2xl md:text-3xl"
-                  : "font-medium text-violet-800 text-xl md:text-2xl"
+                  ? "font-bold text-violet-900 text-xl md:text-2xl"
+                  : "font-medium text-violet-800 text-lg md:text-xl"
               } leading-snug mb-1.5`}
             >
               {line}
@@ -407,7 +407,7 @@ export function InstructorSection() {
         {/* ————— SAU CUỘC LY HÔN ————— */}
         <PhaseMarker>Sau cuộc ly hôn — Hành trình chữa lành</PhaseMarker>
 
-        <div className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl">
+        <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
           {afterDivorce.map((p, i) => (
             <motion.p
               key={i}
@@ -432,7 +432,7 @@ export function InstructorSection() {
           <p className="font-serif font-bold text-violet-900 text-2xl md:text-3xl mb-4">
             {rebirthOrigin}
           </p>
-          <p className="text-gray-700 leading-[1.9] text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-gray-700 leading-[1.9] text-base md:text-lg max-w-2xl mx-auto">
             {rebirthDesc}
           </p>
         </motion.div>
@@ -479,7 +479,7 @@ export function InstructorSection() {
           <p className="text-violet-900/90 font-serif font-semibold text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-6">
             {closing[1]}
           </p>
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
             {closingInvite}
           </p>
           <button
