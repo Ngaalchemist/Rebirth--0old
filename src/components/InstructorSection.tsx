@@ -185,7 +185,7 @@ function BrokenCircleQuote({ text }: { text: string }) {
           strokeLinecap="round"
         />
       </svg>
-      <p className="relative font-serif italic font-semibold text-violet-900 text-2xl md:text-3xl leading-snug text-center max-w-md px-4">
+      <p className="relative font-serif italic font-semibold text-violet-900 text-2xl md:text-3xl leading-snug text-center max-w-2xl px-4">
         “{text}”
       </p>
     </motion.div>
