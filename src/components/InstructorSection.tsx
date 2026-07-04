@@ -55,9 +55,16 @@ const quoteWhy = "Tại sao kết cục luôn giống nhau?";
 const realization = [
   "Trước đây, mình luôn nghĩ mình là người mạnh mẽ, sẵn sàng rời đi khi mối quan hệ không còn phù hợp. Nhưng lần đầu tiên, mình ngừng đổ lỗi cho hoàn cảnh để nhìn thẳng vào bản thân và hiện thực trước mắt.",
   "Dù là những con người khác nhau, những câu chuyện khác nhau nhưng kết cục vẫn lặp lại một cách kỳ lạ. Sau cùng, mình vẫn luôn là người ôm lấy tổn thương, luôn cảm thấy mình không đủ giá trị và đánh mất chính mình khi mọi thứ kết thúc.",
-  "Trong khoảnh khắc đó, mình nhìn ra một sự thật: Đây không phải là một biến cố ngẫu nhiên. Đây là một vòng lặp.",
-  "Một mô thức đã âm thầm vận hành trong cuộc đời mình suốt nhiều năm. Và nếu mình không chữa lành gốc rễ, nó sẽ tiếp tục lặp lại.",
 ];
+
+// Câu này cần tô đậm inline ngay trong dòng chảy văn bản — không tách khối riêng
+const realizationTruth = {
+  prefix: "Trong khoảnh khắc đó, mình nhìn ra một sự thật: Đây không phải là một biến cố ngẫu nhiên. ",
+  highlight: "Đây là một vòng lặp.",
+};
+
+const realizationPattern =
+  "Một mô thức đã âm thầm vận hành trong cuộc đời mình suốt nhiều năm. Và nếu mình không chữa lành gốc rễ, nó sẽ tiếp tục lặp lại.";
 
 const realizationClose = "Chính nhận thức đó đã thay đổi mọi thứ.";
 
@@ -201,13 +208,15 @@ function CycleBreakerStatement({ data }: { data: typeof cycleBreakerPhilosophy }
 
       <div className="space-y-1">
         {data.core.map((line, i) => (
-          <p key={i} className="font-serif font-bold text-violet-900">
+          <p key={i} className="font-serif font-bold text-violet-900 text-xl md:text-2xl leading-snug">
             {line}
           </p>
         ))}
       </div>
 
-      <p className="font-serif italic text-gray-800">{data.wound}</p>
+      <p className="font-serif italic font-bold text-violet-900 text-xl md:text-2xl leading-snug">
+        {data.wound}
+      </p>
 
       <div className="pl-5 border-l-2 border-gray-200 space-y-1 text-gray-500">
         {data.faces.map((line, i) => (
@@ -215,7 +224,9 @@ function CycleBreakerStatement({ data }: { data: typeof cycleBreakerPhilosophy }
         ))}
       </div>
 
-      <p className="font-serif font-bold text-[#B0893A]">{data.until}</p>
+      <p className="font-serif font-bold text-[#B0893A] text-xl md:text-2xl leading-snug">
+        {data.until}
+      </p>
 
       <div className="pt-2 space-y-1">
         {data.witness.map((line, i) => (
@@ -313,7 +324,7 @@ export function InstructorSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-serif font-medium text-gray-900"
+            className="font-serif font-semibold text-violet-900 text-xl md:text-2xl leading-snug"
           >
             {turningPointLead}
           </motion.p>
@@ -329,21 +340,19 @@ export function InstructorSection() {
           ))}
         </div>
 
-        {/* Aha moment — kéo dài nhịp, mỗi dòng một nhát cắt riêng biệt */}
+        {/* Aha moment — kéo dài nhịp, mỗi dòng một nhát cắt, cùng 1 tông nhấn */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative my-8 pl-6 md:pl-8 border-l-2 border-[#C9A84C]"
+          className="my-8 space-y-1.5"
         >
           {ahaMoment.map((line, i) => (
             <p
               key={i}
-              className={`font-serif ${
-                i === ahaMoment.length - 1
-                  ? "font-bold text-violet-900 text-xl md:text-2xl"
-                  : "font-medium text-gray-800 text-base md:text-lg"
-              } leading-snug mb-1.5`}
+              className={`font-serif text-violet-900 text-xl md:text-2xl leading-snug ${
+                i === ahaMoment.length - 1 ? "font-bold" : "font-semibold"
+              }`}
             >
               {line}
             </p>
@@ -377,31 +386,45 @@ export function InstructorSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-serif font-semibold text-gray-900"
+          >
+            {realizationTruth.prefix}
+            <span className="font-bold text-violet-900">{realizationTruth.highlight}</span>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            {realizationPattern}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-serif font-bold text-violet-900 text-xl md:text-2xl leading-snug"
           >
             {realizationClose}
           </motion.p>
         </div>
 
-        {/* Divorce punch line — dấu ngoặt lớn nhất của câu chuyện */}
+        {/* Divorce punch line — dấu ngoặt lớn nhất của câu chuyện.
+            3 câu có 3 vai trò khác nhau nên dùng 3 cách nhấn khác nhau,
+            không phải cùng 1 kiểu lặp lại: câu quyết định (đậm, tím) →
+            câu bản lề (thường, làm nền) → câu chốt/insight (lớn nhất, có
+            gạch chân vàng ngắn bên dưới thay vì viền dọc bên trái). */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative my-10 pl-6 md:pl-8 border-l-2 border-[#C9A84C]"
+          className="my-10 space-y-3"
         >
-          {divorceLines.map((line, i) => (
-            <p
-              key={i}
-              className={`font-serif ${
-                i === 3
-                  ? "font-bold text-violet-900 text-xl md:text-2xl"
-                  : "font-medium text-violet-800 text-lg md:text-xl"
-              } leading-snug mb-1.5`}
-            >
-              {line}
-            </p>
-          ))}
+          <p className="font-serif font-bold text-violet-900 text-xl md:text-2xl leading-snug">
+            {divorceLines[0]}
+          </p>
+          <p className="text-gray-600 text-base md:text-lg">{divorceLines[1]}</p>
+          <p className="inline-block font-serif font-bold text-violet-900 text-2xl md:text-3xl leading-snug pb-2 border-b-2 border-[#C9A84C]">
+            {divorceLines[2]}
+          </p>
         </motion.div>
 
         {/* ————— SAU CUỘC LY HÔN ————— */}
