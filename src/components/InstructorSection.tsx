@@ -25,7 +25,7 @@ const relate = {
   cue: "Và đến một ngày, bạn nhìn chính mình rồi tự hỏi:",
 };
 
-const quoteWorth = "Mình có thật sự xứng đáng được yêu không?";
+const quoteWorth = "Tại sao kết cục luôn giống nhau?";
 const echo = "Đó cũng từng là câu hỏi của mình.";
 
 const herStruggle =
