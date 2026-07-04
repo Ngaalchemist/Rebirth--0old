@@ -9,7 +9,7 @@ const includes = [
   "Checklist nhận diện tình yêu lành mạnh và tình yêu gây tổn thương",
   "Kế hoạch 7 ngày quay về với bản thân",
   "Livestream giải đáp thắc mắc hàng tuần",
-  "Quyền tham gia cộng đồng Pattern Breakers",
+  "Quyền tham gia cộng đồng The Cycle Breakers",
   "Truy cập trọn đời",
   "Kế hoạch duy trì sau khóa",
 ];
