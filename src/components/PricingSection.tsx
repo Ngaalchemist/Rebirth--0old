@@ -145,8 +145,8 @@ export function PricingSection() {
           <div className="grid md:grid-cols-3 gap-4 text-left">
             {[
               { label: "Thời hạn", val: "Trong vòng 7 ngày kể từ thanh toán thành công." },
-              { label: "Điều kiện", val: "Áp dụng cho mọi lý do — không cần giải thích chi tiết." },
-              { label: "Cách thực hiện", val: "Gửi email kèm tên và email đăng ký. Xử lý 3–5 ngày làm việc." },
+              { label: "Điều kiện", val: "Hoàn tiền 100% nếu bạn đã hoàn thành đủ 7 ngày bài tập và audio thôi miên - nhưng vẫn không cảm thấy bất kỳ chuyển biến nào." },
+              { label: "Cách thực hiện", val: "Gửi email kèm tên và email đăng ký và bài tập 7 ngày đã hoàn thành. Xử lý 3–5 ngày làm việc." },
             ].map((row, i) => (
               <div key={i} className="bg-white/5 rounded-xl p-5">
                 <p className="text-[#C9A84C] font-semibold text-sm uppercase tracking-wider mb-2">{row.label}</p>
