@@ -43,6 +43,8 @@ const trust = [
   { icon: Play, label: "Bắt đầu ngay" },
   { icon: Users, label: "Cộng đồng riêng" },
   { icon: InfinityIcon, label: "Truy cập trọn đời" },
+  // Đưa Cam kết hoàn tiền thành một dấu v cạnh Truy cập trọn đời
+  { icon: BadgeCheck, label: "Cam kết hoàn tiền 7 ngày" },
 ];
 
 export function HeroSection() {
@@ -192,7 +194,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
-              className="grid grid-cols-2 gap-x-6 gap-y-3 mb-7 max-w-xl"
+              className="grid grid-cols-2 gap-x-6 gap-y-3 mb-7 max-w-2xl" 
             >
               {features.map((f, i) => (
                 <div key={i} className="flex items-start gap-2.5">
@@ -202,7 +204,8 @@ export function HeroSection() {
                   >
                     <f.icon className="w-3.5 h-3.5" style={{ color: GOLD }} />
                   </div>
-                  <p className="text-[12.5px] leading-snug text-gray-100">
+                  {/* Tăng max-w ở dòng số 2 để ép text "Không còn tim đập loạn..." hiển thị gọn gàng trong 2 dòng */}
+                  <p className="text-[12.5px] leading-snug text-gray-100 max-w-[240px] md:max-w-[280px]">
                     {f.title}
                   </p>
                 </div>
@@ -226,38 +229,10 @@ export function HeroSection() {
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </motion.button>
 
-            {/* Effort detail — reduces perceived Effort & Sacrifice right under the ask */}
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.75 }}
-              className="mt-3 text-[11px] md:text-xs text-gray-300"
-              style={{ textShadow: "0 1px 4px rgba(20,7,40,0.95)" }}
-            >
-              Chỉ 20–30 phút mỗi ngày, học theo tiến độ riêng của bạn — không cần gián đoạn công việc hay cuộc sống hiện tại.
-            </motion.p>
+            {/* - ĐÃ XÓA dòng "Chỉ 20-30 phút mỗi ngày..." */}
+            {/* - ĐÃ XÓA Box cam kết hoàn tiền lớn gồ ghề ở đây */}
 
-            {/* Guarantee badge — made prominent instead of buried in the trust row */}
-            <motion.div
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="mt-4 inline-flex items-center gap-2.5 px-4 py-2.5 rounded-md border max-w-2xl"
-              style={{
-                borderColor: "rgba(232,201,106,0.35)",
-                backgroundColor: "rgba(8,3,22,0.45)",
-              }}
-            >
-              <BadgeCheck className="w-5 h-5 flex-shrink-0" style={{ color: GOLD }} />
-              <span className="text-xs md:text-sm text-gray-100">
-                <span className="font-semibold" style={{ color: GOLD }}>
-                  Cam kết hoàn tiền 100%
-                </span>{" "}
-                nếu bạn đã hoàn thành đủ 7 ngày bài tập và không có bất kỳ chuyển biến nào.
-              </span>
-            </motion.div>
-
-            {/* Trust row */}
+            {/* Trust row — Giờ đã bao gồm Cam kết hoàn tiền đi liền sau Truy cập trọn đời */}
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-5 text-xs md:text-sm text-gray-200">
               {trust.map((t, i) => (
                 <div key={i} className="flex items-center gap-1.5 whitespace-nowrap">
@@ -271,12 +246,12 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* ── QUOTE — small floating pull-quote above the shoulder, dark translucent box ── */}
+        {/* ── QUOTE — Đã hạ thấp vị trí xuống (top-[46%]) và đẩy ra xa lề phải (right-2 md:right-4) để tránh xa phần tóc ── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.85 }}
-          className="hidden lg:block absolute top-[38%] -translate-y-1/2 right-8 xl:right-14 z-10 w-max max-w-[260px] text-right px-3.5 py-3 rounded-md backdrop-blur-[2px]"
+          className="hidden lg:block absolute top-[46%] -translate-y-1/2 right-2 xl:right-4 z-10 w-max max-w-[260px] text-right px-3.5 py-3 rounded-md backdrop-blur-[2px]"
           style={{
             backgroundColor: "rgba(8,3,22,0.4)",
             boxShadow: "0 8px 24px rgba(0,0,0,0.25)",
