@@ -65,9 +65,14 @@ export function PricingSection() {
             <p className="text-gray-300 text-sm md:text-base mt-3">Một lần duy nhất · Truy cập trọn đời</p>
           </div>
 
-          <p className="text-sm md:text-base text-gray-400 leading-relaxed mb-7 text-center max-w-md mx-auto">
-            Bạn đang nhận giá ra mắt vì đây là giai đoạn đầu mở khóa cho nhóm học viên nền tảng đầu tiên — để tối ưu trải nghiệm học và xây những case study đầu tiên.
-          </p>
+          <div className="mb-7 text-center max-w-md mx-auto">
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+              Mình từng trả hàng chục triệu để tìm con đường này. Và mình biết — người thật sự cần chữa lành thường không phải người có nhiều tiền nhất. 444K vì mình không muốn tiền là lý do bạn tiếp tục mắc kẹt thêm một ngày nào nữa.
+            </p>
+            <p className="text-xs md:text-sm text-[#C9A84C]/80 mt-3">
+              Giá này chỉ dành cho 100 người đầu tiên — sau đó sẽ tăng lên mức thực.
+            </p>
+          </div>
 
           {/* Includes */}
           <div className="space-y-2.5">
