@@ -78,7 +78,7 @@ const cycleBreakerPhilosophy = {
   lead: "Trong suốt những năm tháng sau đó, mình nhận ra một điều:",
   core: [
     "Chúng ta không lặp lại cùng một kiểu tổn thương vì kém may mắn.",
-    "Chúng ta lặp lại nó vì có một phần bên trong vẫn đang coi sự đau khổ đó là "vùng an toàn" quen thuộc.",
+    "Chúng ta lặp lại nó vì có một phần bên trong vẫn đang coi sự đau khổ đó là “vùng an toàn” quen thuộc.",
   ],
   wound: "Một vết thương chưa được chữa lành sẽ luôn tìm cách tái tạo chính nó.",
   faces: ["Dưới một gương mặt khác.", "Một mối quan hệ khác.", "Một hoàn cảnh khác."],
@@ -185,58 +185,42 @@ function BrokenCircleQuote({ text }: { text: string }) {
   );
 }
 
-// Triết lý "đóng đinh" world view của Cycle Breaker — không đóng box, chỉ dùng
-// phân cấp typography + nhịp khoảng trắng để tách khỏi dòng kể chuyện và giữ
-// cảm giác chuyên nghiệp, dễ đọc trên nền trắng chung của section.
+// Triết lý "đóng đinh" world view của Cycle Breaker — trình bày liền mạch,
+// canh trái, CÙNG MỘT CỠ CHỮ với phần còn lại của câu chuyện (text-lg md:text-xl,
+// leading-[1.9]) để không bị "nhảy size" giữa các dòng. Chỉ dùng đậm/nghiêng/màu
+// để nhấn ý, không đổi kích thước.
 function CycleBreakerStatement({ data }: { data: typeof cycleBreakerPhilosophy }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="my-14 md:my-16"
+      className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl"
     >
-      <div className="mx-auto max-w-xl text-center">
-        <p className="text-violet-800 text-base md:text-lg mb-6">{data.lead}</p>
+      <p>{data.lead}</p>
 
-        <div className="space-y-2.5 mb-8">
-          {data.core.map((line, i) => (
-            <p
-              key={i}
-              className="font-serif font-bold text-violet-900 text-2xl md:text-3xl leading-snug"
-            >
-              {line}
-            </p>
-          ))}
-        </div>
+      <div className="space-y-1">
+        {data.core.map((line, i) => (
+          <p key={i} className="font-serif font-bold text-violet-900">
+            {line}
+          </p>
+        ))}
+      </div>
 
-        <p className="font-serif italic text-gray-800 text-xl md:text-2xl leading-snug mb-5">
-          {data.wound}
-        </p>
-        <div className="space-y-2 mb-8">
-          {data.faces.map((line, i) => (
-            <p
-              key={i}
-              className="text-gray-500 text-lg md:text-xl tracking-wide leading-relaxed"
-            >
-              {line}
-            </p>
-          ))}
-        </div>
+      <p className="font-serif italic text-gray-800">{data.wound}</p>
 
-        <p className="font-serif font-bold text-[#B0893A] text-xl md:text-2xl mb-10">
-          {data.until}
-        </p>
+      <div className="pl-5 border-l-2 border-gray-200 space-y-1 text-gray-500">
+        {data.faces.map((line, i) => (
+          <p key={i}>{line}</p>
+        ))}
+      </div>
 
-        <span className="block w-12 h-px bg-[#C9A84C] mx-auto mb-8" aria-hidden="true" />
+      <p className="font-serif font-bold text-[#B0893A]">{data.until}</p>
 
-        <div className="space-y-2">
-          {data.witness.map((line, i) => (
-            <p key={i} className="text-gray-700 text-lg md:text-xl leading-relaxed">
-              {line}
-            </p>
-          ))}
-        </div>
+      <div className="pt-2 space-y-1">
+        {data.witness.map((line, i) => (
+          <p key={i}>{line}</p>
+        ))}
       </div>
     </motion.div>
   );
