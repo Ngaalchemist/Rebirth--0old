@@ -73,9 +73,6 @@ export function PricingSection() {
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
               Nhưng mình định giá <span className="text-[#C9A84C] font-semibold">444K</span> vì mình muốn đây là <span className="text-[#F5D78E] font-medium">quyết định dễ dàng nhất</span> bạn từng làm cho bản thân. Không phải vì lộ trình này rẻ, mà vì bạn xứng đáng được bắt đầu.
             </p>
-            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-              Mình biết — người thực sự cần chữa lành thường không phải là người có nhiều tiền nhất. Mình muốn cộng đồng này đủ lớn để làm điểm tựa cho nhau...
-            </p>
             <p className="text-base md:text-lg text-[#F5D78E] font-medium leading-relaxed bg-[#C9A84C]/10 border-l-2 border-[#C9A84C] pl-4 py-2">
               Và mình không muốn TIỀN là lý do bạn tiếp tục mắc kẹt thêm một ngày nào nữa.
             </p>
