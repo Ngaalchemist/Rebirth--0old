@@ -9,7 +9,7 @@ export function FooterSection() {
             <img src={logoImg} alt="Nga Alchemist" className="h-14 w-auto object-contain" />
             <div>
               <div className="font-bold text-foreground font-serif tracking-wide">NGA ALCHEMIST</div>
-              <div className="text-xs text-muted-foreground">Chữa Lành · Chuyển Hóa · Thức Tỉnh</div>
+              <div className="text-xs text-muted-foreground">Pain to Power</div>
             </div>
           </div>
 
