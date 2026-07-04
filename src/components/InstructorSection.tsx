@@ -21,11 +21,11 @@ const intro = [
 
 const relate = {
   lead: "Có thể bạn cũng đã từng trải qua cảm giác này.",
-  body: "Bạn yêu rất nhiều, cố gắng rất nhiều, và luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình. Bạn lo lắng khi người kia im lặng, bạn liên tục tự hỏi liệu mình có làm gì sai, bạn cố gắng trở nên tốt hơn, ngoan hơn, hiểu chuyện hơn để giữ lấy điều mình trân trọng.",
-  cue: "Và đến một ngày, bạn bắt đầu nhận ra:",
+  body: "Bạn yêu rất nhiều, cố gắng rất nhiều, và luôn là người nhường nhịn và thấu hiểu. Nhưng càng bước sâu vào một mối quan hệ, bạn càng thấy mình dần đánh mất chính mình. Bạn lo lắng khi người kia im lặng, bạn liên tục tự hỏi liệu mình có làm gì sai, bạn cố gắng trở nên tốt hơn, ngoan hơn, hiểu chuyện hơn để được ở lại.",
+  cue: "Và đến một ngày, một câu hỏi bắt đầu xuất hiện - âm thầm, dai dẳng:",
 };
 
-const quoteWorth = "Dù đã cố gắng rất nhiều... Dường như mọi chuyện vẫn luôn kết thúc theo cùng một cách.";
+const quoteWorth = "Hay là... mình thật sự không có giá trị? Nên họ mới không thấy mình đáng được trân trọng?.";
 
 const herStruggle =
   "Đã có một thời gian dài, mình đặt giá trị bản thân vào cách người khác đối xử với mình. Mình sợ bị bỏ rơi, sợ không được chọn, sợ không đủ tốt… Và những nỗi sợ đó âm thầm điều khiển cách mình yêu, cách mình gắn bó và cách mình nhìn nhận chính mình.";
