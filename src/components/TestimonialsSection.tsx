@@ -3,40 +3,34 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Điều em thấy rõ nhất không phải là hết đau ngay, mà là lần đầu tiên em hiểu vì sao mình phản ứng mạnh như vậy. Em không còn thấy mình 'có vấn đề', mà thấy mình đang ở trong một vòng lặp có thể đi ra được.",
-    name: "Thùy Linh",
-    role: "NVVP",
+    text: "Mình tìm được vòng lặp tiêu cực từ đâu thì mình sẽ chữa lành được đúng nơi đó. Thay đổi từ bên trong, từ chính mình — mình nghĩ đó là điều sâu sắc nhất mình có được.",
+    name: "Khách hàng 1:1",
     location: "Hà Nội",
   },
   {
-    text: "Em từng học rất nhiều thứ về chữa lành, nhưng đây là lần đầu em có cảm giác mọi thứ nối lại với nhau: cảm xúc, cơ thể, niềm tin, nhu cầu. Em bắt đầu giữ được mình hơn trong các mối quan hệ.",
-    name: "Thu Thủy",
-    role: "NVKD Nha Khoa",
-    location: "HCM",
-  },
-  {
-    text: "Phiên làm việc với chị giúp em chạm vào những phần rất sâu mà trước đây em chỉ biết bằng lý thuyết. Sau đó em bình tĩnh hơn hẳn, không còn lao đi giải thích hay níu kéo như trước.",
-    name: "Kim Yến",
-    role: "Healer",
+    text: "Em thấy kết nối với bản thân mình hơn, tin tưởng vào bản thân. Hiện tại em thấy nhẹ nhõm hơn rất nhiều, tim không còn bị nặng nữa. Em cảm thấy không còn bị cảm xúc tiêu cực chi phối mạnh nữa.",
+    name: "Khách hàng 1:1",
     location: "Hà Nội",
   },
   {
-    text: "Điều em biết ơn nhất là em bắt đầu thấy giá trị bản thân của mình không nằm ở việc người khác có chọn mình hay không. Em không cần có gì em vẫn thấy tự tin. Cảm giác đó rất khác so với trước.",
-    name: "Ngọc Mai",
-    role: "",
-    location: "HN",
+    text: "Các triệu chứng cũ gần như không gặp lại. Em ngủ tốt hơn. Đợt này em cũng thấy yêu đời hơn haha.",
+    name: "Khách hàng 1:1",
+    location: "Hà Nội",
   },
   {
-    text: "Em từng nghĩ mình chỉ là người quá nhạy cảm. Nhưng sau khi làm việc cùng chị, em nhận ra mình chỉ đang sống quá lâu với những cảm xúc cũ chưa được đi qua đúng cách.",
-    name: "Thu Nguyễn",
-    role: "NV Ngân hàng",
-    location: "HN",
+    text: "Sau buổi hôm nay nhiều vấn đề với tớ đã rõ ràng hơn. Thấy mình bỏ bê bản thân lâu quá, mà cứ phải trông cậy yêu thương từ bên ngoài.",
+    name: "Khách hàng 1:1",
+    location: "Hà Nội",
   },
   {
-    text: "Điều em thấy rõ nhất là bây giờ em tự tin hơn rất nhiều. Không phải kiểu gồng lên để tỏ ra mạnh, mà là một sự tự tin rất sâu từ bên trong — kiểu dù mình có đang ở đâu, đang là ai, mình vẫn thấy mình có giá trị. Em thật sự biết ơn chị rất nhiều.",
-    name: "Minh Nguyễn",
-    role: "NVVP",
-    location: "HN",
+    text: "Dạo này mọi thứ nhẹ nhàng hơn với em, chỉ là thỉnh thoảng vẫn còn khùng lên — nhưng tỷ lệ cáu giận giảm hơn nhiều. Em đang thấy mình easy hơn, kiểu enjoy my life và yêu thương bản thân hơn.",
+    name: "Khách hàng 1:1",
+    location: "Hà Nội",
+  },
+  {
+    text: "Điều em thấy rõ nhất là bây giờ em tự tin hơn rất nhiều. Không phải kiểu gồng lên để tỏ ra mạnh, mà là một sự tự tin rất sâu từ bên trong, kiểu dù mình có đang ở đâu, đang là ai, mình vẫn thấy mình có giá trị. Em thật sự biết ơn chị rất nhiều.",
+    name: "Khách hàng 1:1",
+    location: "Hà Nội",
   },
 ];
 
