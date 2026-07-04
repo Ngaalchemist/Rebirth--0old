@@ -253,7 +253,7 @@ export function HeroSection() {
                 <span className="font-semibold" style={{ color: GOLD }}>
                   Cam kết hoàn tiền 100%
                 </span>{" "}
-                nếu sau 7 ngày bạn không thấy sự thay đổi rõ rệt — không cần lý do.
+                nếu bạn đã hoàn thành đủ 7 ngày bài tập và không có bất kỳ chuyển biến nào.
               </span>
             </motion.div>
 
