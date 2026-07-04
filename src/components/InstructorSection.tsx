@@ -43,7 +43,7 @@ const ahaMoment = [
   "Và trong khoảnh khắc đó, lần đầu tiên mình ngừng nghĩ về cuộc cãi vã.",
   "Ngừng nghĩ về chồng.",
   "Ngừng nghĩ về việc ai đúng ai sai.",
-  "Mình bắt đầu nhìn vào một điều đáng sợ hơn.",
+  "Mình bắt đầu nhìn vào một điều đáng sợ hơn:",
   "Toàn bộ cuộc đời mình.",
 ];
 
@@ -53,7 +53,7 @@ const realizationIntro =
 const quoteWhy = "Tại sao kết cục luôn giống nhau?";
 
 const realization = [
-  "Trước đây, mình luôn nghĩ mình là người mạnh mẽ, sẵn sàng rời đi khi mối quan hệ không còn phù hợp. Nhưng lần đầu tiên, mình ngừng đổ lỗi cho hoàn cảnh để nhìn thẳng vào bản thân và hiện thực trước mắt.",
+  "Trước đây, mình luôn nghĩ mình là người mạnh mẽ, sẵn sàng rời đi khi mối quan hệ không còn phù hợp. Nhưng lần đầu tiên, mình ngừng đổ lỗi cho hoàn cảnh để nhìn thẳng vào bản thân và hiện thực trước mắt:",
   "Dù là những con người khác nhau, những câu chuyện khác nhau nhưng kết cục vẫn lặp lại một cách kỳ lạ. Sau cùng, mình vẫn luôn là người ôm lấy tổn thương, luôn cảm thấy mình không đủ giá trị và đánh mất chính mình khi mọi thứ kết thúc.",
 ];
 
