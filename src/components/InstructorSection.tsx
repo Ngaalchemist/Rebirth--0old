@@ -187,45 +187,54 @@ function BrokenCircleQuote({ text }: { text: string }) {
   );
 }
 
-// Box triết lý — "đóng đinh" world view của Cycle Breaker. Tách hẳn khỏi dòng
-// kể chuyện bằng khung viền + nền riêng, để người đọc dừng lại và thấm quan
-// điểm trước khi bước sang lý do Rebirth ra đời.
-function CycleBreakerBox({ data }: { data: typeof cycleBreakerPhilosophy }) {
+// Triết lý "đóng đinh" world view của Cycle Breaker — không đóng box, chỉ dùng
+// phân cấp typography + nhịp khoảng trắng để tách khỏi dòng kể chuyện và giữ
+// cảm giác chuyên nghiệp, dễ đọc trên nền trắng chung của section.
+function CycleBreakerStatement({ data }: { data: typeof cycleBreakerPhilosophy }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="my-12 rounded-2xl border border-[#C9A84C]/40 bg-gradient-to-br from-[#FBF6EA] to-white px-6 py-9 md:px-12 md:py-11 shadow-sm"
+      className="my-14 md:my-16"
     >
       <div className="mx-auto max-w-xl text-center">
-        <p className="text-violet-700/80 text-base md:text-lg mb-4">{data.lead}</p>
+        <p className="text-violet-800 text-base md:text-lg mb-6">{data.lead}</p>
 
-        <div className="space-y-1.5 mb-5">
+        <div className="space-y-2.5 mb-8">
           {data.core.map((line, i) => (
             <p
               key={i}
-              className="font-serif font-semibold text-violet-900 text-xl md:text-2xl leading-snug"
+              className="font-serif font-bold text-violet-900 text-2xl md:text-3xl leading-snug"
             >
               {line}
             </p>
           ))}
         </div>
 
-        <p className="font-serif italic text-gray-800 text-lg md:text-xl mb-2">{data.wound}</p>
-        <div className="mb-5">
+        <p className="font-serif italic text-gray-800 text-xl md:text-2xl leading-snug mb-5">
+          {data.wound}
+        </p>
+        <div className="space-y-2 mb-8">
           {data.faces.map((line, i) => (
-            <p key={i} className="text-gray-500 text-base md:text-lg leading-relaxed">
+            <p
+              key={i}
+              className="text-gray-500 text-lg md:text-xl tracking-wide leading-relaxed"
+            >
               {line}
             </p>
           ))}
         </div>
 
-        <p className="font-serif font-bold text-[#B0893A] text-lg md:text-xl">{data.until}</p>
+        <p className="font-serif font-bold text-[#B0893A] text-xl md:text-2xl mb-10">
+          {data.until}
+        </p>
 
-        <div className="mt-6 pt-5 border-t border-[#C9A84C]/30 space-y-1.5">
+        <span className="block w-12 h-px bg-[#C9A84C] mx-auto mb-8" aria-hidden="true" />
+
+        <div className="space-y-2">
           {data.witness.map((line, i) => (
-            <p key={i} className="text-gray-700 text-base md:text-lg leading-relaxed">
+            <p key={i} className="text-gray-700 text-lg md:text-xl leading-relaxed">
               {line}
             </p>
           ))}
@@ -429,7 +438,7 @@ export function InstructorSection() {
           ))}
         </div>
 
-        <CycleBreakerBox data={cycleBreakerPhilosophy} />
+        <CycleBreakerStatement data={cycleBreakerPhilosophy} />
 
         {/* Rebirth origin */}
         <motion.div
