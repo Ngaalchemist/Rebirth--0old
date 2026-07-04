@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Monitor, Zap, Users, Infinity } from "lucide-react";
 import instructorImg from "@/assets/images/instructor-beach.jpg";
 
 /**
@@ -26,7 +26,6 @@ const relate = {
 };
 
 const quoteWorth = "Dù đã cố gắng rất nhiều... Dường như mọi chuyện vẫn luôn kết thúc theo cùng một cách.";
-const echo = "Đó cũng từng là câu hỏi của mình.";
 
 const herStruggle =
   "Đã có một thời gian dài, mình đặt giá trị bản thân vào cách người khác đối xử với mình. Mình sợ bị bỏ rơi, sợ không được chọn, sợ không đủ tốt… Và những nỗi sợ đó âm thầm điều khiển cách mình yêu, cách mình gắn bó và cách mình nhìn nhận chính mình.";
@@ -36,7 +35,16 @@ const turningPointLead = "Cho đến khi cuộc hôn nhân của mình đi đế
 const turningPoint = [
   "Đó là một ngày cuối tháng 8 năm 2022. Sau một trận cãi vã dữ dội với chồng, mình chạm đáy. Mình đã ngồi bất động trên ghế thật lâu, kiệt quệ, thất vọng và hoàn toàn mất phương hướng.",
   "Đó cũng là thời điểm mình vừa trải qua phá sản, thất nghiệp, còn con trai mới được ba tuổi.",
+];
+
+// Aha moment — kéo dài nhịp, mỗi dòng một nhát cắt, dồn về "toàn bộ cuộc đời mình"
+const ahaMoment = [
   "Mọi thứ dường như sụp đổ cùng một lúc.",
+  "Và trong khoảnh khắc đó, lần đầu tiên mình ngừng nghĩ về cuộc cãi vã.",
+  "Ngừng nghĩ về chồng.",
+  "Ngừng nghĩ về việc ai đúng ai sai.",
+  "Mình bắt đầu nhìn vào một điều đáng sợ hơn.",
+  "Toàn bộ cuộc đời mình.",
 ];
 
 const realizationIntro =
@@ -64,6 +72,23 @@ const afterDivorce = [
   "Nhưng rời khỏi một mối quan hệ không đồng nghĩa với việc chữa lành những gì đang diễn ra bên trong. Sau ly hôn vẫn là những khoảng trống, vẫn là nỗi sợ cô đơn, vẫn là những đêm dài overthinking, vẫn là cảm giác bất an mà mình đã mang theo suốt nhiều năm.",
   "Mình tu tập và bắt đầu thiền định. Mình học cách quay vào bên trong, đối diện với những phần sâu nhất mà bản thân trước đây luôn tìm cách né tránh. Nhưng sự chuyển hóa thực sự chỉ bắt đầu khi mình bước sâu vào hành trình làm việc với tiềm thức tầng sâu thông qua Thôi miên trị liệu và các phương pháp chữa lành tận gốc.",
 ];
+
+// Triết lý "đóng đinh" world view của Cycle Breaker — xuất hiện TRƯỚC khi tiết lộ
+// lý do Rebirth ra đời, để người đọc thấm quan điểm trước khi nghe về giải pháp.
+const cycleBreakerPhilosophy = {
+  lead: "Trong suốt những năm sau đó, mình nhận ra một điều:",
+  core: [
+    "Chúng ta không lặp lại cùng một kiểu tổn thương vì kém may mắn.",
+    "Chúng ta lặp lại nó vì có một phần bên trong vẫn đang xem nó là quen thuộc.",
+  ],
+  wound: "Một vết thương chưa được chữa lành sẽ luôn tìm cách tái tạo chính nó.",
+  faces: ["Dưới một gương mặt khác.", "Một mối quan hệ khác.", "Một hoàn cảnh khác."],
+  until: "Cho đến khi chúng ta đủ can đảm nhìn thẳng vào nó.",
+  witness: [
+    "Đó là điều mình nhìn thấy trong cuộc đời mình.",
+    "Và cũng là điều mình đã chứng kiến ở hàng trăm phụ nữ mà mình có cơ hội đồng hành.",
+  ],
+};
 
 const rebirthOrigin = "Đó cũng là lý do Rebirth ra đời.";
 const rebirthDesc =
@@ -93,6 +118,13 @@ const closing = [
 ];
 const closingInvite =
   "Và nếu bạn đã sẵn sàng ngừng tự bỏ rơi chính mình, mình sẽ đồng hành cùng bạn trên hành trình trở về ấy.";
+
+const ctaBadges = [
+  { icon: Monitor, label: "Học online" },
+  { icon: Zap, label: "Bắt đầu ngay" },
+  { icon: Users, label: "Cộng đồng riêng" },
+  { icon: Infinity, label: "Truy cập trọn đời" },
+];
 
 /**
  * ————————————————————————————————————————————
@@ -151,6 +183,54 @@ function BrokenCircleQuote({ text }: { text: string }) {
       <p className="relative font-serif italic font-semibold text-violet-900 text-2xl md:text-3xl leading-snug text-center max-w-md px-4">
         “{text}”
       </p>
+    </motion.div>
+  );
+}
+
+// Box triết lý — "đóng đinh" world view của Cycle Breaker. Tách hẳn khỏi dòng
+// kể chuyện bằng khung viền + nền riêng, để người đọc dừng lại và thấm quan
+// điểm trước khi bước sang lý do Rebirth ra đời.
+function CycleBreakerBox({ data }: { data: typeof cycleBreakerPhilosophy }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="my-12 rounded-2xl border border-[#C9A84C]/40 bg-gradient-to-br from-[#FBF6EA] to-white px-6 py-9 md:px-12 md:py-11 shadow-sm"
+    >
+      <div className="mx-auto max-w-xl text-center">
+        <p className="text-violet-700/80 text-base md:text-lg mb-4">{data.lead}</p>
+
+        <div className="space-y-1.5 mb-5">
+          {data.core.map((line, i) => (
+            <p
+              key={i}
+              className="font-serif font-semibold text-violet-900 text-xl md:text-2xl leading-snug"
+            >
+              {line}
+            </p>
+          ))}
+        </div>
+
+        <p className="font-serif italic text-gray-800 text-lg md:text-xl mb-2">{data.wound}</p>
+        <div className="mb-5">
+          {data.faces.map((line, i) => (
+            <p key={i} className="text-gray-500 text-base md:text-lg leading-relaxed">
+              {line}
+            </p>
+          ))}
+        </div>
+
+        <p className="font-serif font-bold text-[#B0893A] text-lg md:text-xl">{data.until}</p>
+
+        <div className="mt-6 pt-5 border-t border-[#C9A84C]/30 space-y-1.5">
+          {data.witness.map((line, i) => (
+            <p key={i} className="text-gray-700 text-base md:text-lg leading-relaxed">
+              {line}
+            </p>
+          ))}
+        </div>
+      </div>
     </motion.div>
   );
 }
@@ -229,14 +309,6 @@ export function InstructorSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center text-violet-800/80 font-medium"
-          >
-            {echo}
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
           >
             {herStruggle}
           </motion.p>
@@ -264,11 +336,34 @@ export function InstructorSection() {
               {p}
             </motion.p>
           ))}
+        </div>
+
+        {/* Aha moment — kéo dài nhịp, mỗi dòng một nhát cắt riêng biệt */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative my-8 pl-6 md:pl-8 border-l-2 border-[#C9A84C]"
+        >
+          {ahaMoment.map((line, i) => (
+            <p
+              key={i}
+              className={`font-serif ${
+                i === ahaMoment.length - 1
+                  ? "font-bold text-violet-900 text-2xl md:text-3xl"
+                  : "font-medium text-gray-800 text-lg md:text-xl"
+              } leading-snug mb-1.5`}
+            >
+              {line}
+            </p>
+          ))}
+        </motion.div>
+
+        <div className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="pt-2"
           >
             {realizationIntro}
           </motion.p>
@@ -333,6 +428,8 @@ export function InstructorSection() {
             </motion.p>
           ))}
         </div>
+
+        <CycleBreakerBox data={cycleBreakerPhilosophy} />
 
         {/* Rebirth origin */}
         <motion.div
@@ -402,6 +499,18 @@ export function InstructorSection() {
             <span className="tracking-wide whitespace-nowrap">TÔI CHỌN NGỪNG TỰ BỎ RƠI CHÍNH MÌNH</span>
             <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform flex-shrink-0" />
           </button>
+
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            {ctaBadges.map((b, i) => (
+              <span
+                key={i}
+                className="inline-flex items-center gap-1.5 text-sm md:text-base text-violet-700/80 font-medium"
+              >
+                <b.icon className="w-4 h-4 text-[#B0893A]" />
+                {b.label}
+              </span>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
