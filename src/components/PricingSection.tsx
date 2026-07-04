@@ -40,8 +40,8 @@ export function PricingSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-6xl font-bold font-serif text-[#F5D78E] mb-4">ƯU ĐÃI ĐẶC BIỆT HÔM NAY</h2>
-          <p className="text-gray-300 text-lg md:text-xl">Dành riêng cho 100 học viên đăng ký đầu tiên</p>
+          <h2 className="text-4xl md:text-6xl font-bold font-serif text-[#F5D78E] mb-4">BẮT ĐẦU HÀNH TRÌNH CỦA BẠN</h2>
+          <p className="text-gray-300 text-lg md:text-xl">Một lần đầu tư · Truy cập trọn đời · Cộng đồng mở</p>
         </motion.div>
 
         {/* MAIN OFFER CARD */}
@@ -53,7 +53,7 @@ export function PricingSection() {
         >
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
             <span className="bg-[#C9A84C] text-[#140728] text-xs font-bold px-5 py-1.5 rounded-lg tracking-widest uppercase">
-              GIÁ RA MẮT
+              GIÁ CỐ ĐỊNH
             </span>
           </div>
 
@@ -65,12 +65,15 @@ export function PricingSection() {
             <p className="text-gray-300 text-sm md:text-base mt-3">Một lần duy nhất · Truy cập trọn đời</p>
           </div>
 
-          <div className="mb-7 text-center max-w-md mx-auto">
+          <div className="mb-7 text-center max-w-md mx-auto space-y-2">
             <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-              Mình từng trả hàng chục triệu để tìm con đường này. Và mình biết — người thật sự cần chữa lành thường không phải người có nhiều tiền nhất. 444K vì mình không muốn tiền là lý do bạn tiếp tục mắc kẹt thêm một ngày nào nữa.
+              Mình từng trả hàng chục triệu để tìm con đường này.
             </p>
-            <p className="text-xs md:text-sm text-[#C9A84C]/80 mt-3">
-              Giá này chỉ dành cho 100 người đầu tiên — sau đó sẽ tăng lên mức thực.
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+              Và mình biết — người thật sự cần chữa lành thường không phải người có nhiều tiền nhất.
+            </p>
+            <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+              444K vì mình muốn cộng đồng này lớn, và mình không muốn tiền là lý do bạn tiếp tục mắc kẹt thêm một ngày nào nữa.
             </p>
           </div>
 
@@ -98,7 +101,7 @@ export function PricingSection() {
             <Gift className="w-10 h-10 text-[#C9A84C] flex-shrink-0" />
             <div>
               <h3 className="font-bold font-serif text-[#F5D78E] text-2xl md:text-3xl mb-0.5">🎁 Quà tặng đặc biệt</h3>
-              <p className="text-sm text-gray-300 uppercase tracking-wider">Cho 100 học viên đăng ký đầu tiên</p>
+              <p className="text-sm text-gray-300 uppercase tracking-wider">Dành cho tất cả học viên Rebirth</p>
             </div>
           </div>
 
