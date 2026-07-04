@@ -68,7 +68,7 @@ export function PricingSection() {
           {/* KHỐI TÂM SỰ & ĐỊNH GIÁ GÂY ĐỘNG LỰC MUA NGAY */}
           <div className="border-t border-b border-white/10 py-6 my-8 text-left space-y-3.5">
             <p className="text-gray-200 text-base leading-relaxed italic font-light">
-              "Mình từng trả hàng chục triệu để tìm con đường này."
+              Mình từng trả hàng chục triệu để tìm con đường này.
             </p>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
               Nhưng mình định giá <span className="text-[#C9A84C] font-semibold">444K</span> vì mình muốn đây là <span className="text-[#F5D78E] font-medium">quyết định dễ dàng nhất</span> bạn từng làm cho bản thân. Không phải vì lộ trình này rẻ, mà vì bạn xứng đáng được bắt đầu.
