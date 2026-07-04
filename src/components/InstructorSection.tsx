@@ -33,8 +33,8 @@ const herStruggle =
 const turningPointLead = "Cho đến khi cuộc hôn nhân của mình đi đến điểm đổ vỡ.";
 
 const turningPoint = [
-  "Đó là một ngày cuối tháng 8 năm 2022. Sau một trận cãi vã dữ dội với chồng, mình chạm đáy. Mình đã ngồi bất động trên ghế thật lâu, kiệt quệ, thất vọng và hoàn toàn mất phương hướng.",
-  "Đó cũng là thời điểm mình vừa trải qua phá sản, thất nghiệp, còn con trai mới được ba tuổi.",
+  "Đó là một ngày cuối tháng 8 năm 2022. Sau một trận cãi vã dữ dội với chồng, mình chạm đáy. Mình ngồi bất động trên ghế thật lâu, kiệt quệ, thất vọng và hoàn toàn mất phương hướng.",
+  "Đó cũng là thời điểm mình vừa trải qua phá sản, thất nghiệp, còn con trai mới bước sang tuổi lên ba.",
 ];
 
 // Aha moment — kéo dài nhịp, mỗi dòng một nhát cắt, dồn về "toàn bộ cuộc đời mình"
@@ -48,51 +48,49 @@ const ahaMoment = [
 ];
 
 const realizationIntro =
-  "Nhưng điều thay đổi cuộc đời mình lại không nằm ở cuộc cãi vã đó. Nó đến từ một câu hỏi. Một câu hỏi mà trước đó mình chưa từng thật sự đối diện:";
+  "Nhưng điều thay đổi số phận mình lại không nằm ở cuộc cãi vã đó. Nó đến từ một câu hỏi mà trước đây mình chưa từng thật sự đối diện:";
 
 const quoteWhy = "Tại sao kết cục luôn giống nhau?";
 
 const realization = [
-  "Mình chưa bao giờ là người chấp nhận ở lại trong những mối quan hệ khiến mình đau khổ. Mình luôn đủ mạnh mẽ để rời đi khi cảm thấy không còn phù hợp. Nhưng lần đầu tiên, mình ngừng nhìn vào người khác và bắt đầu nhìn vào chính mình.",
-  "Dù là những con người khác nhau, những hoàn cảnh khác nhau, những câu chuyện khác nhau nhưng kết cục vẫn luôn giống nhau một cách kỳ lạ. Sau cùng, mình luôn là người bị tổn thương, luôn cảm thấy mình không đủ giá trị, luôn đánh mất chính mình khi mối quan hệ kết thúc.",
-  "Và trong khoảnh khắc đó, mình nhìn thấy một điều mà trước đây chưa từng nhìn thấy: Đây không phải là một biến cố đơn lẻ. Đây là một vòng lặp.",
-  "Một mô thức đã âm thầm vận hành trong cuộc đời mình suốt nhiều năm mà mình chưa từng nhận ra. Và nếu mình không chữa lành nó, nó sẽ tiếp tục lặp lại.",
+  "Trước đây, mình luôn nghĩ mình là người mạnh mẽ, sẵn sàng rời đi khi mối quan hệ không còn phù hợp. Nhưng lần đầu tiên, mình ngừng đổ lỗi cho hoàn cảnh để nhìn thẳng vào bản thân và hiện thực trước mắt.",
+  "Dù là những con người khác nhau, những câu chuyện khác nhau nhưng kết cục vẫn lặp lại một cách kỳ lạ. Sau cùng, mình vẫn luôn là người ôm lấy tổn thương, luôn cảm thấy mình không đủ giá trị và đánh mất chính mình khi mọi thứ kết thúc.",
+  "Trong khoảnh khắc đó, mình nhìn ra một sự thật: Đây không phải là một biến cố ngẫu nhiên. Đây là một vòng lặp.",
+  "Một mô thức đã âm thầm vận hành trong cuộc đời mình suốt nhiều năm. Và nếu mình không chữa lành gốc rễ, nó sẽ tiếp tục lặp lại.",
 ];
 
-const realizationClose = "Chính khoảnh khắc đó đã thay đổi mọi thứ.";
+const realizationClose = "Chính nhận thức đó đã thay đổi mọi thứ.";
 
 const divorceLines = [
   "Mình quyết định ly hôn.",
-  "Không phải vì hết yêu.",
-  "Mà vì lần đầu tiên, mình hiểu rằng điều mình cần cứu không phải là một mối quan hệ.",
-  "Điều mình cần cứu là cứu lấy chính mình.",
-];
+  "Không phải vì hết yêu, mà vì lần đầu tiên mình hiểu rằng:",
+  "Điều cần được cứu vớt không phải là một cuộc hôn nhân, mà là chính bản thân mình.",
+  ];
 
 const afterDivorce = [
-  "Nhưng rời khỏi một mối quan hệ không đồng nghĩa với việc chữa lành những gì đang diễn ra bên trong. Sau ly hôn vẫn là những khoảng trống, vẫn là nỗi sợ cô đơn, vẫn là những đêm dài overthinking, vẫn là cảm giác bất an mà mình đã mang theo suốt nhiều năm.",
-  "Mình tu tập và bắt đầu thiền định. Mình học cách quay vào bên trong, đối diện với những phần sâu nhất mà bản thân trước đây luôn tìm cách né tránh. Nhưng sự chuyển hóa thực sự chỉ bắt đầu khi mình bước sâu vào hành trình làm việc với tiềm thức tầng sâu thông qua Thôi miên trị liệu và các phương pháp chữa lành tận gốc.",
+  "Nhưng rời đi không đồng nghĩa với việc những giông bão bên trong sẽ tự động biến mất. Sau ly hôn vẫn là những khoảng trống, là nỗi sợ cô đơn, là những đêm dài overthinking và cảm giác bất an âm ỉ.",
+  "Mình bắt đầu tu tập và học cách thiền định, học cách quay vào bên trong để đối diện với những góc khuất bản thân từng né tránh. Nhưng sự chuyển hóa thực sự chỉ bắt đầu khi mình bước sâu vào hành trình làm việc với tiềm thức thông qua Thôi miên trị liệu và các phương pháp chữa lành tận gốc.",
 ];
 
 // Triết lý "đóng đinh" world view của Cycle Breaker — xuất hiện TRƯỚC khi tiết lộ
 // lý do Rebirth ra đời, để người đọc thấm quan điểm trước khi nghe về giải pháp.
 const cycleBreakerPhilosophy = {
-  lead: "Trong suốt những năm sau đó, mình nhận ra một điều:",
+  lead: "Trong suốt những năm tháng sau đó, mình nhận ra một điều:",
   core: [
     "Chúng ta không lặp lại cùng một kiểu tổn thương vì kém may mắn.",
-    "Chúng ta lặp lại nó vì có một phần bên trong vẫn đang xem nó là quen thuộc.",
+    "Chúng ta lặp lại nó vì có một phần bên trong vẫn đang coi sự đau khổ đó là "vùng an toàn" quen thuộc.",
   ],
   wound: "Một vết thương chưa được chữa lành sẽ luôn tìm cách tái tạo chính nó.",
   faces: ["Dưới một gương mặt khác.", "Một mối quan hệ khác.", "Một hoàn cảnh khác."],
   until: "Cho đến khi chúng ta đủ can đảm nhìn thẳng vào nó.",
   witness: [
-    "Đó là điều mình nhìn thấy trong cuộc đời mình.",
-    "Và cũng là điều mình đã chứng kiến ở hàng trăm phụ nữ mà mình có cơ hội đồng hành.",
+    "Đó là bài học xương máu trong cuộc đời mình, và cũng là câu chuyện mình đã chứng kiến ở hàng trăm phụ nữ mà mình có cơ hội đồng hành.",
   ],
 };
 
 const rebirthOrigin = "Đó cũng là lý do Rebirth ra đời.";
 const rebirthDesc =
-  "Hành trình 7 ngày này không được xây dựng từ những lý thuyết xa vời. Nó là những gì tinh gọn, thực tế và sâu sắc nhất được chắt lọc từ hành trình chuyển hóa của chính mình, cùng những gì mình đã thực hành, kiểm chứng và quan sát trong quá trình đồng hành với khách hàng thực tế. Mình ở đây để giúp bạn rút ngắn con đường đó.";
+  "Hành trình 7 ngày này không được xây dựng từ những lý thuyết xa vời. Nó là những gì tinh gọn, thực tế và sâu sắc nhất được chắt lọc từ chính sự chuyển hóa của mình, cùng những trải nghiệm thực tế từ các khách hàng. Mình ở đây để giúp bạn rút ngắn con đường đó.";
 
 const pillars = [
   {
