@@ -59,7 +59,7 @@ const realization = [
 
 // Câu này cần tô đậm inline ngay trong dòng chảy văn bản — không tách khối riêng
 const realizationTruth = {
-  prefix: "Trong khoảnh khắc đó, mình nhìn ra một sự thật: Đây không phải là một biến cố ngẫu nhiên. ",
+  prefix: "Trong khoảnh khắc đó, mình chợt nhìn ra một sự thật: Đây không phải là một biến cố ngẫu nhiên. ",
   highlight: "Đây là một vòng lặp.",
 };
 
