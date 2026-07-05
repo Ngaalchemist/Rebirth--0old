@@ -1,4 +1,5 @@
 import { Redis } from "@upstash/redis";
+import { sendConversionEvent } from "./_fb-conversions.js";
 
 // Vercel Marketplace (Upstash) bơm biến môi trường dưới tên KV_REST_API_URL / KV_REST_API_TOKEN.
 // Tài khoản Upstash gốc dùng tên UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN.
@@ -78,6 +79,22 @@ export default async function handler(req, res) {
       email: email || "",
       orderCode: code,
       paid: false,
+    });
+
+    // Theo hướng dẫn: ghi nhận Purchase ngay khi khách điền form xong (chưa đợi
+    // xác nhận chuyển khoản), để Facebook có đủ dữ liệu Purchase sớm hơn.
+    // eventId trùng với sự kiện Pixel cùng tên gửi từ trình duyệt
+    // (RegistrationSection.tsx) để Meta khớp, không đếm trùng.
+    await sendConversionEvent({
+      eventName: "Purchase",
+      eventId: `purchase_${code}`,
+      customer: { email, phone },
+      customData: {
+        value: AMOUNT,
+        currency: "VND",
+        content_name: "REBIRTH - 7 Ngày Thoát Khỏi Nỗi Sợ Bị Bỏ Rơi & Lấy Lại Giá Trị Bản Thân",
+      },
+      req,
     });
 
     const qrUrl = `https://qr.sepay.vn/img?acc=${ACCOUNT_NO}&bank=MSB&amount=${AMOUNT}&des=${encodeURIComponent(code)}`;
