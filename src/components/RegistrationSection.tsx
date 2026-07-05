@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck, Zap, HeartHandshake, RefreshCw, Loader2, CheckCircle2, Copy, Check } from "lucide-react";
+import { trackPixelEvent } from "@/lib/pixel";
 
 type Step = "form" | "loading" | "qr" | "processing" | "paid" | "error";
 
@@ -47,6 +48,19 @@ export function RegistrationSection() {
       const data: OrderInfo = await res.json();
       setOrder(data);
       setStep("qr");
+
+      // Theo hướng dẫn: ghi nhận sự kiện Purchase ngay khi khách điền form xong
+      // (chưa đợi xác nhận chuyển khoản), giúp Facebook có đủ dữ liệu Purchase
+      // sớm hơn để thoát learning phase nhanh hơn trong giai đoạn đầu chạy quảng cáo.
+      trackPixelEvent(
+        "Purchase",
+        {
+          value: data.amount,
+          currency: "VND",
+          content_name: "REBIRTH - 7 Ngày Thoát Khỏi Nỗi Sợ Bị Bỏ Rơi",
+        },
+        `purchase_${data.code}`
+      );
 
       pollRef.current = setInterval(async () => {
         try {
