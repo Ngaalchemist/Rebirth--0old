@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "24.x"
+  "engines": {
+    "node": "24.x"
   },
   "scripts": {
     "dev": "vite --config vite.config.ts --host 0.0.0.0",
