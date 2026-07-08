@@ -272,9 +272,9 @@ export function HeroSection() {
           >
             Thế giới chỉ bắt đầu bỏ rơi bạn,
             <br />
-            sau khi bạn đã hoàn thành
+            sau khi bạn đã hoàn thành việc
             <br />
-            việc tự bỏ rơi chính mình.
+            tự bỏ rơi chính mình.
           </p>
           <div
             className="mt-2.5 ml-auto w-7 h-px"
