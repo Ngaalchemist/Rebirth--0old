@@ -270,11 +270,11 @@ export function HeroSection() {
               whiteSpace: "nowrap",
             }}
           >
-            Bạn không đau vì họ rời đi.
+            Thế giới chỉ bắt đầu bỏ rơi bạn,
             <br />
-            Bạn đau vì họ chạm vào nơi
+            sau khi bạn đã hoàn thành
             <br />
-            chưa từng được chữa lành.
+            việc tự bỏ rơi chính mình.
           </p>
           <div
             className="mt-2.5 ml-auto w-7 h-px"
