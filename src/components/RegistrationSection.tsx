@@ -48,7 +48,7 @@ export function RegistrationSection() {
       setOrder(data);
       setStep("qr");
 
-      // Ghi nhận sự kiện Purchase chuẩn của Meta Pixel ngay khi điền form thành công
+      // 1. Ghi nhận sự kiện Purchase ngay khi điền form thành công (chờ quét mã)
       if (typeof window !== "undefined" && (window as any).fbq) {
         (window as any).fbq("track", "Purchase", {
           value: data.amount,
@@ -66,6 +66,16 @@ export function RegistrationSection() {
           if (checkData.status === "paid") {
             if (pollRef.current) clearInterval(pollRef.current);
             setStep("paid");
+
+            // 2. KÍCH HOẠT KHI MÀN HÌNH CẢM ƠN XUẤT HIỆN (ĐÃ NHẬN ĐƯỢC TIỀN)
+            if (typeof window !== "undefined" && (window as any).fbq) {
+              (window as any).fbq("track", "CompleteRegistration", {
+                value: data.amount,
+                currency: "VND",
+                content_name: "REBIRTH - Xác Nhận Chuyển Khoản Thành Công"
+              });
+            }
+
           } else if (checkData.status === "processing") {
             setStep("processing");
           }
