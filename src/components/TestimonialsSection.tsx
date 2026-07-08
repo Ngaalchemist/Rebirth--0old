@@ -48,7 +48,7 @@ export function TestimonialsSection() {
             Những chia sẻ thật từ phụ nữ đã làm việc cùng tôi
           </h2>
           <p className="text-gray-300 text-sm max-w-xl mx-auto">
-            Đây là khóa học mới được xây dựng từ kinh nghiệm đồng hành thực tế với nhiều phụ nữ trong quá trình thôi miên chữa lành và chuyển hóa cảm xúc.
+            Rebirth là khóa học được chắt lọc trực tiếp từ những gì mình đã áp dụng thành công trong các phiên 1:1 dưới đây — cùng một hệ thống, cùng một lộ trình gốc → ngọn, chỉ khác là bạn tự đi qua nó theo tốc độ của riêng mình, có audio và bài tập dẫn dắt từng bước thay cho việc ngồi cùng mình trực tiếp.
           </p>
         </motion.div>
 
