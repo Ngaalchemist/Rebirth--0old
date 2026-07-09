@@ -22,21 +22,17 @@ const GOLD = "#E8C96A";
 const features = [
   {
     icon: Compass,
-    title: "Gọi đúng tên mô thức khiến bạn cứ yêu là lặp lại một kiểu tổn thương",
+    title: "Hiểu vì sao mình cứ yêu là lặp lại một kiểu đau",
   },
   {
     icon: BellOff,
-    title: "Không còn tim đập loạn, check điện thoại liên tục khi họ chỉ chậm nhắn tin",
+    title: "Ngừng lo lắng, ngừng kiểm tra điện thoại liên tục",
   },
   {
     icon: ShieldCheck,
-    title: "Bước vào mối quan hệ tiếp theo mà không mang theo nỗi sợ cũ",
+    title: "Học cách yêu mà không đánh mất chính mình",
   },
-  {
-    icon: Users2,
-    title: "Ngừng cố gắng đến kiệt sức chỉ để đổi lấy một chỗ ở lại",
-  },
-];
+ ];
 
 const trust = [
   { icon: Monitor, label: "Học online" },
@@ -106,7 +102,7 @@ export function HeroSection() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.6)",
                 }}
               >
-                Tại sao những người
+                Vì sao bạn luôn là
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
@@ -119,7 +115,7 @@ export function HeroSection() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.6)",
                 }}
               >
-                từng rất yêu bạn...
+                người cố gắng nhiều nhất...
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
@@ -133,7 +129,7 @@ export function HeroSection() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.6)",
                 }}
               >
-                cuối cùng lại trở nên
+                nhưng lại luôn là người
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
@@ -147,7 +143,7 @@ export function HeroSection() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.6)",
                 }}
               >
-                lạnh nhạt?
+                bị bỏ lại?
               </motion.span>
             </h1>
 
@@ -164,9 +160,9 @@ export function HeroSection() {
                 fontStyle: "italic",
               }}
             >
-              Nếu kết cục này cứ lặp lại, có thể vấn đề không nằm ở họ. Mà nằm ở
+              Không phải vì bạn chưa đủ tốt. Mà vì bạn đang lặp lại một kiểu tổn thương cũ -              
               <br />
-              nỗi sợ bị bỏ rơi chưa được chữa lành trong bạn.
+              mà không biết cách nào để dừng lại.
             </motion.p>
 
             {/* Sub headline 2 — "Khóa học online 7 ngày" highlighted gold */}
@@ -182,11 +178,9 @@ export function HeroSection() {
               }}
             >
               <span className="font-semibold" style={{ color: GOLD }}>
-                Khóa học online 7 ngày
+                Rebirth là khóa học online 7 ngày,
               </span>{" "}
-              giúp bạn nhận diện gốc rễ nỗi sợ bị bỏ rơi, phá vỡ
-              <br />
-              những mô thức cũ và xây dựng cảm giác đủ đầy từ bên trong.
+              giúp bạn:
             </motion.p>
 
             {/* Feature row — icon inline with text, compact height */}
