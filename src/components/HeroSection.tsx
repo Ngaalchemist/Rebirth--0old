@@ -183,23 +183,22 @@ export function HeroSection() {
               giúp bạn:
             </motion.p>
 
-            {/* Feature row — icon inline with text, compact height */}
+            {/* Feature row — mỗi bullet chiếm trọn 1 dòng, kéo dài hết chiều rộng cột hero, không xuống dòng */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6 }}
-              className="grid grid-cols-2 gap-x-6 gap-y-3 mb-7 max-w-2xl" 
+              className="flex flex-col gap-3 mb-7 w-full"
             >
               {features.map((f, i) => (
-                <div key={i} className="flex items-start gap-2.5">
+                <div key={i} className="flex items-center gap-2.5 w-full">
                   <div
-                    className="w-7 h-7 rounded-full flex items-center justify-center border shrink-0 mt-0.5"
+                    className="w-7 h-7 rounded-full flex items-center justify-center border shrink-0"
                     style={{ borderColor: "rgba(232,201,106,0.45)" }}
                   >
                     <f.icon className="w-3.5 h-3.5" style={{ color: GOLD }} />
                   </div>
-                  {/* Tăng max-w ở dòng số 2 để ép text "Không còn tim đập loạn..." hiển thị gọn gàng trong 2 dòng */}
-                  <p className="text-[12.5px] leading-snug text-gray-100 max-w-[240px] md:max-w-[280px]">
+                  <p className="text-[12.5px] sm:text-sm leading-snug text-gray-100 whitespace-nowrap">
                     {f.title}
                   </p>
                 </div>
