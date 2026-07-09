@@ -1,88 +1,88 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { X, Check } from "lucide-react";
 
 const rows = [
   {
-    before: "Thức dậy là check điện thoại xem họ có nhắn tin không",
-    after: "Thức dậy với sự bình an, tự kết nối với chính mình trước",
+    before: "Thức dậy là kiểm tra điện thoại xem người ta có nhắn gì không",
+    after: "Thức dậy thấy bình an, không cần chờ tin nhắn của ai",
   },
   {
-    before: "Cảm giác tội lỗi và lo sợ khi không làm hài lòng người khác",
-    after: 'Chạm vào trạng thái "Tôi là đủ". Biết nói "không" mà không bất an',
+    before: "Sợ làm người khác thất vọng, luôn cố gắng làm hài lòng",
+    after: 'Biết nói "không" mà không thấy tội lỗi',
   },
   {
-    before: 'Luôn thấy mình là "lựa chọn phụ" của ai đó',
-    after: "Thu hồi quyền lực nội tâm. Trở thành bến đỗ của chính mình",
+    before: "Luôn thấy mình là lựa chọn phụ của ai đó",
+    after: "Biết rõ giá trị của mình không phụ thuộc vào người khác",
   },
   {
-    before: "Hiểu hết lý thuyết chữa lành nhưng vẫn không thoát ra được",
-    after: "Hệ thống vận hành ở tầng tiềm thức, không tốn ý chí để duy trì",
+    before: "Hiểu hết lý thuyết chữa lành nhưng vẫn lặp lại y như cũ",
+    after: "Có công cụ thực hành cụ thể, áp dụng ngay được mỗi ngày",
   },
   {
     before: "Sợ cô đơn và sợ sự im lặng",
-    after: "Bình an với chính mình. Biết rõ giá trị bản thân không nằm ở người khác",
+    after: "Thấy ổn khi ở một mình, không cần ai lấp đầy khoảng trống",
   },
 ];
 
 export function TransformationSection() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
+    <section className="py-24 bg-[#1a0a2e] relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 right-1/4 w-[500px] h-[400px] rounded-full bg-violet-800/20 blur-[120px]" />
+      </div>
+
+      <div className="container mx-auto px-4 lg:px-8 max-w-4xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-14"
         >
-          <h2 className="text-2xl md:text-4xl font-bold font-serif text-gray-900">
-            SAU 7 NGÀY, BẠN SẼ THAY ĐỔI NHƯ THẾ NÀO?
+          <h2 className="text-2xl md:text-4xl font-bold font-serif text-white">
+            SAU 7 NGÀY, BẠN SẼ KHÁC{" "}
+            <span className="text-[#F5D78E]">NHƯ THẾ NÀO?</span>
           </h2>
         </motion.div>
 
         {/* Column headers */}
-        <div className="grid grid-cols-2 gap-0 mb-3">
-          <div className="px-5 py-3 text-center">
-            <span className="text-sm md:text-base font-bold tracking-[0.12em] uppercase text-gray-400">Trước hành trình</span>
+        <div className="grid grid-cols-2 gap-4 mb-4 px-1">
+          <div className="flex items-center gap-2 justify-center md:justify-start">
+            <div className="w-6 h-6 rounded-full bg-gray-600 flex items-center justify-center flex-shrink-0">
+              <X className="w-3.5 h-3.5 text-white" />
+            </div>
+            <span className="text-gray-400 text-xs md:text-sm font-bold tracking-widest uppercase">
+              Trước hành trình
+            </span>
           </div>
-          <div className="px-5 py-3 text-center">
-            <span className="text-sm md:text-base font-extrabold tracking-[0.12em] uppercase text-violet-700">
-              ✦ Sau hành trình ✦
+          <div className="flex items-center gap-2 justify-center md:justify-start">
+            <div className="w-6 h-6 rounded-full bg-[#C9A84C] flex items-center justify-center flex-shrink-0">
+              <Check className="w-3.5 h-3.5 text-[#140728]" />
+            </div>
+            <span className="text-[#F5D78E] text-xs md:text-sm font-bold tracking-widest uppercase">
+              Sau hành trình
             </span>
           </div>
         </div>
 
-        <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
-          {rows.map((t, i) => (
+        <div className="space-y-3">
+          {rows.map((r, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.07 }}
-              className={`grid grid-cols-2 ${i < rows.length - 1 ? "border-b border-gray-200" : ""} group hover:bg-violet-50/60 transition-colors`}
+              transition={{ delay: i * 0.06 }}
+              className="grid grid-cols-2 gap-4 bg-white/[0.04] border border-white/10 rounded-xl overflow-hidden"
             >
-              <div className="bg-gray-50 px-5 py-5 flex items-center border-r border-gray-200 group-hover:bg-transparent transition-colors">
-                <p className="text-sm md:text-base text-gray-500 leading-relaxed">{t.before}</p>
+              <div className="p-4 md:p-5 border-r border-white/10">
+                <p className="text-gray-400 text-sm md:text-base leading-relaxed">{r.before}</p>
               </div>
-              <motion.div
-                className="bg-violet-50 px-5 py-5 flex items-center gap-3 group-hover:bg-violet-100/70 transition-colors"
-                whileHover={{ x: 2 }}
-              >
-                <ArrowRight className="w-4 h-4 text-violet-600 flex-shrink-0" />
-                <p className="text-sm md:text-base text-gray-900 leading-relaxed font-medium">{t.after}</p>
-              </motion.div>
+              <div className="p-4 md:p-5">
+                <p className="text-gray-100 text-sm md:text-base leading-relaxed">{r.after}</p>
+              </div>
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-gray-900 font-serif font-bold text-xl md:text-2xl lg:text-3xl leading-snug max-w-3xl mx-auto mt-12"
-        >
-          Với Nga Alchemist, việc thay đổi <span className="text-violet-800">"danh tính nội tâm"</span> — từ <span className="text-gray-500">"người bị bỏ rơi"</span> sang <span className="text-violet-800">"người biết chọn chính mình"</span> — chính là thay đổi bản thiết kế gốc trong tiềm thức, để thay đổi toàn bộ thực tại bên ngoài.
-        </motion.p>
       </div>
     </section>
   );
