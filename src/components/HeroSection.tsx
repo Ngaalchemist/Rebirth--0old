@@ -102,7 +102,7 @@ export function HeroSection() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.6)",
                 }}
               >
-                Vì sao bạn luôn là
+                Vì sao bạn luôn là người
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
@@ -115,7 +115,7 @@ export function HeroSection() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.6)",
                 }}
               >
-                người cố gắng nhiều nhất...
+                cố gắng nhiều nhất...
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
@@ -129,7 +129,7 @@ export function HeroSection() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.6)",
                 }}
               >
-                nhưng lại luôn là người
+                nhưng lại là người
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 24 }}
@@ -160,9 +160,9 @@ export function HeroSection() {
                 fontStyle: "italic",
               }}
             >
-              Không phải vì bạn chưa đủ tốt. Mà vì bạn đang lặp lại một kiểu tổn thương cũ -              
+              Không phải vì bạn chưa đủ tốt. Mà vì bạn đang lặp lại một kiểu tổn thương cũ mà không biết cách nào để dừng lại              
               <br />
-              mà không biết cách nào để dừng lại.
+          
             </motion.p>
 
             {/* Sub headline 2 — "Khóa học online 7 ngày" highlighted gold */}
