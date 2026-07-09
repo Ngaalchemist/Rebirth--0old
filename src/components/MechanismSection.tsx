@@ -1,20 +1,21 @@
 import { motion } from "framer-motion";
+import { Heart, Repeat, ShieldAlert } from "lucide-react";
 
-const codes = [
+const reasons = [
   {
-    icon: "🔮",
-    title: "Mật mã 1. Tấm gương tiềm thức",
-    desc: "Sự im lặng, phản bội hay coi thường từ đối phương thực chất không phải do họ tự nhiên tàn nhẫn. Đó chỉ là hình ảnh phản chiếu chính xác việc bạn đã tự khinh rẻ và tự bỏ rơi chính mình trước đó.",
+    icon: Heart,
+    title: "Bạn chọn ai để yêu",
+    desc: "Bạn dễ bị thu hút bởi người khiến bạn phải cố gắng mới có được — vì điều đó quen thuộc với bạn.",
   },
   {
-    icon: "📻",
-    title: "Mật mã 2. Định luật đồng tần số",
-    desc: 'Khi tần số cốt lõi bên trong của bạn phát ra là "Tôi không đủ tốt, Tôi sợ bị bỏ rơi", bạn sẽ tự động hút về những con người có xu hướng phớt lờ bạn. Đối phương chỉ là tiếng vọng từ vết thương của bạn.',
+    icon: Repeat,
+    title: "Bạn cư xử thế nào trong mối quan hệ",
+    desc: "Bạn nhịn, bạn hạ thấp tiêu chuẩn, bạn sợ mất nên càng cố giữ — dù điều đó khiến bạn kiệt sức.",
   },
   {
-    icon: "📊",
-    title: "Mật mã 3. Dữ liệu phản hồi (Feedback)",
-    desc: 'Người làm bạn tổn thương không xuất hiện để dìm bạn xuống đáy. Họ chỉ là một "dữ liệu phản hồi" trung thực, phơi bày phần tổn thương bạn đang phớt lờ, buộc bạn phải thức tỉnh để thu hồi lại giá trị của chính mình.',
+    icon: ShieldAlert,
+    title: "Bạn phản ứng ra sao khi bị tổn thương",
+    desc: "Bạn tự trách mình trước, thay vì bảo vệ mình — vì đó là phản xạ đã hình thành từ rất lâu.",
   },
 ];
 
@@ -31,10 +32,10 @@ export function MechanismSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-10"
+          className="text-center mb-8"
         >
           <h2 className="font-serif font-bold text-2xl md:text-4xl text-[#F5D78E] leading-tight">
-            BÍ MẬT CỦA SỰ CHUYỂN HÓA
+            TẠI SAO NÓ CỨ LẶP LẠI?
           </h2>
         </motion.div>
 
@@ -42,19 +43,20 @@ export function MechanismSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center text-gray-200 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-6"
+          className="text-center text-gray-200 text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-4"
         >
-          Nhờ hành trình đi xuyên qua bóng tối đó, mình nhận ra một sự thật mà không ai từng dạy chúng ta.
+          Bạn không "kém may mắn". Và người ta không phải "tự nhiên tàn nhẫn".
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.97 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="border-y-2 border-[#C9A84C]/40 py-8 px-4 max-w-3xl mx-auto mb-12"
+          className="border-y-2 border-[#C9A84C]/40 py-7 px-4 max-w-2xl mx-auto mb-12"
         >
-          <p className="font-serif text-lg md:text-2xl text-[#F5D78E] leading-relaxed text-center italic">
-            "Thế giới không đối xử với bạn theo cách bạn muốn. Nó đối xử với bạn theo đúng cách bạn đang đối xử với chính mình."
+          <p className="font-serif text-lg md:text-xl text-[#F5D78E] leading-relaxed text-center">
+            Sự thật đơn giản là: từ nhỏ đến giờ, có một phần trong bạn đã học rằng —{" "}
+            <span className="italic">muốn được yêu, phải cố gắng, phải nhịn, phải xứng đáng mới được ở lại.</span>
           </p>
         </motion.div>
 
@@ -64,11 +66,11 @@ export function MechanismSection() {
           viewport={{ once: true }}
           className="text-center text-white font-medium text-base md:text-lg max-w-2xl mx-auto mb-10"
         >
-          Để hiểu vì sao bạn càng hy sinh thì đối phương lại càng khinh thường, bạn phải nhìn thấu 3 mật mã vận hành của Tiềm thức.
+          Niềm tin đó không xuất hiện ngẫu nhiên. Nó âm thầm điều khiển 3 điều:
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-5 mb-12">
-          {codes.map((c, i) => (
+          {reasons.map((r, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 25 }}
@@ -77,33 +79,24 @@ export function MechanismSection() {
               transition={{ delay: i * 0.12 }}
               className="bg-white/5 border border-[#C9A84C]/25 rounded-2xl p-7 hover:border-[#C9A84C]/60 hover:bg-white/[0.07] hover:-translate-y-1 transition-all"
             >
-              <div className="text-5xl mb-4">{c.icon}</div>
-              <h3 className="font-serif font-bold text-[#F5D78E] text-lg md:text-xl mb-3">{c.title}</h3>
-              <p className="text-sm md:text-base text-gray-200 leading-relaxed">{c.desc}</p>
+              <div className="w-12 h-12 rounded-full bg-[#C9A84C]/15 border border-[#C9A84C]/40 flex items-center justify-center mb-5">
+                <r.icon className="w-6 h-6 text-[#F5D78E]" />
+              </div>
+              <h3 className="font-serif font-bold text-[#F5D78E] text-lg md:text-xl mb-3">{r.title}</h3>
+              <p className="text-sm md:text-base text-gray-200 leading-relaxed">{r.desc}</p>
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center text-white font-bold text-xl md:text-2xl font-serif max-w-3xl mx-auto mb-10"
-        >
-          Không có gì xảy ra bên ngoài mà không bắt nguồn từ một rung động bên trong.
-        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white/5 border border-[#C9A84C]/25 rounded-2xl p-8 max-w-3xl mx-auto"
+          className="bg-white/5 border border-[#C9A84C]/25 rounded-2xl p-8 max-w-2xl mx-auto text-center"
         >
-          <p className="text-gray-100 text-base md:text-1g leading-[1.8] text-center">
-            Hãy nhớ rằng, mọi thứ bên ngoài chỉ là "tấm gương phản chiếu" thế giới nội tâm của bạn. Nếu muốn người trong gương mỉm cười, bạn phải mỉm cười trước.
-             <br />
-            Tương tự, muốn thay đổi kết quả trong cuộc sống, trước tiên hãy thay đổi chính mình từ bên trong. Nói cách khác, hãy thay đổi{" "}
-            <span className="text-[#F5D78E] font-bold">"Danh tính nội tâm"</span> của bạn, bởi thế giới bên ngoài chỉ đang phản chiếu lại con người mà bạn đang là.
+          <p className="font-serif font-bold text-white text-xl md:text-2xl leading-snug">
+            Tin tốt: đây là một mô thức <span className="text-[#F5D78E]">học được</span> — nên nó cũng{" "}
+            <span className="text-[#F5D78E]">học lại được</span>.
           </p>
         </motion.div>
       </div>
