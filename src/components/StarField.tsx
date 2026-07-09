@@ -1,95 +1,52 @@
-import React, { useEffect, useRef } from "react";
+import { useMemo } from "react";
 
-export function StarField() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+interface StarFieldProps {
+  count?: number;
+  className?: string;
+}
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    let animationFrameId: number;
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener("resize", resizeCanvas);
-    resizeCanvas();
-
-    const stars = Array.from({ length: 150 }).map(() => ({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      radius: Math.random() * 1.5,
-      alpha: Math.random(),
-      velocity: (Math.random() - 0.5) * 0.02,
-    }));
-
-    const supernovas = Array.from({ length: 4 }).map(() => ({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      radius: Math.random() * 3 + 1,
-      alpha: Math.random(),
-      velocity: (Math.random() - 0.5) * 0.01,
-      glow: Math.random() * 10,
-      glowVelocity: 0.1,
-    }));
-
-    const render = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      // Draw normal stars
-      stars.forEach((star) => {
-        star.alpha += star.velocity;
-        if (star.alpha <= 0 || star.alpha >= 1) {
-          star.velocity = -star.velocity;
-        }
-
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
-        ctx.fill();
-      });
-
-      // Draw supernovas
-      supernovas.forEach((star) => {
-        star.alpha += star.velocity;
-        star.glow += star.glowVelocity;
-
-        if (star.alpha <= 0.2 || star.alpha >= 1) {
-          star.velocity = -star.velocity;
-        }
-        if (star.glow <= 5 || star.glow >= 20) {
-          star.glowVelocity = -star.glowVelocity;
-        }
-
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(201, 168, 76, ${star.alpha})`;
-        ctx.shadowBlur = star.glow;
-        ctx.shadowColor = "rgba(201, 168, 76, 1)";
-        ctx.fill();
-        ctx.shadowBlur = 0; // Reset shadow blur
-      });
-
-      animationFrameId = requestAnimationFrame(render);
-    };
-
-    render();
-
-    return () => {
-      window.removeEventListener("resize", resizeCanvas);
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
+/**
+ * Lớp nền "sao lấp lánh" trang trí cho các section nền tối (#140728, #1a0a2e...).
+ * Thuần CSS, không ảnh nặng — đặt absolute inset-0 phía sau nội dung section.
+ * Dùng: <section className="relative ..."><StarField /><div className="relative z-10">...</div></section>
+ */
+export function StarField({ count = 60, className = "" }: StarFieldProps) {
+  const stars = useMemo(
+    () =>
+      Array.from({ length: count }).map((_, i) => ({
+        id: i,
+        top: Math.random() * 100,
+        left: Math.random() * 100,
+        size: Math.random() * 1.6 + 0.6,
+        delay: Math.random() * 4,
+        duration: Math.random() * 3 + 2.5,
+        opacity: Math.random() * 0.5 + 0.25,
+      })),
+    [count]
+  );
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="fixed inset-0 pointer-events-none z-[-1] opacity-60"
-    />
+    <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`} aria-hidden="true">
+      {stars.map((s) => (
+        <span
+          key={s.id}
+          className="absolute rounded-full bg-[#F5D78E]"
+          style={{
+            top: `${s.top}%`,
+            left: `${s.left}%`,
+            width: `${s.size}px`,
+            height: `${s.size}px`,
+            opacity: s.opacity,
+            animation: `star-twinkle ${s.duration}s ease-in-out ${s.delay}s infinite`,
+          }}
+        />
+      ))}
+      <style>{`
+        @keyframes star-twinkle {
+          0%, 100% { opacity: 0.15; transform: scale(0.85); }
+          50% { opacity: 0.7; transform: scale(1.15); }
+        }
+      `}</style>
+    </div>
   );
 }
