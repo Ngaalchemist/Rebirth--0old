@@ -78,12 +78,11 @@ export function ProblemSection() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C9A84C]/20 border border-[#C9A84C]/40 mb-5">
               <AlertTriangle className="w-4 h-4 text-[#C9A84C]" />
               <span className="text-[#C9A84C] text-xs font-bold tracking-[0.2em] uppercase">
-                Nếu đúng
+               Nếu bạn vừa gật đầu nhiều hơn một lần, đừng vội nghĩ mình "yếu đuối"
               </span>
             </div>
             <p className="text-gray-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              Vấn đề không nằm ở việc người ta chọn sai. Vấn đề là có một mô thức cũ trong bạn đang
-              lặp lại — và nó có thể học cách dừng lại.
+              Có thể bạn chỉ đang lặp lại một cách yêu đã hình thành từ rất lâu. Và điều đã được học thì cũng có thể học lại.
             </p>
           </motion.div>
         </div>
