@@ -162,7 +162,7 @@ export function HeroSection() {
             >
               Không phải vì bạn chưa đủ tốt.  
               <br />
-             Có thể chỉ là bạn đang lặp lại một cách phản ứng trong tình yêu đã khiến mình tổn thương hết lần này đến lần khác — mà chưa biết làm sao để dừng lại.              
+             Có thể chỉ là bạn đang lặp lại một cách phản ứng trong tình yêu khiến mình luôn là người lo lắng, chờ đợi và cố gắng nhiều hơn người kia.              
               <br />
           
             </motion.p>
