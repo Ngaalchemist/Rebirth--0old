@@ -49,7 +49,7 @@ export function ProblemSection() {
               Có phải bạn cũng đang sống như thế này?
             </h3>
             <p className="text-gray-600 text-base md:text-lg">
-              Đọc 5 dòng dưới đây. Nếu thấy mình trong ít nhất 3 dòng — khóa học này dành cho bạn.
+              Đọc 5 dòng dưới đây. Nếu bạn thấy mình trong từ 3 điều trở lên, rất có thể bạn đang mắc kẹt trong một vòng lặp mà mình chưa từng gọi tên.
             </p>
           </motion.div>
 
