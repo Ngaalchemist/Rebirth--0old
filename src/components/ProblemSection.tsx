@@ -5,10 +5,10 @@ import windowGirlImg from "@/assets/images/problem-window.jpg";
 
 const checklist = [
   "Thức dậy là kiểm tra điện thoại xem người ta có nhắn gì không",
-  "Họ chỉ cần im lặng vài tiếng là bạn bắt đầu nghĩ đủ chuyện",
-  "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi trước",
-  "Mối quan hệ nào cũng kết thúc giống nhau, dù người khác nhau",
-  "Bạn mạnh mẽ trước mặt người khác, nhưng về nhà lại thấy trống rỗng và mệt mỏi",
+  "Chỉ cần họ im lặng vài tiếng, bạn bắt đầu tưởng tượng đủ mọi kịch bản",
+  "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi và người cố giữ mối quan hệ",
+  "Dù yêu ai, kết thúc vẫn giống nhau: bạn là người bị bỏ lại",
+  "Bên ngoài mạnh mẽ, nhưng khi ở một mình lại thấy trống rỗng và kiệt sức",
 ];
 
 export function ProblemSection() {
