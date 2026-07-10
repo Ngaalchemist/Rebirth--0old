@@ -86,7 +86,7 @@ export function HeroSection() {
               className="text-xs lg:text-sm font-bold tracking-[0.16em] uppercase mb-4"
               style={{ color: GOLD, textShadow: "0 1px 6px rgba(20,7,40,0.9)" }}
             >
-              Rebirth - 7 Ngày Thoát Khỏi Nỗi Sợ Bị Bỏ Rơi
+              Rebirth | 7 Ngày Thoát Khỏi Nỗi Sợ Bị Bỏ Rơi
             </motion.p>
 
             {/* Headline — big, bold, white + gold last lines */}
