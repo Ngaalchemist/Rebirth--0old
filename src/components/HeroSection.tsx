@@ -22,7 +22,7 @@ const GOLD = "#E8C96A";
 const features = [
   {
     icon: Compass,
-    title: "Nhìn ra vì sao mình cứ lặp lại cùng một kiểu đau trong tình yêu.",
+    title: "Nhìn ra vì sao mình cứ lặp lại cùng một kiểu mối quan hệ khiến mình tổn thương.",
   },
   {
     icon: BellOff,
@@ -160,9 +160,9 @@ export function HeroSection() {
                 fontStyle: "italic",
               }}
             >
-              Không phải vì bạn chưa đủ tốt. 
+              Không phải vì bạn chưa đủ tốt.  
               <br />
-              Có thể chỉ là bạn đang lặp lại một cách yêu đã khiến mình tổn thương nhiều lần mà chưa biết làm sao để dừng lại.              
+             Có thể chỉ là bạn đang lặp lại một cách phản ứng trong tình yêu đã khiến mình tổn thương hết lần này đến lần khác — mà chưa biết làm sao để dừng lại.              
               <br />
           
             </motion.p>
