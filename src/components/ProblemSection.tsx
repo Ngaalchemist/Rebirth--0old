@@ -7,7 +7,7 @@ const checklist = [
   "Thức dậy là kiểm tra điện thoại xem người ta có nhắn gì không",
   "Họ chỉ cần im lặng vài tiếng là bạn bắt đầu nghĩ đủ chuyện",
   "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi trước",
-  "Mối quan hệ nào cũng kết thúc giống nhau — dù người khác nhau",
+  "Mối quan hệ nào cũng kết thúc giống nhau, dù người khác nhau",
   "Bạn mạnh mẽ trước mặt người khác, nhưng về nhà lại thấy trống rỗng và mệt mỏi",
 ];
 
