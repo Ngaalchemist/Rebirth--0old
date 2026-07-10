@@ -4,10 +4,10 @@ import phoneGirlImg from "@/assets/images/problem-phone.jpg";
 import windowGirlImg from "@/assets/images/problem-window.jpg";
 
 const checklist = [
-  "Thức dậy là kiểm tra điện thoại xem người ta có nhắn gì không",
+  "Thức dậy là bạn kiểm tra điện thoại xem người ta có nhắn gì không",
   "Chỉ cần họ im lặng vài tiếng, bạn bắt đầu tưởng tượng đủ mọi kịch bản",
   "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi và người cố giữ mối quan hệ",
-  "Dù yêu ai, kết thúc vẫn giống nhau: bạn là người bị bỏ lại hoặc bị lừa dối",
+  "Mối quan hệ nào cũng kết thúc giống nhau — dù người khác nhau",
   "Bên ngoài mạnh mẽ, nhưng khi ở một mình lại thấy trống rỗng và kiệt sức",
 ];
 
@@ -83,7 +83,7 @@ export function ProblemSection() {
               </span>
             </div>
             <p className="text-gray-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              Có thể bạn chỉ đang lặp lại một cách yêu đã hình thành từ rất lâu. Và điều đã được học thì cũng có thể học lại.
+              Có thể bạn chỉ đang phản ứng theo một mô thức đã hình thành từ rất lâu. Và điều đã được học thì cũng có thể học lại.
             </p>
           </motion.div>
         </div>
