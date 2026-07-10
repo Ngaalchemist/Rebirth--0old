@@ -22,15 +22,15 @@ const GOLD = "#E8C96A";
 const features = [
   {
     icon: Compass,
-    title: "Nhìn ra vì sao mình cứ lặp lại cùng một kiểu mối quan hệ khiến mình tổn thương.",
+    title: "Hiểu vì sao mình cứ lặp lại cùng một kiểu mối quan hệ khiến bản thân tổn thương.",
   },
   {
     icon: BellOff,
-    title: "Ngừng lo lắng, ngừng kiểm tra điện thoại liên tục",
+    title: "Không còn hoảng loạn chỉ vì một tin nhắn đến chậm hay một cuộc gọi không được trả lời",
   },
   {
     icon: ShieldCheck,
-    title: "Học cách yêu mà không đánh mất chính mình",
+    title: "Học cách yêu mà không phải đánh đổi lòng tự trọng hay đánh mất chính mình",
   },
  ];
 
