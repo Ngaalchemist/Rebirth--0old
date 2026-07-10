@@ -5,10 +5,10 @@ import windowGirlImg from "@/assets/images/problem-window.jpg";
 
 const checklist = [
   "Thức dậy là kiểm tra điện thoại xem người ta có nhắn gì không",
-  "Chỉ cần họ im lặng vài tiếng, bạn bắt đầu tưởng tượng đủ mọi kịch bản",
-  "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi và người cố giữ mối quan hệ",
-  "Dù yêu ai, kết thúc vẫn giống nhau: bạn là người bị bỏ lại",
-  "Bên ngoài mạnh mẽ, nhưng khi ở một mình lại thấy trống rỗng và kiệt sức",
+  "Họ chỉ cần im lặng vài tiếng là bạn bắt đầu nghĩ đủ chuyện",
+  "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi trước",
+  "Mối quan hệ nào cũng kết thúc giống nhau — dù người khác nhau",
+  "Bạn mạnh mẽ trước mặt người khác, nhưng về nhà lại thấy trống rỗng và mệt mỏi",
 ];
 
 export function ProblemSection() {
@@ -45,10 +45,11 @@ export function ProblemSection() {
             viewport={{ once: true }}
             className="text-center mb-10"
           >
-          
+            <h3 className="font-serif font-bold text-2xl md:text-3xl text-violet-900 mb-3">
+              Có phải bạn cũng đang sống như thế này?
             </h3>
             <p className="text-gray-600 text-base md:text-lg">
-              Nếu bạn gật đầu với từ 3 điều trở lên dưới đây, rất có thể điều khiến bạn đau không phải là mối quan hệ hiện tại - mà là một mô thức đã theo bạn từ rất lâu..
+              Đọc 5 dòng dưới đây. Nếu thấy mình trong ít nhất 3 dòng — khóa học này dành cho bạn.
             </p>
           </motion.div>
 
@@ -78,11 +79,12 @@ export function ProblemSection() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C9A84C]/20 border border-[#C9A84C]/40 mb-5">
               <AlertTriangle className="w-4 h-4 text-[#C9A84C]" />
               <span className="text-[#C9A84C] text-xs font-bold tracking-[0.2em] uppercase">
-               Nếu bạn vừa gật đầu nhiều hơn một lần, đừng vội nghĩ mình "yếu đuối"
+                Nếu đúng
               </span>
             </div>
             <p className="text-gray-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              Có thể bạn chỉ đang lặp lại một cách yêu đã hình thành từ rất lâu. Và điều đã được học thì cũng có thể học lại.
+              Vấn đề không nằm ở việc người ta chọn sai. Vấn đề là có một mô thức cũ trong bạn đang
+              lặp lại — và nó có thể học cách dừng lại.
             </p>
           </motion.div>
         </div>
