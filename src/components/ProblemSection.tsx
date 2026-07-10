@@ -30,9 +30,7 @@ export function ProblemSection() {
             className="flex flex-col justify-center px-8 py-16 lg:pl-10 lg:pr-16"
           >
             <h2 className="font-serif font-bold text-xl md:text-2xl lg:text-[2.2rem] text-white leading-[1.18]">
-              Vì sao bạn luôn là người{" "}
-              <span className="text-[#E8C96A]">cố gắng nhiều nhất</span>, nhưng lại là người{" "}
-              <span className="text-[#E8C96A]">bị bỏ lại?</span>
+              Có phải bạn cũng đang sống như thế này?
             </h2>
           </motion.div>
         </div>
