@@ -45,11 +45,10 @@ export function ProblemSection() {
             viewport={{ once: true }}
             className="text-center mb-10"
           >
-            <h3 className="font-serif font-bold text-2xl md:text-3xl text-violet-900 mb-3">
-              Có phải bạn cũng đang sống như thế này?
+          
             </h3>
             <p className="text-gray-600 text-base md:text-lg">
-              Đọc 5 dòng dưới đây. Nếu thấy mình trong ít nhất 3 dòng — khóa học này dành cho bạn.
+              Nếu bạn gật đầu với từ 3 điều trở lên dưới đây, rất có thể điều khiến bạn đau không phải là mối quan hệ hiện tại - mà là một mô thức đã theo bạn từ rất lâu..
             </p>
           </motion.div>
 
