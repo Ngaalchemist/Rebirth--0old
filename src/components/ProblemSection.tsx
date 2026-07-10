@@ -48,7 +48,7 @@ export function ProblemSection() {
             className="text-center mb-10"
           >
             <h3 className="font-serif font-bold text-2xl md:text-3xl text-violet-900 mb-3">
-              Bạn có đang như vầy không?
+              Có phải bạn cũng đang sống như thế này?
             </h3>
             <p className="text-gray-600 text-base md:text-lg">
               Đọc 5 dòng dưới đây. Nếu thấy mình trong ít nhất 3 dòng — khóa học này dành cho bạn.
