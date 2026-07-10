@@ -160,7 +160,9 @@ export function HeroSection() {
                 fontStyle: "italic",
               }}
             >
-              Không phải vì bạn chưa đủ tốt. Mà vì bạn đang lặp lại một kiểu tổn thương cũ mà không biết cách nào để dừng lại              
+              Không phải vì bạn chưa đủ tốt. 
+              <br />
+              Có thể chỉ là bạn đang lặp lại một cách yêu đã khiến mình tổn thương nhiều lần mà chưa biết làm sao để dừng lại.              
               <br />
           
             </motion.p>
