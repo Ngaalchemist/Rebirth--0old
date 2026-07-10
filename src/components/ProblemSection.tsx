@@ -5,10 +5,10 @@ import windowGirlImg from "@/assets/images/problem-window.jpg";
 
 const checklist = [
   "Thức dậy là kiểm tra điện thoại xem người ta có nhắn gì không",
-  "Họ chỉ cần im lặng vài tiếng là bạn bắt đầu nghĩ đủ chuyện",
-  "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi trước",
-  "Mối quan hệ nào cũng kết thúc giống nhau — dù người khác nhau",
-  "Bạn mạnh mẽ trước mặt người khác, nhưng về nhà lại thấy trống rỗng và mệt mỏi",
+  "Chỉ cần họ im lặng vài tiếng, bạn bắt đầu tưởng tượng đủ mọi kịch bản",
+  "Bạn luôn là người nhịn, người hiểu chuyện, người xin lỗi và người cố giữ mối quan hệ",
+  "Dù yêu ai, kết thúc vẫn giống nhau: bạn là người bị bỏ lại hoặc bị lừa dối",
+  "Bên ngoài mạnh mẽ, nhưng khi ở một mình lại thấy trống rỗng và kiệt sức",
 ];
 
 export function ProblemSection() {
@@ -30,7 +30,7 @@ export function ProblemSection() {
             className="flex flex-col justify-center px-8 py-16 lg:pl-10 lg:pr-16"
           >
             <h2 className="font-serif font-bold text-xl md:text-2xl lg:text-[2.2rem] text-white leading-[1.18]">
-              Có phải bạn cũng đang sống như thế này?
+             Nếu chỉ cần một tin nhắn chậm cũng đủ khiến bạn bất an, hãy đọc tiếp.
             </h2>
           </motion.div>
         </div>
@@ -79,12 +79,11 @@ export function ProblemSection() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#C9A84C]/20 border border-[#C9A84C]/40 mb-5">
               <AlertTriangle className="w-4 h-4 text-[#C9A84C]" />
               <span className="text-[#C9A84C] text-xs font-bold tracking-[0.2em] uppercase">
-                Nếu đúng
+                Nếu bạn vừa gật đầu nhiều hơn một lần, đừng vội nghĩ mình "yếu đuối".
               </span>
             </div>
             <p className="text-gray-100 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              Vấn đề không nằm ở việc người ta chọn sai. Vấn đề là có một mô thức cũ trong bạn đang
-              lặp lại — và nó có thể học cách dừng lại.
+              Có thể bạn chỉ đang lặp lại một cách yêu đã hình thành từ rất lâu. Và điều đã được học thì cũng có thể học lại.
             </p>
           </motion.div>
         </div>
