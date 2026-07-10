@@ -22,7 +22,7 @@ const GOLD = "#E8C96A";
 const features = [
   {
     icon: Compass,
-    title: "Hiểu vì sao mình cứ yêu là lặp lại một kiểu đau trong tình yêu",
+    title: "Nhìn ra vì sao mình cứ lặp lại cùng một kiểu đau trong tình yêu.",
   },
   {
     icon: BellOff,
