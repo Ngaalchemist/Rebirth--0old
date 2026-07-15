@@ -1,31 +1,58 @@
 import { motion } from "framer-motion";
-import { ChevronRight, Monitor, Zap, Users, Infinity } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import instructorImg from "@/assets/images/instructor-beach.jpg";
 
-const pillars = [
+const methods = [
+  "Thôi miên trị liệu",
+  "Timeline healing",
+  "Somatic therapy",
+  "Inner child work",
+  "Shadow work",
+  "Coaching chữa lành",
+];
+
+const storyBefore = [
+  "Mình đứng đây hôm nay không phải như một bậc thầy lý thuyết, mà như một người phụ nữ đã từng bước qua đổ vỡ, tự tay đi qua ngọn lửa tăm tối nhất để nhặt lại từng mảnh vỡ giá trị của chính mình.",
+  'Mình hiểu hơn ai hết cảm giác nhục nhã âm thầm khi phải quỵ lụy xin xỏ sự trân trọng. Mình từng gượng ép bản thân trở nên "hiểu chuyện", cố cho đi nhiều hơn... chỉ để đổi lấy một tấm vé ở lại trong cuộc đời của một người vốn đã coi thường mình.',
+];
+
+const storyAfter = [
+  "Đêm tháng 8 năm 2022.\nNằm bất động trên sàn nhà sau một trận cãi vã nảy lửa với chồng, mình chạm đáy.",
+  "Giây phút tim thắt lại vì kiệt sức và tủi nhục, mình biết một điều duy nhất: Không thể để lòng tự trọng bị chà đạp thêm một giây nào nữa. Mình gom chút dũng khí tàn tạ cuối cùng để ly hôn, bước ra khỏi mối quan hệ độc hại.",
+  "Nhưng bước ra khỏi một người không có nghĩa là thoát khỏi vòng lặp. Ly hôn xong, mình vẫn phải đối diện với sự trống rỗng, nỗi sợ cô đơn và những đêm dài overthinking.",
+  "Sự giải thoát thực sự chỉ bắt đầu khi mình ngừng hướng ra ngoài, dấn thân vào hành trình tự chữa lành nghiêm túc và chọn con đường trở thành một Người thực hành Thôi miên & chữa lành Tiềm thức tầng sâu.",
+];
+
+const proof = [
+  {
+    lead: "Mình đã tự mình đi qua và chuyển hóa thật.",
+    body: 'Mình đã dùng chính Thôi miên và Thiền định để bẻ gãy kịch bản "bị bỏ rơi" trong tiềm thức, tái lập lại sự tự tôn từ gốc để kiến tạo một thực tại hoàn toàn mới: Bình an tự thân, làm chủ cảm xúc và tự do tự tại.',
+  },
+  {
+    lead: "Mình thấu hiểu từ việc đồng hành thực tế.",
+    body: "Mình không chia sẻ bằng những lý thuyết suông trong sách vở. Sự thấu suốt của mình ngày hôm nay được mài dũa từ việc trực tiếp đồng hành, lắng nghe và dẫn dắt những tâm hồn từng vụn vỡ. Mình đã nhìn thấy cấu trúc của nỗi đau, thấy cách tiềm thức vận hành cái bẫy tự hủy hoại, và cũng thấy khoảnh khắc một người phụ nữ bừng tỉnh, thu hồi lại quyền lực nội tâm để làm chủ cuộc đời mình.",
+  },
+];
+
+const helps = [
   {
     icon: "🔓",
     title: "Giải mã kịch bản vô thức",
-    desc: "Nhìn thấu vì sao nỗi sợ vô giá trị đang âm thầm điều khiển cách bạn yêu, cách bạn lựa chọn và cách bạn cho phép người khác đối xử với mình.",
+    desc: 'Nhìn thấu cơ chế vì sao nỗi sợ "vô giá trị" lại đang âm thầm điều khiển bạn tự hạ thấp tiêu chuẩn để chuốc lấy tổn thương.',
   },
   {
     icon: "🛡️",
     title: "Thu hồi quyền lực cá nhân",
-    desc: "Ngừng phản ứng từ những vết thương cũ, cắt đứt sự phụ thuộc cảm xúc và xây dựng cảm giác an toàn từ bên trong.",
+    desc: "Ngừng phản ứng dựa trên vết thương cũ, cắt đứt sự phụ thuộc cảm xúc để trở thành bến đỗ vững chãi và an toàn nhất cho chính mình.",
   },
   {
     icon: "🦋",
-    title: "Tái lập mối quan hệ với chính mình",
-    desc: "Để bạn không còn phải tìm kiếm giá trị bản thân thông qua sự công nhận, sự chú ý hay tình yêu từ người khác.",
+    title: "Tái lập mối quan hệ bên trong",
+    desc: "Đưa tiềm thức về trạng thái an toàn nguyên bản, để bạn không bao giờ còn sống với nhu cầu phải cầu xin sự công nhận từ bất kỳ ai khác.",
   },
 ];
 
-const ctaBadges = [
-  { icon: Monitor, label: "Học online" },
-  { icon: Zap, label: "Bắt đầu ngay" },
-  { icon: Users, label: "Cộng đồng riêng" },
-  { icon: Infinity, label: "Truy cập trọn đời" },
-];
+const trust = ["Học online", "Bắt đầu ngay", "Cộng đồng riêng", "Truy cập trọn đời", "Hoàn tiền 7 ngày"];
 
 export function InstructorSection() {
   const scrollToPricing = () =>
@@ -34,22 +61,18 @@ export function InstructorSection() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 max-w-3xl relative z-10">
-        {/* Header */}
+        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <span className="inline-block text-xs md:text-sm font-semibold tracking-[0.3em] uppercase text-[#B0893A] mb-3">
-            Cycle Breaker
-          </span>
           <h2 className="font-serif font-bold text-3xl md:text-5xl text-gray-900 tracking-wide">
             Chào bạn, mình là Nga Alchemist
           </h2>
-          <p className="mt-4 text-violet-700/90 text-base md:text-lg max-w-xl mx-auto leading-relaxed">
-            Người đồng hành giúp phụ nữ phá vỡ những mô thức vô thức đang lặp lại trong tình yêu, các
-            mối quan hệ và cách họ nhìn nhận chính mình.
+          <p className="mt-3 text-violet-700 text-base md:text-lg">
+            Người bẻ gãy mô thức &amp; chữa lành cảm xúc từ gốc
           </p>
         </motion.div>
 
@@ -58,95 +81,102 @@ export function InstructorSection() {
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative rounded-3xl overflow-hidden shadow-xl border border-violet-100 mb-12 max-w-md mx-auto"
+          className="relative rounded-3xl overflow-hidden shadow-xl border border-violet-100 mb-6 max-w-md mx-auto"
         >
           <img src={instructorImg} alt="Nga Alchemist" className="w-full object-cover" />
         </motion.div>
 
-        {/* Story — rút gọn, giữ đúng mạch cảm xúc thật nhưng đi thẳng vào trọng tâm */}
-        <div className="space-y-5 text-gray-700 leading-[1.9] text-base md:text-lg">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            Mình từng là người luôn cố gắng, luôn nhịn, luôn hiểu chuyện — và luôn là người bị bỏ lại.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            Năm 2022, sau một cuộc hôn nhân đổ vỡ, mình nhận ra: tất cả những mối quan hệ tan vỡ trong
-            đời mình đều có chung một kịch bản. Không phải vì mình gặp sai người liên tục — mà vì mình
-            chưa từng chữa lành phần bên trong khiến mình chấp nhận bị đối xử như vậy.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-serif font-semibold text-violet-900 text-xl md:text-2xl leading-snug"
-          >
-            "Đây không phải là một biến cố ngẫu nhiên. Đây là một vòng lặp."
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            Sau hành trình chữa lành cho chính mình bằng thôi miên trị liệu và làm việc với tiềm thức,
-            mình đã đồng hành cùng hơn 500 phụ nữ để phá vỡ mô thức này.{" "}
-            <span className="font-semibold text-violet-900">
-              Rebirth là chính hệ thống đó — rút gọn còn 7 ngày, để bạn tự học theo tốc độ của mình.
+        {/* Methods */}
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
+          {methods.map((m, i) => (
+            <span key={i} className="px-3.5 py-1.5 rounded-full text-sm border border-violet-200 text-violet-700 bg-violet-50">
+              {m}
             </span>
-          </motion.p>
+          ))}
         </div>
 
-        {/* Three pillars */}
+        {/* Story */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 rounded-2xl p-7 md:p-9 bg-gradient-to-br from-[#1a0a2e] to-[#140728] border border-[#C9A84C]/30 shadow-xl"
+          className="space-y-5 text-gray-700 leading-[1.9] text-lg md:text-xl"
         >
-          <ul className="space-y-7">
-            {pillars.map((p, i) => (
-              <motion.li
-                key={i}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="flex items-start gap-4"
-              >
-                <span className="text-3xl leading-none mt-0.5">{p.icon}</span>
+          {storyBefore.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+
+          <div className="bg-gray-900 rounded-2xl px-7 py-6 my-7">
+            <p className="text-white font-semibold text-xl md:text-2xl leading-relaxed text-center">
+              Sau nhiều thất bại và những lời thóa mạ hạ bệ lòng tự trọng, mình đã thực sự tin: Bản thân mình là kẻ không có giá trị.
+            </p>
+          </div>
+
+          {storyAfter.map((p, i) => (
+            <p key={i} className="whitespace-pre-line">{p}</p>
+          ))}
+        </motion.div>
+
+        {/* VÌ MÌNH ĐÃ ĐI QUA box (contrasting dark bg) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 rounded-2xl p-7 md:p-9 bg-gradient-to-br from-[#1a0a2e] to-[#140728] border border-[#C9A84C]/30 shadow-xl"
+        >
+          <h3 className="font-serif font-bold text-[#F5D78E] text-xl md:text-2xl mb-5 tracking-wide">
+            VÌ MÌNH ĐÃ ĐI QUA, NÊN MÌNH HIỂU...
+          </h3>
+          <ul className="space-y-6">
+            {proof.map((p, i) => (
+              <li key={i} className="flex items-start gap-4">
+                <span className="mt-2 w-2.5 h-2.5 rounded-full bg-[#C9A84C] flex-shrink-0" />
                 <div>
-                  <h4 className="font-serif font-bold text-[#F5D78E] text-lg md:text-xl mb-1.5">
-                    {p.title}
-                  </h4>
-                  <p className="text-gray-100 leading-[1.9] text-base md:text-lg">{p.desc}</p>
+                  <p className="text-[#F5D78E] font-semibold text-lg md:text-xl mb-1.5">{p.lead}</p>
+                  <p className="text-gray-100 leading-[1.9] text-lg md:text-xl">{p.body}</p>
                 </div>
-              </motion.li>
+              </li>
             ))}
           </ul>
         </motion.div>
 
-        {/* Closing */}
+        {/* Transition + 3 helps */}
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 text-gray-700 leading-[1.9] text-lg md:text-xl whitespace-pre-line"
+        >
+          {"Hành trình 7 ngày này không có những triết lý cao siêu đao to búa lớn. Nó là tất cả những đúc kết tinh gọn, an toàn và sâu sắc nhất từ chính hành trình chuyển hóa xương máu của mình, cùng những trải nghiệm đồng hành thực tế cùng hàng trăm khách hàng.\nMình ở đây để giúp bạn rút ngắn con đường, không còn phải mò mẫm trong bóng tối:"}
+        </motion.p>
+
+        <div className="grid md:grid-cols-3 gap-5 mt-8">
+          {helps.map((h, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="bg-white border border-violet-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all"
+            >
+              <div className="text-4xl mb-3">{h.icon}</div>
+              <h4 className="font-serif font-bold text-violet-900 text-lg md:text-xl mb-2">{h.title}</h4>
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed">{h.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-10 text-center"
         >
-          <p className="text-violet-900 font-serif font-bold text-xl md:text-2xl leading-relaxed max-w-2xl mx-auto mb-2">
-            Bạn chưa từng thiếu giá trị.
-          </p>
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Bạn chỉ đang mang những vết thương khiến mình quên mất giá trị vốn có của bản thân. Nếu bạn
-            đã sẵn sàng ngừng tự bỏ rơi chính mình, mình sẽ đồng hành cùng bạn trên hành trình trở về ấy.
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-8">
+            Hành trình này đang ở đây đợi bạn — nếu bạn đã sẵn sàng ngừng nỗ lực để được yêu, và bắt đầu trở thành{" "}
+            <span className="text-violet-800 font-semibold whitespace-nowrap">người không thể bị bỏ rơi.</span>
           </p>
           <button
             onClick={scrollToPricing}
@@ -156,15 +186,11 @@ export function InstructorSection() {
             <span className="tracking-wide whitespace-nowrap">TÔI CHỌN NGỪNG TỰ BỎ RƠI CHÍNH MÌNH</span>
             <ChevronRight className="w-6 h-6 group-hover:translate-x-1 transition-transform flex-shrink-0" />
           </button>
-
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {ctaBadges.map((b, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center gap-1.5 text-sm md:text-base text-violet-700/80 font-medium"
-              >
-                <b.icon className="w-4 h-4 text-[#B0893A]" />
-                {b.label}
+          <div className="flex flex-nowrap justify-center items-center gap-x-3 mt-4 text-xs md:text-sm text-gray-500 overflow-x-auto">
+            {trust.map((t, i) => (
+              <span key={i} className="flex items-center gap-2 whitespace-nowrap flex-shrink-0">
+                {i > 0 && <span className="text-[#C9A84C]/60">•</span>}
+                {t}
               </span>
             ))}
           </div>
